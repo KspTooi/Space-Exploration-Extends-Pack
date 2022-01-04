@@ -6,3 +6,7 @@
 local removeRecipe = {
 
 }
+
+local removeTechnology ={
+
+}
