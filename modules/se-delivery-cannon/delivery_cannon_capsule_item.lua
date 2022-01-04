@@ -4,12 +4,15 @@
 --- DateTime: 2022/1/4 17:22
 
 
-local base = data.raw["item"]["liquid-rocket-fuel-barrel"]
+local base = data.raw["item"]["se-liquid-rocket-fuel-barrel"]
+
+
+if base~=nil then
 
 data:extend({
     {
         type = "item",
-        name = "se-delivery-cannon-package-".."liquid-rocket-fuel-barrel",
+        name = "se-delivery-cannon-package-".."se-liquid-rocket-fuel-barrel",
         icon = "__space-exploration-graphics__/graphics/icons/delivery-cannon-capsule.png",
         icon_size = 64,
         order = order,
@@ -20,17 +23,17 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "se-delivery-cannon-pack-" .. "liquid-rocket-fuel-barrel",
+        name = "se-delivery-cannon-pack-" .. "se-liquid-rocket-fuel-barrel",
         icon = base.icon,
         icon_size = base.icon_size,
         icon_mipmaps = base.icon_mipmaps,
         icons = base.icons,
-        result = "se-delivery-cannon-package-".."liquid-rocket-fuel-barrel",
+        result = "se-delivery-cannon-package-".."se-liquid-rocket-fuel-barrel",
         enabled = true,
         energy_required = 5,
         ingredients = {
             { "se-delivery-cannon-capsule", 1 },
-            { type = "item", name = "liquid-rocket-fuel-barrel", amount = 100},
+            { type = "item", name = "se-liquid-rocket-fuel-barrel", amount = 100},
         },
         requester_paste_multiplier = 1,
         always_show_made_in = false,
@@ -41,3 +44,6 @@ data:extend({
         allow_decomposition = false
     },
 })
+
+end
+

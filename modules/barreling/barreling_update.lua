@@ -16,8 +16,8 @@ for name, fluid in pairs(data.raw["fluid"]) do
     local item = data.raw["item"][itemName]
 
     if item~=nil then
-
-        item.stack_size = 100
+	
+        item.stack_size = 75
 
     end
 
