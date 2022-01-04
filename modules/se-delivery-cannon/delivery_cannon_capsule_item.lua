@@ -33,7 +33,7 @@ data:extend({
         energy_required = 5,
         ingredients = {
             { "se-delivery-cannon-capsule", 1 },
-            { type = "item", name = "se-liquid-rocket-fuel-barrel", amount = 100},
+            { type = "item", name = "se-liquid-rocket-fuel-barrel", amount = 75},
         },
         requester_paste_multiplier = 1,
         always_show_made_in = false,
