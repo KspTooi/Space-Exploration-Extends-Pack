@@ -6,10 +6,10 @@
 
 local itemStack = 100
 
+--需要统一堆叠的物品名称
 local item = {
     "rocket-fuel"
 }
-
 
 
 for i,itemName in pairs(item) do
