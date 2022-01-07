@@ -14,9 +14,9 @@ local max_distance_of_nearby_sector_revealed = data.raw['radar']['radar'].max_di
 local extra_energy_cost = 75 * radar_amplification_type
 
 
-data.raw['radar']['radar'].max_distance_of_sector_revealed = max_distance_of_sector_revealed
+data.raw['radar']['radar'].max_distance_of_sector_revealed = 0
 
-data.raw['radar']['radar'].max_distance_of_nearby_sector_revealed = 0
-data.raw['radar']['radar'].energy_per_sector = 0 .. "kJ"
+data.raw['radar']['radar'].max_distance_of_nearby_sector_revealed = 4
+data.raw['radar']['radar'].energy_per_sector = 1 .. "kW"
 
 data.raw['radar']['radar'].energy_usage = (300 + extra_energy_cost) .. "kW"

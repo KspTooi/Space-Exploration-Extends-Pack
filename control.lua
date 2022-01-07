@@ -3,7 +3,7 @@
 
 
 local ctx = "KspTooi"
-local version = "1.39B"
+local version = "1.4C"
 
 script.on_event(defines.events.on_player_created, function(event)
     local player = game.players[event.player_index]
