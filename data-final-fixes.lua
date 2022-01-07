@@ -11,6 +11,12 @@ require "modules.se-delivery-cannon.delivery_cannon_capsule_item"
 
 require "modules.vanilla-radar.VanillaRaderUpgrader"
 
+require "modules.deadlock.DeadLockUpgrader"
+
+require "modules.mine-drone.MineDroneUpgrader"
+
+
+
 
 
 
