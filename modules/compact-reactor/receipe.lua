@@ -14,7 +14,7 @@ compactReactorRecipe.ingredients = {
     {"steel-plate", 500},
     {"advanced-circuit", 500},
     {"copper-plate", 500},
-    {"heat-exchanger", 15},
+    {"heat-exchanger", 10},
     {"steam-turbine", 8}
 }
 
