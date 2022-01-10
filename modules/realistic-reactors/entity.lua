@@ -8,6 +8,11 @@
 local originCollingTower = data.raw["furnace"]["rr-cooling-tower"]
 local marinePropulsionCoolingTower = nil
 
+local recipeCategory={
+	type = "recipe-category",
+	name = "marine-propulsion-water-cooling",
+}
+
 --舰载冷却塔水冷recipe
 local marinePropulsionCoolingTowerWaterCollingRecipe = {
     type = "recipe",
@@ -28,11 +33,15 @@ local marinePropulsionCoolingTowerWaterCollingRecipe = {
     order = "z",
 }
 
+
 if originCollingTower~=nil then
 
     marinePropulsionCoolingTower = table.deepcopy(data.raw["furnace"]["rr-cooling-tower"])
     marinePropulsionCoolingTower.name = "kscp-cooling-tower"
     marinePropulsionCoolingTower.crafting_categories = {"marine-propulsion-water-cooling"}
+    ---marinePropulsionCoolingTower.localised_name = "kscp-cooling-tower"
+    ---marinePropulsionCoolingTower.localised_description = "kscp-cooling-tower"
+	marinePropulsionCoolingTower.localised_description = "专用于飞船或空间站的冷却塔,使用了特殊的紧凑型设计使得它的效率非常高。只能放置于飞船或空间站。"
     --[[marinePropulsionCoolingTower.collision_mask = {"object-layer", "train-layer", "floor-layer","water-tile","ground-tile","resource-layer"}]]
     marinePropulsionCoolingTower.collision_mask = {
         "water-tile",
@@ -41,9 +50,51 @@ if originCollingTower~=nil then
         "object-layer",
         "player-layer",
     }
+	
+	
+	marinePropulsionCoolingTower.animation = {
+		layers = {
+			{
+				filename = "__RealisticReactors__/graphics/entity/cooling-tower-shadow.png",
+				width = 430, height = 310,
+				shift = util.by_pixel(52, -21),
+				scale = 0.5,
+				draw_as_shadow = true,
+				flags = {"shadow"},
+			},
+			{
+				filename = "__ksptooi-server-commons-preprocess__/modules/realistic-reactors/res/cooling-tower.png",
+				width = 308, height = 310,
+				shift = {0.695, -0.66},
+				scale = 0.505,
+			},
+			{
+				filename = "__RealisticReactors__/graphics/entity/cooling-tower-light.png",
+				scale = 0.505,
+				width = 308, height = 310,
+				shift = {0.695, -0.66},
+				tint = {r = 1, g = 0, b = 0},
+				draw_as_light = true,
+				priority = "extra-high",
+				flags = {"light"},
+			},
+			{
+				filename = "__RealisticReactors__/graphics/entity/cooling-tower-glow.png",
+				scale = 0.505,
+				width = 308, height = 310,
+				shift = {0.695, -0.66},
+				tint = {r = 1, g = 0, b = 0},
+				draw_as_light = true,
+				priority = "extra-high",
+				flags = {"light"},
+			},
+		}
+	}
+	
 
-    data:extend({marinePropulsionCoolingTower})
+    data:extend({recipeCategory})
     data:extend({marinePropulsionCoolingTowerWaterCollingRecipe})
+    data:extend({marinePropulsionCoolingTower})
 end
 
 

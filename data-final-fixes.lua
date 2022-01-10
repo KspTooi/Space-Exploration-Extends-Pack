@@ -16,6 +16,12 @@ require "modules.deadlock.DeadLockUpgrader"
 require "modules.mine-drone.MineDroneUpgrader"
 
 
+require "modules.realistic-reactors.entity"
+require "modules.realistic-reactors.item"
+require "modules.realistic-reactors.receipe"
+require "modules.realistic-reactors.technology"
+
+
 
 
 
