@@ -1,9 +1,17 @@
 
 
 
+unmark = require("modules.unmark-upgrade.UnmarkUpgrader")
+
 
 local ctx = "KspTooi"
 local version = "1.4D"
+
+
+script.on_event(defines.events.on_marked_for_deconstruction, function(event)
+    unmark.unmark_cliffs(event)
+end)
+
 
 script.on_event(defines.events.on_player_created, function(event)
     local player = game.players[event.player_index]

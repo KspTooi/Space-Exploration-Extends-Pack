@@ -15,3 +15,5 @@ local compactReactor = {
     place_result = "kscp-compact-nuclear-reactor",
     stack_size = 10
 }
+
+data:extend({compactReactor})

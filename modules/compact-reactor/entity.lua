@@ -10,14 +10,16 @@ local compactReactor =  {
     icon = "__base__/graphics/icons/nuclear-reactor.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral","player-creation"},
-    minable = {mining_time = 5, result = "kscp-compact-nuclear-reactor"},
+    minable = {mining_time = 30, result = "kscp-compact-nuclear-reactor"},
     max_health = 5000,
     corpse = "nuclear-reactor-remnants",
     dying_explosion = "nuclear-reactor-explosion",
 
-    effectivity = 0.375,
+    effectivity = 1,
     collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+
+    allow_copy_paste = false,
 
     energy_source = {
         type = "electric",
@@ -27,14 +29,57 @@ local compactReactor =  {
     burner = {
         type = "burner",
         fuel_category = "nuclear",
-        effectivity = 1,
-        fuel_inventory_size = 2,
+        effectivity = 0.10,
+        fuel_inventory_size = 4,
         burnt_inventory_size = 1,
-        light_flicker =
+        light_flicker = {intensity = 1, size = 0.5, color = {r=19, g=80, b=161}},
+--[[        smoke =
         {
-            color = {0,0,0},
-            minimum_intensity = 0.7,
-            maximum_intensity = 0.95
+            {
+                name = "simple-burner-generator-smoke",
+                frequency = 50,
+                --position = {0.05, 0.9},
+]]--[[                north_position = {0.05, 0.9},
+                east_position = {0.05, 0.8},]]--[[
+
+            },
+        }]]
+
+
+    },
+
+    idle_animation = {
+        layers = {
+            {
+                filename = "__base__/graphics/entity/nuclear-reactor/reactor.png",
+                width = 154,
+                height = 158,
+                shift = util.by_pixel(-6, -6),
+                hr_version =
+                {
+                    filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor.png",
+                    width = 302,
+                    height = 318,
+                    scale = 0.5,
+                    shift = util.by_pixel(-5, -7)
+                }
+            },
+            {
+                filename = "__ksptooi-server-commons-preprocess__/modules/compact-reactor/res/reactor-shadow.png",
+                width = 263,
+                height = 162,
+                shift = { 1.625 , 0 },
+                draw_as_shadow = true,
+                hr_version =
+                {
+                    filename = "__ksptooi-server-commons-preprocess__/modules/compact-reactor/res/hr-reactor-shadow.png",
+                    width = 525,
+                    height = 323,
+                    scale = 0.5,
+                    shift = { 1.625, 0 },
+                    draw_as_shadow = true
+                }
+            }
         }
     },
 
@@ -56,23 +101,54 @@ local compactReactor =  {
                 }
             },
             {
-                filename = "__base__/graphics/entity/nuclear-reactor/reactor-shadow.png",
+                filename = "__ksptooi-server-commons-preprocess__/modules/compact-reactor/res/reactor-shadow.png",
                 width = 263,
                 height = 162,
                 shift = { 1.625 , 0 },
                 draw_as_shadow = true,
                 hr_version =
                 {
-                    filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-shadow.png",
+                    filename = "__ksptooi-server-commons-preprocess__/modules/compact-reactor/res/hr-reactor-shadow.png",
                     width = 525,
                     height = 323,
                     scale = 0.5,
                     shift = { 1.625, 0 },
                     draw_as_shadow = true
                 }
+            },
+            {
+                filename = "__ksptooi-server-commons-preprocess__/modules/compact-reactor/res/hr-reactor-lights-color.png",
+                priority = "extra-high",
+
+                frame_count = 1,
+                line_length = 8,
+                animation_speed = 1 / 100,
+                blend_mode = "additive",
+
+                draw_as_glow = true,
+                width = 320,
+                height = 320,
+                scale = 0.5,
+                shift = { -0.03125, -0.1875 }
+            },
+            {
+                filename = "__ksptooi-server-commons-preprocess__/modules/compact-reactor/res/hr-reactor-lights-color_cyan.png",
+                priority = "extra-high",
+
+                frame_count = 1,
+                line_length = 8,
+                animation_speed = 1 / 100,
+                blend_mode = "additive",
+
+                draw_as_glow = true,
+                width = 320,
+                height = 320,
+                scale = 0.5,
+                shift = { -0.03125, -0.1875 }
             }
         }
     },
+
 
     working_sound =
     {
@@ -84,7 +160,7 @@ local compactReactor =  {
             },
             {
                 filename = "__base__/sound/nuclear-reactor-2.ogg",
-                volume = 0.55
+                volume = 0.5
             }
         },
         --idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.3 },
@@ -95,7 +171,9 @@ local compactReactor =  {
 
     min_perceived_performance = 0.25,
     performance_to_sound_speedup = 0.5,
-    max_power_output = "20MW",
+    max_power_output = "35MW",
 }
 
+
 data:extend({compactReactor})
+

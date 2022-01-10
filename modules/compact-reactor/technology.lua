@@ -3,3 +3,10 @@
 --- Created by KspTooi.
 --- DateTime: 2022/1/10 14:45
 ---
+
+table.insert(data.raw["technology"]["nuclear-power"].effects,{
+
+    type = "unlock-recipe",
+    recipe = "kscp-compact-nuclear-reactor"
+
+})

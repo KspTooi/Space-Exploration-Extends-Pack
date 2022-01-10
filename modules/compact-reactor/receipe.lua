@@ -7,6 +7,7 @@
 
 local compactReactorRecipe = table.deepcopy(data.raw["recipe"]["nuclear-reactor"])
 
+compactReactorRecipe.name = "kscp-compact-nuclear-reactor"
 compactReactorRecipe.result = "kscp-compact-nuclear-reactor"
 
 compactReactorRecipe.ingredients = {
