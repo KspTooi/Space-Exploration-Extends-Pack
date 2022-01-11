@@ -10,7 +10,7 @@ local compactReactor =  {
     icon = "__base__/graphics/icons/nuclear-reactor.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral","player-creation"},
-    minable = {mining_time = 30, result = "kscp-compact-nuclear-reactor"},
+    minable = {mining_time = 10, result = "kscp-compact-nuclear-reactor"},
     max_health = 5000,
     corpse = "nuclear-reactor-remnants",
     dying_explosion = "nuclear-reactor-explosion",

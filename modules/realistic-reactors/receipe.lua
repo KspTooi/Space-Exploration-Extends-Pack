@@ -7,7 +7,7 @@ local originCollingTowerRecipe = data.raw["recipe"]["rr-cooling-tower"]
 local marinePropulsionCoolingTowerRecipe = nil
 
 if originCollingTowerRecipe~=nil then
-    marinePropulsionCoolingTowerRecipe = table.deepcope(data.raw["recipe"]["rr-cooling-tower"])
+    marinePropulsionCoolingTowerRecipe = table.deepcopy(data.raw["recipe"]["rr-cooling-tower"])
     marinePropulsionCoolingTowerRecipe.name = "kscp-cooling-tower"
     marinePropulsionCoolingTowerRecipe.result = "kscp-cooling-tower"
 end

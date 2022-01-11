@@ -22,10 +22,10 @@ local marinePropulsionCoolingTowerWaterCollingRecipe = {
     hidden = true,
     energy_required = 0.5,
     ingredients = {
-        {type="fluid", name="water", amount=750},
+        {type="fluid", name="water", amount=500},
     },
     results = {
-        {type="fluid", name="water", amount=750},
+        {type="fluid", name="water", amount=500},
     },
     icon = "__base__/graphics/icons/fluid/water.png",
     icon_size = 32,
