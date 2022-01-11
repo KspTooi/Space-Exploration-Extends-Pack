@@ -4,6 +4,6 @@
 --- DateTime: 2022/1/11 17:59
 ---
 
-data.raw["solar-panel"]["se-space-solar-panel"].production = "120kW" --origin 400kw
-data.raw["solar-panel"]["se-space-solar-panel-2"].production = "240kW" --origin 800kw
-data.raw["solar-panel"]["se-space-solar-panel-3"].production = "480kW" --origin 1600kw
+data.raw["solar-panel"]["se-space-solar-panel"].production = "180kW" --origin 400kw
+data.raw["solar-panel"]["se-space-solar-panel-2"].production = "360kW" --origin 800kw
+data.raw["solar-panel"]["se-space-solar-panel-3"].production = "720kW" --origin 1600kw

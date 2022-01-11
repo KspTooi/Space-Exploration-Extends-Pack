@@ -10,6 +10,12 @@
 	"dependencies": [
 		"space-exploration >= 0.5.94",
 		"space-exploration-postprocess >= 0.5.25",
-		"Warehousing >= 0.5.4"
+		"Warehousing >= 0.5.4",
+		"Advanced-Solar >= 1.3.1",
+		"underground-pipe-pack >= 1.1.2",
+		"RealisticReactors >= 3.1.2",
+		"Mining_Drones >= 1.1.10",
+		"Factorissimo2 >= 2.5.3",
+		"deadlock-beltboxes-loaders >= 2.4.2"
 	]
 }
