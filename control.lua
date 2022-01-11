@@ -9,7 +9,7 @@ local version = "1.4D"
 
 
 script.on_event(defines.events.on_marked_for_deconstruction, function(event)
-    unmark.unmark_cliffs(event)
+    unmark.unmark_reactor(event)
 end)
 
 

@@ -6,7 +6,7 @@
 
 local unmark = {};
 
-function unmark.unmark_cliffs(event)
+function unmark.unmark_reactor(event)
 
     local player = event.player_index
 
