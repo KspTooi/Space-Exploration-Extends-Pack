@@ -5,19 +5,22 @@
 ---
 
 
-local compactReactorRecipe = table.deepcopy(data.raw["recipe"]["nuclear-reactor"])
 
-compactReactorRecipe.name = "kscp-compact-nuclear-reactor"
-compactReactorRecipe.result = "kscp-compact-nuclear-reactor"
-
-compactReactorRecipe.ingredients = {
-    {"concrete", 500},
-    {"steel-plate", 500},
-    {"advanced-circuit", 500},
-    {"copper-plate", 500},
-    {"heat-exchanger", 10},
-    {"steam-turbine", 8}
+local compactReactorRecipe = {
+    type = "recipe",
+    name = "kscp-compact-nuclear-reactor",
+    energy_required = 8,
+    enabled = false,
+    ingredients = {
+        {"concrete", 500},
+        {"steel-plate", 500},
+        {"advanced-circuit", 500},
+        {"copper-plate", 500},
+        {"heat-exchanger", 10},
+        {"steam-turbine", 8}
+    },
+    result = "kscp-compact-nuclear-reactor",
+    requester_paste_multiplier = 1
 }
 
 data:extend({compactReactorRecipe})
-

@@ -27,6 +27,7 @@ require "modules.compact-reactor.entity"
 require "modules.compact-reactor.receipe"
 require "modules.compact-reactor.technology"
 
+data.raw["recipe"]["kscp-compact-nuclear-reactor"].hide=false
 
 
 
