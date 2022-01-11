@@ -3,3 +3,14 @@
 --- Created by KspTooi.
 --- DateTime: 2022/1/10 10:52
 ---
+local originCollingTowerRecipe = data.raw["recipe"]["rr-cooling-tower"]
+local marinePropulsionCoolingTowerRecipe = nil
+
+if originCollingTowerRecipe~=nil then
+    marinePropulsionCoolingTowerRecipe = table.deepcope(data.raw["recipe"]["rr-cooling-tower"])
+    marinePropulsionCoolingTowerRecipe.name = "kscp-cooling-tower"
+    marinePropulsionCoolingTowerRecipe.result = "kscp-cooling-tower"
+end
+
+data:extend({marinePropulsionCoolingTowerRecipe})
+

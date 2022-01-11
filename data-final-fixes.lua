@@ -22,6 +22,7 @@ require "modules.realistic-reactors.receipe"
 require "modules.realistic-reactors.technology"
 
 require "modules.compact-reactor.item"
+require 'modules.space-exploration.SpaceSolarPanelUpgrader'
 require "modules.compact-reactor.entity"
 require "modules.compact-reactor.receipe"
 require "modules.compact-reactor.technology"
