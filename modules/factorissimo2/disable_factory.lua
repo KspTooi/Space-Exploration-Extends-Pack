@@ -5,12 +5,30 @@
 ---
 
 --[[移除厂房合成]]
-data.raw["recipe"]["factory-1"] = nil
-data.raw["recipe"]["factory-2"] = nil
-data.raw["recipe"]["factory-3"] = nil
+
+if data.raw["recipe"]["factory-1"]~=nil then
+    data.raw["recipe"]["factory-1"] = nil
+end
+
+if data.raw["recipe"]["factory-2"]~=nil then
+    data.raw["recipe"]["factory-1"] = nil
+end
+
+if data.raw["recipe"]["factory-3"]~=nil then
+    data.raw["recipe"]["factory-1"] = nil
+end
+
 
 
 --[[移除厂房科技研究成果]]
-data.raw["technology"]["factory-architecture-t1"].effects = nil
-data.raw["technology"]["factory-architecture-t2"].effects = nil
-data.raw["technology"]["factory-architecture-t3"].effects = nil
+if data.raw["technology"]["factory-architecture-t1"]~=nil then
+    data.raw["technology"]["factory-architecture-t1"].effects = nil
+end
+
+if data.raw["technology"]["factory-architecture-t2"]~=nil then
+    data.raw["technology"]["factory-architecture-t1"].effects = nil
+end
+
+if data.raw["technology"]["factory-architecture-t3"]~=nil then
+    data.raw["technology"]["factory-architecture-t1"].effects = nil
+end
