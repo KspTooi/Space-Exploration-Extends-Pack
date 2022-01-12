@@ -1,7 +1,7 @@
 {
 	"name":"ksptooi-server-commons-preprocess",
 	"author":"KspTooi",
-	"version":"1.4.22",
+	"version":"1.4.26",
 	"title":"ksptooi-server-commons-preprocess",
 	"homepage":"Unknow",
 	"contact": "Unknow",
@@ -15,6 +15,7 @@
 		"underground-pipe-pack >= 1.1.2",
 		"RealisticReactors >= 3.1.2",
 		"Mining_Drones >= 1.1.10",
-		"deadlock-beltboxes-loaders >= 2.4.2"
+		"deadlock-beltboxes-loaders >= 2.4.2",
+		"DeleteEmptyChunks >= 0.4.3"
 	]
 }

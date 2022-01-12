@@ -1,11 +1,35 @@
-
-
+local mod_gui = require("mod-gui")
 
 unmark = require("modules.unmark-upgrade.UnmarkUpgrader")
+surfaceManager = require("modules.surface-manager.SurfaceManager")
 
 
 local ctx = "KspTooi"
 local version = "1.4D"
+
+
+
+
+commands.add_command("clearup",
+        "[KSCP-SurfaceManager]Force Remove Temp Surfaces",
+        function(cmd)
+
+            local pl = game.get_player(cmd.player_index)
+
+            if pl==nil or pl.valid ~= true then
+                return
+            end
+
+            if pl.admin == false then
+                pl.print("你不是管理员.")
+                return
+            end
+
+            surfaceManager.removeTempSurface()
+            game.get_player(cmd.player_index).print("操作完成于" .. cmd.tick)
+
+        end)
+
 
 
 script.on_event(defines.events.on_marked_for_deconstruction, function(event)
@@ -13,7 +37,13 @@ script.on_event(defines.events.on_marked_for_deconstruction, function(event)
 end)
 
 
+
 script.on_event(defines.events.on_player_created, function(event)
+    local player = game.players[event.player_index]
+    player.print("欢迎来到特色太空!"..player.name)
+end)
+
+script.on_event(defines.events.on_player_respawned, function(event)
     local player = game.players[event.player_index]
 end)
 
