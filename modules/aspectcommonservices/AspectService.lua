@@ -8,6 +8,20 @@ local aspectObject = require("modules.aspectcommonservices.aspect.AspectObject")
 local aspectService = {}
 
 
+
+
+function aspectService.get(type,name)
+
+    --获取luaEntity
+    local item = table.deepcopy(data.raw[type][name])
+
+    --将luaEntity封装为AspectObject
+    return aspectObject.create(item)
+end
+
+
+
+
 function aspectService.getItem(name)
 
     --获取luaEntity
@@ -35,5 +49,7 @@ function aspectService.getTechnology(name)
     local technology = table.deepcopy(data.raw["technology"][name])
     return aspectObject.create(technology)
 end
+
+return aspectService
 
 

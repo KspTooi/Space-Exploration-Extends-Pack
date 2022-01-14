@@ -1,4 +1,9 @@
 
+local aspectService = require("modules.aspectcommonservices.AspectService")
+
+
+
+
 data.raw["assembling-machine"]["se-core-miner"] = nil
 data.raw["mining-drill"]["se-core-miner-drill"] = nil
 data.raw["item"]["se-core-miner"] = nil

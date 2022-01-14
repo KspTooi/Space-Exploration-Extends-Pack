@@ -4,8 +4,12 @@
 --- DateTime: 2022/1/14 16:40
 ---
 
-local constEnum = {}
+ConstEnum = {}
 
-constEnum.modName = "ksptooi-server-commons-preprocess"
-constEnum.version = "1.4-G"
-constEnum.ctx = "KspTooi"
+ConstEnum.modName = "ksptooi-server-commons-preprocess"
+ConstEnum.version = "1.4-G"
+ConstEnum.ctx = "KspTooi"
+
+
+
+

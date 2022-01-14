@@ -21,6 +21,18 @@ function aspectObject:setEntity(luaEntity)
     self.luaObject = luaEntity
 end
 
+function aspectObject:getType()
+    if self.luaObject~=nil then
+        return self.luaObject.type
+    end
+end
+
+function aspectObject:getName()
+    if self.luaObject~=nil then
+        return self.luaObject.name
+    end
+end
+
 
 function aspectObject:remove()
 
