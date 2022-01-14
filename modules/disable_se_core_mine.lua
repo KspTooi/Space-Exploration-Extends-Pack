@@ -2,6 +2,7 @@
 local aspectService = require("modules.aspectcommonservices.AspectService")
 
 
+aspectService.get(TypeEnum.assemblingMachine,"se-core-miner"):remove()
 
 
 data.raw["assembling-machine"]["se-core-miner"] = nil
