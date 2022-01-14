@@ -5,14 +5,15 @@ surfaceManager = require("modules.surface-manager.SurfaceManager")
 
 
 local ctx = "KspTooi"
-local version = "1.4D"
-
-
-
+local version = "1.4-F"
 
 commands.add_command("clearup",
         "[KSCP-SurfaceManager]Force Remove Temp Surfaces",
         function(cmd)
+
+            if cmd.player_index == nil then
+                return
+            end
 
             local pl = game.get_player(cmd.player_index)
 
