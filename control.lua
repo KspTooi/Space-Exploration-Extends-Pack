@@ -4,8 +4,13 @@ unmark = require("modules.unmark-upgrade.UnmarkUpgrader")
 surfaceManager = require("modules.surface-manager.SurfaceManager")
 
 
-local ctx = "KspTooi"
+
+--Space Exploration Extend Pack
+local modName = "ksptooi-server-commons-preprocess"
 local version = "1.4-F"
+
+local ctx = "KspTooi"
+
 
 commands.add_command("clearup",
         "[KSCP-SurfaceManager]Force Remove Temp Surfaces",
