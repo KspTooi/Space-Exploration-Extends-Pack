@@ -8,8 +8,6 @@ local aspectObject = require("modules.aspectcommonservices.aspect.AspectObject")
 local aspectService = {}
 
 
-
-
 function aspectService.get(type,name)
 
     --获取luaEntity
@@ -18,8 +16,6 @@ function aspectService.get(type,name)
     --将luaEntity封装为AspectObject
     return aspectObject.create(item)
 end
-
-
 
 
 function aspectService.getItem(name)

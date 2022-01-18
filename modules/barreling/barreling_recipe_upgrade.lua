@@ -19,6 +19,7 @@ for name, fluid in pairs(data.raw["fluid"]) do
 
     local recipe_fill,recipe_empty = get_recipes_for_barrel(barrel_name);
 
+
     if recipe_fill~=nil and recipe_empty~=nil then
 
         data.raw["recipe"]["fill-"..barrel_name].ingredients ={
