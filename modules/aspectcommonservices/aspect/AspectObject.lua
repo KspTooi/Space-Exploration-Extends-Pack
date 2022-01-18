@@ -54,6 +54,10 @@ function aspectObject:insertToData()
 
 end
 
+function aspectObject:update()
+    self:insertToData()
+end
+
 function aspectObject:isNotEmpty()
 
     local luaEntity = self.getEntity()

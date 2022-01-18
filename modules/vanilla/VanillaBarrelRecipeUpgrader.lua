@@ -24,9 +24,9 @@ for name,fluid in pairs(data.raw["fluid"]) do
             {type = "fluid", name = fluid.name, amount = 50, catalyst_amount = 50}
         })
 
-        recipeFill:insertToData()
-        recipeEmpty:insertToData()
-        
+        recipeFill:update()
+        recipeEmpty:update()
+
     end
 
 
