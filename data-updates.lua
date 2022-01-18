@@ -1,3 +1,8 @@
+constEnum = require("enums.ConstEnum")
+typeEnum = require("enums.TypeEnum")
+
+
+
 require 'modules.barreling.barreling_update'
 
 

@@ -3,7 +3,7 @@
 --- Created by KspTooi.
 --- DateTime: 2022/1/14 17:23
 ---
-local aspectObject = require("modules.aspectcommonservices.aspect.AspectObject")
+local aspectObject = require("aspect.AspectObject")
 
 local aspectService = {}
 
