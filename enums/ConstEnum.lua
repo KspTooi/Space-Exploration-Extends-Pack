@@ -7,5 +7,10 @@
 ConstEnum = {}
 
 ConstEnum.modName = "ksptooi-server-commons-preprocess"
-ConstEnum.version = "1.4-G"
+ConstEnum.version = "1.4-F"
 ConstEnum.ctx = "KspTooi"
+
+ConstEnum.kw = "kW"
+ConstEnum.mw = "mW"
+ConstEnum.w = "w"
+
