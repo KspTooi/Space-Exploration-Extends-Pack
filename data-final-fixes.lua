@@ -13,8 +13,6 @@ require "modules.se-delivery-cannon.delivery_cannon_capsule_item"
 
 require "modules.deadlock.DeadLockUpgrader"
 
-require "modules.mine-drone.MineDroneUpgrader"
-
 
 require "modules.realistic-reactors.entity"
 require "modules.realistic-reactors.item"

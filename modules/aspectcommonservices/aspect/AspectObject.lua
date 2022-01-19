@@ -139,6 +139,29 @@ function aspectObject:setEntityMaxHealth(maxHealth)
     return self
 end
 
+function aspectObject:setEntityCollisionMask(collisionMask)
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+        luaEntity.collision_mask = collisionMask
+    end
+
+    return self
+end
+
+function aspectObject:setAllowInSpace(allow)
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+        luaEntity.se_allow_in_space = allow
+    end
+
+    return self
+end
+
+
 function aspectObject:setItemStackSize(stackSize)
 
     local luaEntity = self:getLuaObject()

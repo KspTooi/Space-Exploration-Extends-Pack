@@ -11,15 +11,17 @@ itemEnum = require("enums.ItemEnum")
 
 
 
-require("modules.vanilla.BarrelRecipeUpgrader")
-require("modules.vanilla.BarrelStackSizeUpgrader")
-require("modules.vanilla.ItemStackSizeUpgrader")
-require("modules.vanilla.RaderUpgrader")
-require("modules.vanilla.RobotTowerUpgrader")
+require("modules.SupportComponent.vanilla.BarrelRecipeUpgrader")
+require("modules.SupportComponent.vanilla.BarrelStackSizeUpgrader")
+require("modules.SupportComponent.vanilla.ItemStackSizeUpgrader")
+require("modules.SupportComponent.vanilla.RaderUpgrader")
+require("modules.SupportComponent.vanilla.RobotTowerUpgrader")
 
 
 
-require("modules.warehouse.WarehousingUpgrader")
+require("modules.SupportComponent.Warehouse.WarehousingUpgrader")
 
 
-require("modules.spaceexploration.SpaceSolarPanelUpgrader")
+require("modules.SupportComponent.SpaceExploration.SpaceSolarPanelUpgrader")
+
+require("modules.SupportComponent.MineDrone.MineDroneUpgrader")

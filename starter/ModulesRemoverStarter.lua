@@ -10,4 +10,4 @@ typeEnum = require("enums.TypeEnum")
 itemEnum = require("enums.ItemEnum")
 
 
-require("modules.spaceexploration.CoreMinerRemovers")
+require("modules.SupportComponent.SpaceExploration.CoreMinerRemovers")
