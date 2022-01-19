@@ -14,3 +14,9 @@ ConstEnum.kw = "kW"
 ConstEnum.mw = "mW"
 ConstEnum.w = "w"
 
+
+ConstEnum.collisionMaskAllowInSpace = {"object-layer", "train-layer", "floor-layer","water-tile"}
+
+ConstEnum.collisionMaskAllowInGround = {"water-tile","object-layer", "train-layer", "floor-layer",space_collision_layer}
+
+ConstEnum.collisionMaskAllowInWater = {"object-layer", "train-layer", "floor-layer"}

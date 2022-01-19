@@ -8,6 +8,13 @@ local aspectObject = require("aspect.AspectObject")
 local aspectService = {}
 
 
+
+function aspectService.getList(type)
+    return data.raw[type]
+end
+
+
+
 function aspectService.get(type,name)
 
     --获取luaEntity

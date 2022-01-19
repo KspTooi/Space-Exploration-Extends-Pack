@@ -59,7 +59,14 @@ function aspectObject:insertToData()
 end
 
 function aspectObject:update()
-    self:insertToData()
+
+    local luaEntity = self:getLuaObject()
+
+
+    if luaEntity~=nil then
+        data.raw[luaEntity.type][luaEntity.name] = luaEntity
+    end
+
 
     return self
 end
@@ -83,6 +90,8 @@ function aspectObject:setRecipeIngredients(ingredients)
         luaEntity.ingredients = ingredients
     end
 
+    self:setLuaObject(luaEntity)
+
     return self
 end
 
@@ -91,7 +100,7 @@ function aspectObject:setRecipeResults(results)
     local luaEntity = self:getLuaObject()
 
     if luaEntity~=nil then
-        luaEntity.result = results
+        luaEntity.results = results
     end
 
     return self
@@ -118,6 +127,29 @@ function aspectObject:setSolarPanelProduction(production)
 
     return self
 end
+
+function aspectObject:setEntityMaxHealth(maxHealth)
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+        luaEntity.max_health = maxHealth
+    end
+
+    return self
+end
+
+function aspectObject:setItemStackSize(stackSize)
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+        luaEntity.stack_size = stackSize
+    end
+
+    return self
+end
+
 
 
 
