@@ -5,9 +5,17 @@
 ---
 
 local itemStack = {
-
-    rocket-fuel{
-        itemStack = 75
+    {
+        name="rocket-fuel",
+        itemStack=75
     }
 
 }
+
+
+
+for i,itemName in pairs(itemStack) do
+
+    aspectService.getItem(itemName.name):setItemStackSize(itemName.itemStack):insertToData()
+
+end

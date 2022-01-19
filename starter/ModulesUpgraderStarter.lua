@@ -13,6 +13,7 @@ itemEnum = require("enums.ItemEnum")
 
 require("modules.vanilla.BarrelRecipeUpgrader")
 require("modules.vanilla.BarrelStackSizeUpgrader")
+require("modules.vanilla.ItemStackSizeUpgrader")
 require("modules.vanilla.RaderUpgrader")
 require("modules.vanilla.RobotTowerUpgrader")
 
