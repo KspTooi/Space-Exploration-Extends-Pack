@@ -8,6 +8,7 @@ aspectService = require("modules.aspectcommonservices.AspectService")
 constEnum = require("enums.ConstEnum")
 typeEnum = require("enums.TypeEnum")
 itemEnum = require("enums.ItemEnum")
+toolEnum = require("enums.ToolEnum")
 
 
 require("modules.SupportComponent.SpaceExploration.CoreMinerRemovers")

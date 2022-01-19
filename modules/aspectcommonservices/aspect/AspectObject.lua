@@ -173,6 +173,29 @@ function aspectObject:setItemStackSize(stackSize)
     return self
 end
 
+function aspectObject:setTechnologyPrerequisites(prerequisites)
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+        luaEntity.prerequisites = prerequisites
+    end
+
+    return self
+end
+
+function aspectObject:setTechnologyUnit(unit)
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+        luaEntity.unit = unit
+    end
+
+    return self
+end
+
+
 
 
 
