@@ -4,6 +4,7 @@
 --- DateTime: 2021/12/26 15:42
 ---
 
+TypeEnum.
 
 data.raw["recipe"]["warehouse-basic"].ingredients =
 {

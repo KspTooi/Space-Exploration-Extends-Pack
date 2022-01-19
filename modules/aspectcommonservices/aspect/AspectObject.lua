@@ -49,6 +49,8 @@ function aspectObject:insertToData()
 
     local luaEntity = self:getLuaObject()
 
+    self:removeFromData()
+
     if luaEntity~=nil then
         data:extend({luaEntity})
     end
@@ -101,6 +103,17 @@ function aspectObject:setTechnologyEffects(effects)
 
     if luaEntity~=nil then
         luaEntity.effects = effects
+    end
+
+    return self
+end
+
+function aspectObject:setSolarPanelProduction(production)
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+        luaEntity.production = production
     end
 
     return self
