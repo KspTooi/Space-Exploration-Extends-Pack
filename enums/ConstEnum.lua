@@ -6,8 +6,12 @@
 
 ConstEnum = {}
 
-ConstEnum.modName = "ksptooi-server-commons-preprocess"
-ConstEnum.version = "1.4-F"
+ConstEnum.modName = "SpaceExplorationExtendsPack"
+ConstEnum.modPrefix = "kscp"
+
+
+
+ConstEnum.version = "1.4-K"
 ConstEnum.ctx = "KspTooi"
 
 ConstEnum.kw = "kW"
