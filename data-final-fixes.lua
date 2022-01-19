@@ -1,3 +1,8 @@
+constEnum = require("enums.ConstEnum")
+typeEnum = require("enums.TypeEnum")
+
+
+
 require 'modules.disable_se_core_mine'
 require 'modules.warehousing_update'
 require 'modules.barreling.barreling_recipe_upgrade'

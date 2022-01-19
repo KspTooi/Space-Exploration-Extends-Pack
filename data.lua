@@ -1,3 +1,7 @@
+
+constEnum = require("enums.ConstEnum")
+typeEnum = require("enums.TypeEnum")
+
 require 'modules.iv-assembling.entity'
 require 'modules.iv-assembling.item'
 require 'modules.iv-assembling.receipe'

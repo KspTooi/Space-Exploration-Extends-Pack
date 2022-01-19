@@ -1,5 +1,10 @@
 local mod_gui = require("mod-gui")
 
+constEnum = require("enums.ConstEnum")
+typeEnum = require("enums.TypeEnum")
+
+
+
 unmark = require("modules.unmark-upgrade.UnmarkUpgrader")
 surfaceManager = require("modules.surface-manager.SurfaceManager")
 
