@@ -33,6 +33,17 @@ function aspectObject:getName()
     end
 end
 
+function aspectObject:setName(name)
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+        luaEntity.name = name
+    end
+
+    return self
+end
+
 
 function aspectObject:removeFromData()
 
@@ -115,6 +126,17 @@ function aspectObject:setTechnologyEffects(effects)
     end
 
     return self
+end
+
+function aspectObject:getTechnologyEffects()
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+        return luaEntity.effects
+    end
+
+    return nil
 end
 
 function aspectObject:setSolarPanelProduction(production)

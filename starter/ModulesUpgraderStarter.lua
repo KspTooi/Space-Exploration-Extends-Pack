@@ -24,6 +24,7 @@ require("modules.SupportComponent.Warehouse.WarehousingUpgrader")
 
 
 require("modules.SupportComponent.SpaceExploration.SpaceSolarPanelUpgrader")
+require("modules.SupportComponent.SpaceExploration.DeliveryCannonCapsuleRecipeUpgrader")
 
 require("modules.SupportComponent.MineDrone.MineDroneUpgrader")
 

@@ -10,4 +10,5 @@ require 'modules.iv-assembling.item'
 require 'modules.iv-assembling.receipe'
 require 'modules.iv-assembling.technology'
 
-require 'modules.se-delivery-cannon.delivery_cannon_capsule_update'
+--[[
+require 'modules.se-delivery-cannon.delivery_cannon_capsule_update']]

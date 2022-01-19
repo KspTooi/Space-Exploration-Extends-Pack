@@ -7,7 +7,6 @@ require("starter.ModulesRemoverStarter")
 require("starter.ModulesUpgraderStarter")
 
 
-
 require "modules.se-delivery-cannon.delivery_cannon_capsule_item"
 
 
