@@ -8,7 +8,6 @@ local aspectService = require("modules.aspectcommonservices.AspectService")
 
 for name,fluid in pairs(data.raw["fluid"]) do
 
-    local barrelName = fluid.name + "-barrel"
 
     local recipeFill = aspectService.getRecipe("fill-"..fluid.name.."-barrel")
     local recipeEmpty = aspectService.getRecipe("empty-"..fluid.name.."-barrel")

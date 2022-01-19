@@ -42,6 +42,7 @@ function aspectObject:removeFromData()
         data.raw[luaEntity.type][luaEntity.name] = nil
     end
 
+    return self
 end
 
 function aspectObject:insertToData()
@@ -52,10 +53,13 @@ function aspectObject:insertToData()
         data:extend({luaEntity})
     end
 
+    return self
 end
 
 function aspectObject:update()
     self:insertToData()
+
+    return self
 end
 
 function aspectObject:isNotEmpty()
@@ -67,7 +71,6 @@ function aspectObject:isNotEmpty()
     end
 
     return false
-
 end
 
 function aspectObject:setRecipeIngredients(ingredients)
@@ -78,6 +81,7 @@ function aspectObject:setRecipeIngredients(ingredients)
         luaEntity.ingredients = ingredients
     end
 
+    return self
 end
 
 function aspectObject:setRecipeResults(results)
@@ -88,6 +92,18 @@ function aspectObject:setRecipeResults(results)
         luaEntity.result = results
     end
 
+    return self
+end
+
+function aspectObject:setTechnologyEffects(effects)
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+        luaEntity.effects = effects
+    end
+
+    return self
 end
 
 

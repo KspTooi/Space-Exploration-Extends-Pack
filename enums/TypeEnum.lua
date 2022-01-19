@@ -12,3 +12,4 @@ TypeEnum.entity = "entity"
 TypeEnum.technology = "technology"
 
 TypeEnum.assemblingMachine = "assembling-machine"
+TypeEnum.miningDrill = "mining-drill"

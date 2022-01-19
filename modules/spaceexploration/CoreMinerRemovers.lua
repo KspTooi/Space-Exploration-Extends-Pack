@@ -4,3 +4,12 @@
 --- DateTime: 2022/1/18 22:48
 ---
 
+local aspectService = require("modules.aspectcommonservices.AspectService")
+
+aspectService.get(TypeEnum.assemblingMachine,"se-core-miner"):removeFromData()
+aspectService.get(TypeEnum.miningDrill,"se-core-miner-drill"):removeFromData()
+
+aspectService.getItem("se-core-miner"):removeFromData()
+aspectService.getRecipe("se-core-miner"):removeFromData()
+
+aspectService.getTechnology("se-core-miner"):setTechnologyEffects(nil):insertToData()
