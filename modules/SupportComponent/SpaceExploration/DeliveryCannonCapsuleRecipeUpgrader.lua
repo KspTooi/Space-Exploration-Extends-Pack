@@ -22,9 +22,10 @@ aspectService.getRecipe("se-delivery-cannon-capsule")
 
 local technology = aspectService.getTechnology("se-delivery-cannon");
 
-table.insert(technology:getTechnologyEffects(),{ type = "unlock-recipe", recipe = "kscp-delivery-cannon-capsule-steel", })
-table.insert(technology:getTechnologyEffects(),{ type = "unlock-recipe", recipe = "kscp-delivery-cannon-capsule-steel-exp", })
+technology:setName("kscp-delivery-cannon-stell")
+        :setTechnologyEffects({
+            { type = "unlock-recipe", recipe = "kscp-delivery-cannon-capsule-steel", },
+            { type = "unlock-recipe", recipe = "kscp-delivery-cannon-capsule-steel-exp", }
+        })
 
 technology:insertToData()
-
-
