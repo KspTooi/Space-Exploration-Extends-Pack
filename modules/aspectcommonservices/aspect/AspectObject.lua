@@ -6,11 +6,16 @@
 
 local aspectObject = {}
 
+
+----静态内部操作方法 ----- 开始-----
+
 function aspectObject.create(luaObject)
     aspectObject.luaObject = luaObject
     return aspectObject;
 end
 
+
+--根据给定类型获取数据原型
 function aspectObject.get(type,name)
 
     --获取luaEntity
@@ -20,6 +25,7 @@ function aspectObject.get(type,name)
     return aspectObject.create(item)
 end
 
+--获取于当前原型TYPE相同的新原型
 function aspectObject:getSame(name)
 
     local luaEntity = self:getLuaObject()
@@ -36,7 +42,8 @@ function aspectObject:getSame(name)
     return aspectObject.create(nil)
 end
 
-function aspectObject:set(property,value)
+--基本设值方法(含有非空检查)
+function aspectObject:setProperty(property,value)
 
     local luaEntity = self:getLuaObject()
 
@@ -47,40 +54,45 @@ function aspectObject:set(property,value)
     return self
 end
 
-
-function aspectObject:getLuaObject()
-    return self.luaObject
-end
-
-
-function aspectObject:setLuaObject(luaObject)
-    self.luaObject = luaObject
-end
-
-function aspectObject:getType()
-    if self.luaObject~=nil then
-        return self.luaObject.type
-    end
-end
-
-function aspectObject:getName()
-    if self.luaObject~=nil then
-        return self.luaObject.name
-    end
-end
-
-function aspectObject:setName(name)
+--基本取值方法(含有非空检查)
+function aspectObject:getProperty(propertyName)
 
     local luaEntity = self:getLuaObject()
 
     if luaEntity~=nil then
-        luaEntity.name = name
+        return luaEntity[propertyName]
     end
 
-    return self
+    return nil
+end
+
+--获取当前上下文中的LUAOBJECT
+function aspectObject:getLuaObject()
+    return self.luaObject
+end
+
+--设置当前上下文中的LUAOBJECT
+function aspectObject:setLuaObject(luaObject)
+    self.luaObject = luaObject
 end
 
 
+function aspectObject:getType()
+    return self:getProperty("type")
+end
+
+
+function aspectObject:getName()
+    return self:getProperty("name")
+end
+
+
+function aspectObject:setName(name)
+    return self:setProperty("name",name)
+end
+
+
+--从数据原型中移除该AspectObject
 function aspectObject:removeFromData()
 
     local luaEntity = self:getLuaObject()
@@ -92,6 +104,7 @@ function aspectObject:removeFromData()
     return self
 end
 
+--加入该AspectObject至数据原型
 function aspectObject:insertToData()
 
     local luaEntity = self:getLuaObject()
@@ -105,15 +118,17 @@ function aspectObject:insertToData()
     return self
 end
 
+--加入该AspectObject至数据原型
 function aspectObject:joinToData()
     return self:insertToData()
 end
 
+--加入该AspectObject至数据原型
 function aspectObject:insertInto()
     return self:insertToData()
 end
 
-
+--更新该AspectObject至数据原型
 function aspectObject:update()
 
     local luaEntity = self:getLuaObject()
@@ -127,6 +142,7 @@ function aspectObject:update()
     return self
 end
 
+--检测该AO是否为空
 function aspectObject:isNotEmpty()
 
     local luaEntity = self:getLuaObject()
@@ -138,15 +154,25 @@ function aspectObject:isNotEmpty()
     return false
 end
 
+
+----静态内部操作方法 ----- 结束-----
+
+
+
+
+
+
+
 function aspectObject:setRecipeIngredients(ingredients)
-    return self:set("ingredients",ingredients)
+    return self:setProperty("ingredients",ingredients)
 end
 
 function aspectObject:setRecipeResults(results)
-    return self:set("results",results)
+    return self:setProperty("results",results)
 end
 
 function aspectObject:setTechnologyEffects(effects)
+
 
     local luaEntity = self:getLuaObject()
 
@@ -170,45 +196,44 @@ function aspectObject:getTechnologyEffects()
 end
 
 function aspectObject:setSolarPanelProduction(production)
-    return self:set("production",production)
+    return self:setProperty("production",production)
 end
 
 function aspectObject:setEntityMaxHealth(maxHealth)
-    return self:set("max_health",maxHealth)
+    return self:setProperty("max_health",maxHealth)
 end
 
-
 function aspectObject:setEntityEnergyUsage(energyUsage)
-    return self:set("energy_usage",energyUsage)
+    return self:setProperty("energy_usage",energyUsage)
 end
 
 function aspectObject:setEntityCraftSpeed(craftSpeed)
-    return self:set("crafting_speed",craftSpeed)
+    return self:setProperty("crafting_speed",craftSpeed)
 end
 
 function aspectObject:setEntityModuleSpecification(moduleSpecification)
-    return self:set("module_specification",moduleSpecification)
+    return self:setProperty("module_specification",moduleSpecification)
 end
 
 
 function aspectObject:setEntityCollisionMask(collisionMask)
-    return self:set("collision_mask",collisionMask)
+    return self:setProperty("collision_mask",collisionMask)
 end
 
 function aspectObject:setAllowInSpace(allow)
-    return self:set("se_allow_in_space",allow)
+    return self:setProperty("se_allow_in_space",allow)
 end
 
 function aspectObject:setItemStackSize(stackSize)
-    return self:set("stack_size",stackSize)
+    return self:setProperty("stack_size",stackSize)
 end
 
 function aspectObject:setTechnologyPrerequisites(prerequisites)
-    return self:set("prerequisites",prerequisites)
+    return self:setProperty("prerequisites",prerequisites)
 end
 
 function aspectObject:setTechnologyUnit(unit)
-    return self:set("unit",unit)
+    return self:setProperty("unit",unit)
 end
 
 
