@@ -155,45 +155,23 @@ function aspectObject:isNotEmpty()
 end
 
 
-----静态内部操作方法 ----- 结束-----
+----静态内部操作方法 ----- 结束 -----<<<<
 
 
 
 
+---- 物品操作方法 ----- 开始 ----->>>>
 
-
-
-function aspectObject:setRecipeIngredients(ingredients)
-    return self:setProperty("ingredients",ingredients)
+function aspectObject:setItemStackSize(stackSize)
+    return self:setProperty("stack_size",stackSize)
 end
 
-function aspectObject:setRecipeResults(results)
-    return self:setProperty("results",results)
-end
-
-function aspectObject:setTechnologyEffects(effects)
+---- 物品操作方法 ----- 结束 -----<<<<
 
 
-    local luaEntity = self:getLuaObject()
-
-    if luaEntity~=nil then
-        luaEntity.effects = effects
-    end
-
-    return self
-end
-
-function aspectObject:getTechnologyEffects()
 
 
-    local luaEntity = self:getLuaObject()
-
-    if luaEntity~=nil then
-        return luaEntity.effects
-    end
-
-    return nil
-end
+---- 实体操作方法 ----- 开始 ----->>>>
 
 function aspectObject:setSolarPanelProduction(production)
     return self:setProperty("production",production)
@@ -224,18 +202,47 @@ function aspectObject:setAllowInSpace(allow)
     return self:setProperty("se_allow_in_space",allow)
 end
 
-function aspectObject:setItemStackSize(stackSize)
-    return self:setProperty("stack_size",stackSize)
+---- 实体操作方法 ----- 结束 -----<<<<
+
+
+
+
+---- 合成表操作方法 ----- 开始 ----->>>>
+
+function aspectObject:setRecipeIngredients(ingredients)
+    return self:setProperty("ingredients",ingredients)
 end
+
+function aspectObject:setRecipeResults(results)
+    return self:setProperty("results",results)
+end
+
+---- 合成表操作方法 ----- 结束 -----<<<<
+
+
+
+
+
+---- 科技操作方法 ----- 开始 ----->>>>
+
 
 function aspectObject:setTechnologyPrerequisites(prerequisites)
     return self:setProperty("prerequisites",prerequisites)
+end
+
+function aspectObject:getTechnologyEffects()
+    return self:getProperty("effects")
+end
+
+function aspectObject:setTechnologyEffects(effects)
+    return self:setProperty("effects",effects)
 end
 
 function aspectObject:setTechnologyUnit(unit)
     return self:setProperty("unit",unit)
 end
 
+---- 科技操作方法 ----- 结束 -----<<<<
 
 
 
