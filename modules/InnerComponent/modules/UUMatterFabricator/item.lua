@@ -4,3 +4,11 @@
 --- DateTime: 2022/1/20 21:27
 ---
 
+
+aspectService.getItem(ItemEnum.electricFurnace)
+        :setName(ConstEnum.modPrefix.."uu-matter-fabricator")
+        :setItemPlaceResult(ConstEnum.modPrefix.."uu-matter-fabricator")
+        :setItemStackSize(10)
+        :setItemIcon(ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-uu-matter-fabricator-icon.png")
+        :joinToData()
+

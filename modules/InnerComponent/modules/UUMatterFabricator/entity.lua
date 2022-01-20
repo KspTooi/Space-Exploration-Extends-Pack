@@ -3,3 +3,72 @@
 --- Created by Administrator.
 --- DateTime: 2022/1/20 21:27
 ---
+
+
+
+
+
+aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
+        :setName(ConstEnum.modPrefix.."uu-matter-fabricator")
+        :setEntityCollisionMask(ConstEnum.collisionMaskAllowInGroundAndSpace)
+        :setAllowInSpace(true)
+        :setEntityMaxHealth(1500)
+        :setEntityCraftSpeed(4)
+        :setFurnaceWorkingVisualisations(nil)
+        :setEntityModuleSpecification({
+            module_slots = 4
+        })
+        :setEntityAnimation({
+
+            layers ={
+
+                {
+                    filename = ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-uu-matter-fabricator.png",
+                    priority = "high",
+--[[                    width = 978,
+                    height = 895,]]
+                    width = 512,
+                    height = 512,
+                    frame_count = 32,
+                    line_length = 8,
+                    shift = util.by_pixel(0, -0.75),
+                    scale = 0.3,
+                    hr_version =
+                    {
+                        filename = ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-uu-matter-fabricator.png",
+                        priority = "high",
+                        width = 512,
+                        height = 512,
+                        frame_count = 32,
+                        line_length = 8,
+                        shift = util.by_pixel(0, -0.75),
+                        scale = 0.3
+                    }
+                },
+                {
+                    filename = ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-uu-matter-fabricator-shadow.png",
+                    priority = "high",
+                    width = 800,
+                    height = 512,
+                    frame_count = 32,
+                    line_length = 8,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(28, 4),
+                    scale = 0.3,
+                    hr_version =
+                    {
+                        filename = ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-uu-matter-fabricator-shadow.png",
+                        priority = "high",
+                        width = 800,
+                        height = 512,
+                        frame_count = 32,
+                        line_length = 8,
+                        draw_as_shadow = true,
+                        shift = util.by_pixel(28, 4),
+                        scale = 0.3
+                    }
+                }
+
+            }
+
+        }):joinToData()

@@ -7,7 +7,7 @@
 local aspectObject = {}
 
 
-----静态内部操作方法 ----- 开始-----
+----静态内部操作方法 ----- 开始----->>>>
 
 function aspectObject.create(luaObject)
     aspectObject.luaObject = luaObject
@@ -166,6 +166,22 @@ function aspectObject:setItemStackSize(stackSize)
     return self:setProperty("stack_size",stackSize)
 end
 
+function aspectObject:setItemIcon(icon)
+    return self:setProperty("icon",icon)
+end
+
+function aspectObject:setItemIconSize(iconSize)
+    return self:setProperty("icon_size",iconSize)
+end
+
+function aspectObject:setItemPlaceResult(placeResult)
+    return self:setProperty("place_result",placeResult)
+end
+
+function aspectObject:setFurnaceWorkingVisualisations(workingVisualisations)
+    return self:setProperty("working_visualisations",workingVisualisations)
+end
+
 ---- 物品操作方法 ----- 结束 -----<<<<
 
 
@@ -200,6 +216,10 @@ end
 
 function aspectObject:setAllowInSpace(allow)
     return self:setProperty("se_allow_in_space",allow)
+end
+
+function aspectObject:setEntityAnimation(animation)
+    return self:setProperty("animation",animation)
 end
 
 ---- 实体操作方法 ----- 结束 -----<<<<

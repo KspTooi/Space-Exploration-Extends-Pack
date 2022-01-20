@@ -6,12 +6,16 @@
 
 ConstEnum = {}
 
-ConstEnum.modName = "SpaceExplorationExtendsPack"
+ConstEnum.modName = "ksptooi-server-commons-preprocess"
+
+ConstEnum.modRefName = "__ksptooi-server-commons-preprocess__"
+ConstEnum.modulesPath = "/modules/InnerComponent/modules/"
+
 ConstEnum.modName1 = "SpaceExplorationExtendsPack UU-Industrial"
 ConstEnum.modName2 = "UU-Industrial"
 
 ConstEnum.formerName = "KspTooi-Server-Common-Preprocess"
-ConstEnum.modPrefix = "kscp"
+ConstEnum.modPrefix = "kscp-"
 
 
 
