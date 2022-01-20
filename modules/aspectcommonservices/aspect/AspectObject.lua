@@ -139,27 +139,11 @@ function aspectObject:isNotEmpty()
 end
 
 function aspectObject:setRecipeIngredients(ingredients)
-
-    local luaEntity = self:getLuaObject()
-
-    if luaEntity~=nil then
-        luaEntity.ingredients = ingredients
-    end
-
-    self:setLuaObject(luaEntity)
-
-    return self
+    return self:set("ingredients",ingredients)
 end
 
 function aspectObject:setRecipeResults(results)
-
-    local luaEntity = self:getLuaObject()
-
-    if luaEntity~=nil then
-        luaEntity.results = results
-    end
-
-    return self
+    return self:set("results",results)
 end
 
 function aspectObject:setTechnologyEffects(effects)
@@ -175,6 +159,7 @@ end
 
 function aspectObject:getTechnologyEffects()
 
+
     local luaEntity = self:getLuaObject()
 
     if luaEntity~=nil then
@@ -185,37 +170,16 @@ function aspectObject:getTechnologyEffects()
 end
 
 function aspectObject:setSolarPanelProduction(production)
-
-    local luaEntity = self:getLuaObject()
-
-    if luaEntity~=nil then
-        luaEntity.production = production
-    end
-
-    return self
+    return self:set("production",production)
 end
 
 function aspectObject:setEntityMaxHealth(maxHealth)
-
-    local luaEntity = self:getLuaObject()
-
-    if luaEntity~=nil then
-        luaEntity.max_health = maxHealth
-    end
-
-    return self
+    return self:set("max_health",maxHealth)
 end
 
 
 function aspectObject:setEntityEnergyUsage(energyUsage)
-
-    local luaEntity = self:getLuaObject()
-
-    if luaEntity~=nil then
-        luaEntity.energy_usage = energyUsage
-    end
-
-    return self
+    return self:set("energy_usage",energyUsage)
 end
 
 function aspectObject:setEntityCraftSpeed(craftSpeed)
@@ -223,75 +187,29 @@ function aspectObject:setEntityCraftSpeed(craftSpeed)
 end
 
 function aspectObject:setEntityModuleSpecification(moduleSpecification)
-
-    local luaEntity = self:getLuaObject()
-
-    if luaEntity~=nil then
-        luaEntity.module_specification = moduleSpecification
-    end
-
-    return self
+    return self:set("module_specification",moduleSpecification)
 end
-
-
 
 
 function aspectObject:setEntityCollisionMask(collisionMask)
-
-    local luaEntity = self:getLuaObject()
-
-    if luaEntity~=nil then
-        luaEntity.collision_mask = collisionMask
-    end
-
-    return self
+    return self:set("collision_mask",collisionMask)
 end
 
 function aspectObject:setAllowInSpace(allow)
-
-    local luaEntity = self:getLuaObject()
-
-    if luaEntity~=nil then
-        luaEntity.se_allow_in_space = allow
-    end
-
-    return self
+    return self:set("se_allow_in_space",allow)
 end
 
-
 function aspectObject:setItemStackSize(stackSize)
-
-    local luaEntity = self:getLuaObject()
-
-    if luaEntity~=nil then
-        luaEntity.stack_size = stackSize
-    end
-
-    return self
+    return self:set("stack_size",stackSize)
 end
 
 function aspectObject:setTechnologyPrerequisites(prerequisites)
-
-    local luaEntity = self:getLuaObject()
-
-    if luaEntity~=nil then
-        luaEntity.prerequisites = prerequisites
-    end
-
-    return self
+    return self:set("prerequisites",prerequisites)
 end
 
 function aspectObject:setTechnologyUnit(unit)
-
-    local luaEntity = self:getLuaObject()
-
-    if luaEntity~=nil then
-        luaEntity.unit = unit
-    end
-
-    return self
+    return self:set("unit",unit)
 end
-
 
 
 
