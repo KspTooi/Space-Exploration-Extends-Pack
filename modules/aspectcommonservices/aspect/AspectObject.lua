@@ -36,6 +36,17 @@ function aspectObject:getSame(name)
     return aspectObject.create(nil)
 end
 
+function aspectObject:set(property,value)
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+        luaEntity[property] = value
+    end
+
+    return self
+end
+
 
 function aspectObject:getLuaObject()
     return self.luaObject
@@ -194,6 +205,36 @@ function aspectObject:setEntityMaxHealth(maxHealth)
 
     return self
 end
+
+
+function aspectObject:setEntityEnergyUsage(energyUsage)
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+        luaEntity.energy_usage = energyUsage
+    end
+
+    return self
+end
+
+function aspectObject:setEntityCraftSpeed(craftSpeed)
+    return self:set("crafting_speed",craftSpeed)
+end
+
+function aspectObject:setEntityModuleSpecification(moduleSpecification)
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+        luaEntity.module_specification = moduleSpecification
+    end
+
+    return self
+end
+
+
+
 
 function aspectObject:setEntityCollisionMask(collisionMask)
 
