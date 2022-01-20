@@ -11,6 +11,31 @@ function aspectObject.create(luaObject)
     return aspectObject;
 end
 
+function aspectObject.get(type,name)
+
+    --获取luaEntity
+    local item = table.deepcopy(data.raw[type][name])
+
+    --将luaEntity封装为AspectObject
+    return aspectObject.create(item)
+end
+
+function aspectObject:getSame(name)
+
+    local luaEntity = self:getLuaObject()
+
+    if luaEntity~=nil then
+
+        --获取luaEntity
+        local item = table.deepcopy(data.raw[luaEntity.type][name])
+
+        --将luaEntity封装为AspectObject
+        return aspectObject.create(item)
+    end
+
+    return aspectObject.create(nil)
+end
+
 
 function aspectObject:getLuaObject()
     return self.luaObject
@@ -68,6 +93,15 @@ function aspectObject:insertToData()
 
     return self
 end
+
+function aspectObject:joinToData()
+    return self:insertToData()
+end
+
+function aspectObject:insertInto()
+    return self:insertToData()
+end
+
 
 function aspectObject:update()
 

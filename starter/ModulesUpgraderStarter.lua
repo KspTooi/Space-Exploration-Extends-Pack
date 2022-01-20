@@ -29,3 +29,5 @@ require("modules.SupportComponent.SpaceExploration.DeliveryCannonCapsuleRecipeUp
 require("modules.SupportComponent.MineDrone.MineDroneUpgrader")
 
 require("modules.SupportComponent.UngroundPipePack.SpacePipeRecipeUpgrader")
+
+require("modules.SupportComponent.DeadlockBeltboxesLoaders.DeadLockUpgrader")

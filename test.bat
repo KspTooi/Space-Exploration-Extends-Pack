@@ -2,7 +2,7 @@ echo off
 
 
 
-set buildTarget="C:\Users\Administrator\AppData\Roaming\Factorio\mods\ksptooi-server-commons-preprocess_1.4.31"
+set buildTarget="C:\Users\Administrator\AppData\Roaming\Factorio\mods\ksptooi-server-commons-preprocess_1.4.50"
 set projectPath="C:\InternalDeveloper\Lua\ksptooi-server-commons-preprocess"
 set gamePath = "C:\InternalGames\Steam\steamapps\common\Factorio\bin\x64\factorio.exe"
 
