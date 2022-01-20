@@ -7,6 +7,10 @@
 ConstEnum = {}
 
 ConstEnum.modName = "SpaceExplorationExtendsPack"
+ConstEnum.modName1 = "SpaceExplorationExtendsPack UU-Industrial"
+ConstEnum.modName2 = "UU-Industrial"
+
+ConstEnum.formerName = "KspTooi-Server-Common-Preprocess"
 ConstEnum.modPrefix = "kscp"
 
 
