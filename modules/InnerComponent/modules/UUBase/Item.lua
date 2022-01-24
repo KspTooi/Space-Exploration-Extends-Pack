@@ -30,4 +30,7 @@ aspectService.create(TypeEnum.item,ConstEnum.modPrefix.."uu-matter")
         :setItemStackSize(500)
         :setItemIcon(ConstEnum.modulesPath.."UUBase/res/hr-uu-matter.png")
         :setItemIconSize(32)
+        :setItemSubgroup("raw-resource")
+        :setItemOrder("u[uu-matter]")
         :insertInto()
+

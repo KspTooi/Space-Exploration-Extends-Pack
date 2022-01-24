@@ -34,7 +34,7 @@ function aspectObject:getSame(name)
 
         local item = nil
 
-        if name~nil then
+        if name~=nil then
             item = table.deepcopy(data.raw[luaEntity.type][name])
         end
 

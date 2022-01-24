@@ -7,12 +7,25 @@
 
 
 local uuGenerateResult = {
-    {type = "fluid", name = ConstEnum.modPrefix.."fluid-uu-matter", amount = 50, catalyst_amount = 50}
+    {type = TypeEnum.item, name = ConstEnum.modPrefix.."uu-matter", amount = 50, catalyst_amount = 50}
 }
 
 
 aspectService.create(TypeEnum.recipe,ConstEnum.modPrefix.."uu-generate-iron")
+
         :setRecipeIngredients({{ type=TypeEnum.item , name=ItemEnum.ironOre , amount=1}})
         :setRecipeResults(uuGenerateResult)
---[[
-        :insertInto()]]
+        :setRecipeCategory(ConstEnum.modPrefix.."uu-fabricator")
+        :insertInto()
+
+        :getSame():setName(ConstEnum.modPrefix.."uu-generate-copper")
+        :setRecipeIngredients({{ type=TypeEnum.item , name=ItemEnum.copperOre , amount=1}})
+        :insertInto()
+
+        :getSame():setName(ConstEnum.modPrefix.."uu-generate-stone")
+        :setRecipeIngredients({{ type=TypeEnum.item , name=ItemEnum.stone , amount=1}})
+        :insertInto()
+
+        :getSame():setName(ConstEnum.modPrefix.."uu-generate-coal")
+        :setRecipeIngredients({{ type=TypeEnum.item , name=ItemEnum.coal , amount=1}})
+        :insertInto()
