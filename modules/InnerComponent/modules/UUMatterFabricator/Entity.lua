@@ -4,8 +4,7 @@
 --- DateTime: 2022/1/20 21:27
 ---
 
-
-
+aspectService.create(TypeEnum.recipeCategory,ConstEnum.modPrefix.."uu-fabricator"):insertInto()
 
 
 aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
@@ -19,7 +18,7 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
             module_slots = 4
         })
 
-        :setEntityCraftingCategories(ConstEnum.modPrefix.."uu-fabricator")
+        :setEntityCraftingCategories({ConstEnum.modPrefix.."uu-fabricator"})
 
         :setEntityCollisionBox({{-2.9, -2.9}, {2.9, 2.9}})  --左右 上下
         :setEntitySelectionBox({{-3.2, -3.2}, {3.2, 3.2}})

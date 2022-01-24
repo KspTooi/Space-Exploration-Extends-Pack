@@ -5,8 +5,8 @@
 ---
 local aspectObject = require("aspect.AspectObject")
 
-local aspectService = {}
 
+local aspectService = {}
 
 function aspectService.create(type,name)
     local ao = aspectObject.create({})
