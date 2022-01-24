@@ -7,6 +7,7 @@
 
 
 
+
 aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
         :setName(ConstEnum.modPrefix.."uu-matter-fabricator")
         :setEntityCollisionMask(ConstEnum.collisionMaskAllowInGroundAndSpace)

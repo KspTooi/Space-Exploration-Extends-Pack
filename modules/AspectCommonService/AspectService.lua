@@ -8,6 +8,13 @@ local aspectObject = require("aspect.AspectObject")
 local aspectService = {}
 
 
+function aspectService.create(type,name)
+    local ao = aspectObject.create({})
+    ao:setProperty("type",type)
+    ao:setName(name)
+    return ao
+end
+
 
 function aspectService.getList(type)
     return data.raw[type]
