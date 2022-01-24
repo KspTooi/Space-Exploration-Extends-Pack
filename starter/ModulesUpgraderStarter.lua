@@ -4,7 +4,7 @@
 --- DateTime: 2022/1/18 21:40
 ---
 
-aspectService = require("modules.aspectcommonservices.AspectService")
+aspectService = require("modules.AspectCommonService.AspectService")
 constEnum = require("enums.ConstEnum")
 typeEnum = require("enums.TypeEnum")
 itemEnum = require("enums.ItemEnum")
