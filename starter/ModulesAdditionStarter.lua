@@ -5,7 +5,8 @@
 ---
 
 aspectService = require("modules.AspectCommonService.AspectService")
-constEnum = require("enums.ConstEnum")
-typeEnum = require("enums.TypeEnum")
-itemEnum = require("enums.ItemEnum")
-toolEnum = require("enums.ToolEnum")
+require("enums.ConstEnum")
+require("enums.TypeEnum")
+require("enums.ItemEnum")
+require("enums.ToolEnum")
+require("enums.FluidEnum")

@@ -3,3 +3,13 @@
 --- Created by KspTooi.
 --- DateTime: 2022/1/24 14:00
 ---
+
+aspectService.get(TypeEnum.fluid,FluidEnum.water)
+        :setName(ConstEnum.modPrefix.."fluid-uu-matter")
+        :setItemIcon(ConstEnum.modulesPath.."UUBase/res/hr-fluid-uu.png")
+        :insertInto()
+
+        :getSame(FluidEnum.water)
+        :setName(ConstEnum.modPrefix.."fluid-uu-amplifier")
+        :setItemIcon(ConstEnum.modulesPath.."UUBase/res/hr-fluid-uu-amplifier.png")
+        :insertInto()

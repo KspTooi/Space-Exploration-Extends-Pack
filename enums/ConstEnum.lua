@@ -6,17 +6,18 @@
 
 ConstEnum = {}
 
-ConstEnum.modName = "ksptooi-server-commons-preprocess"
+ConstEnum.modDisplayName = "ksptooi-server-commons-preprocess"
 
-ConstEnum.modRefName = "__ksptooi-server-commons-preprocess__"
-ConstEnum.modulesPath = "/modules/InnerComponent/modules/"
-
-ConstEnum.modName1 = "SpaceExplorationExtendsPack UU-Industrial"
-ConstEnum.modName2 = "UU-Industrial"
-
-ConstEnum.formerName = "KspTooi-Server-Common-Preprocess"
+---基本参数
 ConstEnum.modPrefix = "kscp-"
+ConstEnum.modRefName = "__ksptooi-server-commons-preprocess__"
+ConstEnum.modulesPath = ConstEnum.modRefName.."/modules/InnerComponent/modules/"
+---名称参数结束
 
+
+
+ConstEnum.modAlias1 = "SpaceExplorationExtendsPack UU-Industrial"
+ConstEnum.modAlias2 = "UU-Industrial"
 
 
 ConstEnum.version = "1.4-K"

@@ -5,10 +5,11 @@
 ---
 
 aspectService = require("modules.AspectCommonService.AspectService")
-constEnum = require("enums.ConstEnum")
-typeEnum = require("enums.TypeEnum")
-itemEnum = require("enums.ItemEnum")
-toolEnum = require("enums.ToolEnum")
+require("enums.ConstEnum")
+require("enums.TypeEnum")
+require("enums.ItemEnum")
+require("enums.ToolEnum")
+require("enums.FluidEnum")
 
 
 --UU物质生成机
@@ -16,3 +17,9 @@ require("modules.InnerComponent.modules.UUMatterFabricator.Entity")
 require("modules.InnerComponent.modules.UUMatterFabricator.Item")
 require("modules.InnerComponent.modules.UUMatterFabricator.Recipe")
 require("modules.InnerComponent.modules.UUMatterFabricator.Technology")
+
+--UU液体
+require("modules.InnerComponent.modules.UUBase.Entity")
+require("modules.InnerComponent.modules.UUBase.Item")
+require("modules.InnerComponent.modules.UUBase.Recipe")
+require("modules.InnerComponent.modules.UUBase.Technology")
