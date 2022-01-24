@@ -186,6 +186,43 @@ end
 
 
 
+---- 流体操作方法 ----- 开始 ----->>>>
+
+
+function aspectObject:setFluidHeatCapacity(heatCapacity)
+    return self:setProperty("heat_capacity",heatCapacity)
+end
+
+function aspectObject:setFluidGasTemperature(gasTemperature)
+    return self:setProperty("gas_temperature",gasTemperature)
+end
+
+function aspectObject:setFluidFuelValue(fuelValue)
+    return self:setProperty("fuel_value",fuelValue)
+end
+
+function aspectObject:setFluidBaseColor(baseColor)
+    return self:setProperty("base_color",baseColor)
+end
+
+function aspectObject:setFluidFlowColor(flowColor)
+    return self:setProperty("flow_color",flowColor)
+end
+
+function aspectObject:setFluidMaxTemperature(maxTemperature)
+    return self:setProperty("max_temperature",maxTemperature)
+end
+
+function aspectObject:setFluidDefaultTemperature(defaultTemperature)
+    return self:setProperty("default_temperature",defaultTemperature)
+end
+
+
+
+---- 流体操作方法 ----- 结束 ----->>>>
+
+
+
 
 ---- 实体操作方法 ----- 开始 ----->>>>
 
@@ -221,6 +258,25 @@ end
 function aspectObject:setEntityAnimation(animation)
     return self:setProperty("animation",animation)
 end
+
+function aspectObject:setEntityCollisionBox(collisionBox)
+    return self:setProperty("collision_box",collisionBox)
+end
+
+
+function aspectObject:setEntitySelectionBox(selectionBox)
+    return self:setProperty("selection_box",selectionBox)
+end
+
+function aspectObject:setEntityDrawingBox(drawingBox)
+    return self:setProperty("drawing_box",drawingBox)
+end
+
+function aspectObject:setEntityCraftingCategories(craftingCategories)
+    return self:setProperty("crafting_categories",craftingCategories)
+end
+
+
 
 ---- 实体操作方法 ----- 结束 -----<<<<
 

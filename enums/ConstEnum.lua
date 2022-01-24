@@ -20,7 +20,7 @@ ConstEnum.modAlias1 = "SpaceExplorationExtendsPack UU-Industrial"
 ConstEnum.modAlias2 = "UU-Industrial"
 
 
-ConstEnum.version = "1.4-K"
+ConstEnum.version = "1.4-M"
 ConstEnum.ctx = "KspTooi"
 
 ConstEnum.kw = "kW"
