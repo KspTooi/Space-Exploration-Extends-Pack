@@ -23,7 +23,7 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
             layers ={
 
                 {
-                    filename = ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-uu-matter-fabricator.png",
+                    filename = ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-genric-object-uu.png",
                     priority = "high",
 --[[                    width = 978,
                     height = 895,]]
@@ -35,7 +35,7 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
                     scale = 0.3,
                     hr_version =
                     {
-                        filename = ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-uu-matter-fabricator.png",
+                        filename = ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-genric-object-uu.png",
                         priority = "high",
                         width = 512,
                         height = 512,
@@ -46,9 +46,9 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
                     }
                 },
                 {
-                    filename = ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-uu-matter-fabricator-shadow.png",
+                    filename = ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-genric-object-gen1-shadow.png",
                     priority = "high",
-                    width = 800,
+                    width = 512,
                     height = 512,
                     frame_count = 32,
                     line_length = 8,
@@ -57,9 +57,9 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
                     scale = 0.3,
                     hr_version =
                     {
-                        filename = ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-uu-matter-fabricator-shadow.png",
+                        filename = ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-genric-object-gen1-shadow.png",
                         priority = "high",
-                        width = 800,
+                        width = 512,
                         height = 512,
                         frame_count = 32,
                         line_length = 8,

@@ -9,6 +9,6 @@ aspectService.getItem(ItemEnum.electricFurnace)
         :setName(ConstEnum.modPrefix.."uu-matter-fabricator")
         :setItemPlaceResult(ConstEnum.modPrefix.."uu-matter-fabricator")
         :setItemStackSize(10)
-        :setItemIcon(ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-uu-matter-fabricator-icon.png")
+        :setItemIcon(ConstEnum.modRefName..ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-genric-object-uu-item.png")
         :joinToData()
 
