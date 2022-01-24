@@ -32,12 +32,20 @@ function aspectObject:getSame(name)
 
     if luaEntity~=nil then
 
-        --获取luaEntity
-        local item = table.deepcopy(data.raw[luaEntity.type][name])
+        local item = nil
+
+        if name~nil then
+            item = table.deepcopy(data.raw[luaEntity.type][name])
+        end
+
+        if name==nil then
+            item = table.deepcopy(data.raw[luaEntity.type][luaEntity.name])
+        end
 
         --将luaEntity封装为AspectObject
         return aspectObject.create(item)
-    end
+
+        end
 
     return aspectObject.create(nil)
 end
@@ -182,6 +190,15 @@ function aspectObject:setFurnaceWorkingVisualisations(workingVisualisations)
     return self:setProperty("working_visualisations",workingVisualisations)
 end
 
+function aspectObject:setItemSubgroup(subgroup)
+    return self:setProperty("subgroup",subgroup)
+end
+
+function aspectObject:setItemOrder(order)
+    return self:setProperty("order",order)
+end
+
+
 ---- 物品操作方法 ----- 结束 -----<<<<
 
 
@@ -291,6 +308,10 @@ end
 
 function aspectObject:setRecipeResults(results)
     return self:setProperty("results",results)
+end
+
+function aspectObject:setRecipeCategory(category)
+    return self:setProperty("category",category)
 end
 
 ---- 合成表操作方法 ----- 结束 -----<<<<
