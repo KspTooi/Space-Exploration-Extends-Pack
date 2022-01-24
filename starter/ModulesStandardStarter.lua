@@ -12,7 +12,7 @@ toolEnum = require("enums.ToolEnum")
 
 
 --UU物质生成机
-require("modules.InnerComponent.modules.UUMatterFabricator.entity")
-require("modules.InnerComponent.modules.UUMatterFabricator.item")
-require("modules.InnerComponent.modules.UUMatterFabricator.recipe")
-require("modules.InnerComponent.modules.UUMatterFabricator.technology")
+require("modules.InnerComponent.modules.UUMatterFabricator.Entity")
+require("modules.InnerComponent.modules.UUMatterFabricator.Item")
+require("modules.InnerComponent.modules.UUMatterFabricator.Recipe")
+require("modules.InnerComponent.modules.UUMatterFabricator.Technology")
