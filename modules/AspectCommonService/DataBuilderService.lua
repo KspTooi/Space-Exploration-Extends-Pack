@@ -22,6 +22,18 @@ function db.buildColor(r,g,b,a)
     return {r=r,g=g,b=b,a=a}
 end
 
+function db.buildEnergyAsW(energy)
+    return energy..ConstEnum.w
+end
+
+function db.buildEnergyAsKW(energy)
+    return energy..ConstEnum.kw
+end
+
+function db.buildEnergyAsMW(energy)
+    return energy..ConstEnum.mw
+end
+
 function db.buildIngredients(type,name,amount,catalystAmount)
 
     aspectIngredients.create({})
