@@ -3,3 +3,30 @@
 --- Created by Administrator.
 --- DateTime: 2022/1/26 2:03
 ---
+
+
+
+local duplicateResult = {
+    {type = TypeEnum.item, name = ConstEnum.modPrefix.."uu-matter", amount = 1, catalyst_amount = 1}
+}
+
+
+local UUFluidToMaterial = {
+
+    {name = db.forName("uu-matter") , amount = 10 , result = duplicateResult },
+
+}
+
+
+
+for i,v in pairs(UUFluidToMaterial) do
+
+    local ingredients = db.buildIngredients(TypeEnum.item , v.name , v.amount):build()
+
+    aspectService.create(TypeEnum.recipe,db.forName("uu-duplicate-"..v.name))
+                 :setRecipeCategory(db.forName("uu-duplicator-category"))
+                 :setRecipeResults(v.result)
+                 :setRecipeIngredients(ingredients)
+                 :insertInto()
+
+end

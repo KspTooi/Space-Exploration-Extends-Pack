@@ -258,6 +258,10 @@ function aspectObject:setEntityEnergyUsage(energyUsage)
     return self:setProperty("energy_usage",energyUsage)
 end
 
+function aspectObject:setEntityEnergySource(energySource)
+    return self:setProperty("energy_source",energySource)
+end
+
 function aspectObject:setEntityCraftSpeed(craftSpeed)
     return self:setProperty("crafting_speed",craftSpeed)
 end
@@ -266,6 +270,9 @@ function aspectObject:setEntityModuleSpecification(moduleSpecification)
     return self:setProperty("module_specification",moduleSpecification)
 end
 
+function aspectObject:setEntityAllowedEffects(allowedEffects)
+    return self:setProperty("allowed_effects",allowedEffects)
+end
 
 function aspectObject:setEntityCollisionMask(collisionMask)
     return self:setProperty("collision_mask",collisionMask)
@@ -295,6 +302,11 @@ end
 function aspectObject:setEntityCraftingCategories(craftingCategories)
     return self:setProperty("crafting_categories",craftingCategories)
 end
+
+function aspectObject:setEntityMinable(minable)
+    return self:setProperty("minable",minable)
+end
+
 
 
 

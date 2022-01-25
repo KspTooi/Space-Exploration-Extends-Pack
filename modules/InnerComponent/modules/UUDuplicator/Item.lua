@@ -3,3 +3,11 @@
 --- Created by Administrator.
 --- DateTime: 2022/1/26 2:03
 ---
+
+aspectService.create(TypeEnum.item)
+        :setName(db.forName("uu-duplicator"))
+        :setItemIcon(db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator-icon.png"))
+        :setItemIconSize(64)
+        :setItemPlaceResult(db.forName("uu-duplicator"))
+        :setItemStackSize(10)
+        :insertInto()
