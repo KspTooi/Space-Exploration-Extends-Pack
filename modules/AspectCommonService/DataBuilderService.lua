@@ -25,8 +25,13 @@ end
 function db.buildIngredients(type,name,amount,catalystAmount)
 
     aspectIngredients.create({})
-    aspectIngredients:insert(type,name,amount,catalystAmount)
 
+    if catalystAmount==nil then
+        aspectIngredients:insert(type,name,amount)
+        return aspectIngredients
+    end
+
+    aspectIngredients:insert(type,name,amount)
     return aspectIngredients
 end
 
