@@ -7,25 +7,51 @@
 
 
 local uuGenerateResult = {
-    {type = TypeEnum.item, name = ConstEnum.modPrefix.."uu-matter", amount = 50, catalyst_amount = 50}
+    {type = TypeEnum.item, name = ConstEnum.modPrefix.."uu-matter", amount = 1, catalyst_amount = 1}
+}
+
+local oreToUUMatter = {
+
+    { name = ItemEnum.ironOre , amount = 4 , result = uuGenerateResult},
+    { name = ItemEnum.copperOre , amount = 4 , result = uuGenerateResult},
+    { name = ItemEnum.coal , amount = 5 , result = uuGenerateResult},
+    { name = ItemEnum.stone , amount = 6 , result = uuGenerateResult},
+    { name = ItemEnum.uraniumOre , amount = 4 , result = uuGenerateResult}
+
 }
 
 
-aspectService.create(TypeEnum.recipe,ConstEnum.modPrefix.."uu-generate-iron")
 
-        :setRecipeIngredients({{ type=TypeEnum.item , name=ItemEnum.ironOre , amount=1}})
+for i,v in pairs(oreToUUMatter)do
+
+    local ingredients = db.buildIngredients(TypeEnum.item , v.name , v.amount)
+
+    aspectService.create(TypeEnum.recipe,db.forName("uu-generate-"..v.name))
+            :setRecipeCategory(db.forName("uu-fabricator-category"))
+            :setRecipeResults(v.result)
+            :setRecipeIngredients(ingredients)
+            :insertInto()
+
+end
+
+
+
+--[[
+aspectService.create(TypeEnum.recipe,db.forName("uu-generate-iron"))
+
+        :setRecipeIngredients({{ type=TypeEnum.item , name=ItemEnum.ironOre , amount=5}})
         :setRecipeResults(uuGenerateResult)
-        :setRecipeCategory(ConstEnum.modPrefix.."uu-fabricator")
+        :setRecipeCategory(db.forName("uu-fabricator-category"))
         :insertInto()
 
         :getSame():setName(ConstEnum.modPrefix.."uu-generate-copper")
         :setRecipeIngredients({{ type=TypeEnum.item , name=ItemEnum.copperOre , amount=1}})
         :insertInto()
-        
+
         :getSame():setName(ConstEnum.modPrefix.."uu-generate-stone")
         :setRecipeIngredients({{ type=TypeEnum.item , name=ItemEnum.stone , amount=1}})
         :insertInto()
 
         :getSame():setName(ConstEnum.modPrefix.."uu-generate-coal")
         :setRecipeIngredients({{ type=TypeEnum.item , name=ItemEnum.coal , amount=1}})
-        :insertInto()
+        :insertInto()]]
