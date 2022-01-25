@@ -8,7 +8,6 @@ local aspectObject = {}
 
 
 ----静态内部操作方法 ----- 开始----->>>>
-
 function aspectObject.create(luaObject)
     aspectObject.luaObject = luaObject
     return aspectObject;
@@ -162,7 +161,11 @@ function aspectObject:isNotEmpty()
     return false
 end
 
-
+--从其他AspectObject转入
+function aspectObject:import(object)
+    self:setLuaObject(object)
+    return self;
+end
 ----静态内部操作方法 ----- 结束 -----<<<<
 
 
@@ -314,7 +317,22 @@ function aspectObject:setRecipeCategory(category)
     return self:setProperty("category",category)
 end
 
+function aspectObject:setRecipeIcon(icon)
+    return self:setProperty("icon",icon)
+end
+
+function aspectObject:setRecipeIconSize(iconSize)
+    return self:setProperty("icon_size",iconSize)
+end
+
+function aspectObject:getRecipeIngredients(ingredients)
+    return self:getProperty(ingredients,ingredients)
+end
+
+
+
 ---- 合成表操作方法 ----- 结束 -----<<<<
+
 
 
 

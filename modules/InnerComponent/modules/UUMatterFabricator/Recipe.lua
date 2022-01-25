@@ -22,9 +22,9 @@ local oreToUUMatter = {
 
 
 
-for i,v in pairs(oreToUUMatter)do
+for i,v in pairs(oreToUUMatter) do
 
-    local ingredients = db.buildIngredients(TypeEnum.item , v.name , v.amount)
+    local ingredients = db.buildIngredients(TypeEnum.item , v.name , v.amount):build()
 
     aspectService.create(TypeEnum.recipe,db.forName("uu-generate-"..v.name))
             :setRecipeCategory(db.forName("uu-fabricator-category"))

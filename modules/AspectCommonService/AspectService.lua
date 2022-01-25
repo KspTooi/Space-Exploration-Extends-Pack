@@ -4,6 +4,7 @@
 --- DateTime: 2022/1/14 17:23
 ---
 local aspectObject = require("aspect.AspectObject")
+local aspectRecipe = require("aspect.AspectRecipe")
 db = require("DataBuilderService")
 
 
@@ -59,6 +60,11 @@ end
 function aspectService.getTechnology(name)
     local technology = table.deepcopy(data.raw["technology"][name])
     return aspectObject.create(technology)
+end
+
+
+function aspectService.forRecipe(import)
+    return aspectRecipe:import(import);
 end
 
 return aspectService

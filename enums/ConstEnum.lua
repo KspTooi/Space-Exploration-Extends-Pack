@@ -34,5 +34,4 @@ ConstEnum.collisionMaskAllowInGround = {"water-tile","object-layer", "train-laye
 
 ConstEnum.collisionMaskAllowInGroundAndSpace = {"object-layer", "train-layer", "floor-layer","water-tile"}
 
-
 ConstEnum.collisionMaskAllowInWater = {"object-layer", "train-layer", "floor-layer"}
