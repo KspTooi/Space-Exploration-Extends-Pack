@@ -4,7 +4,7 @@
 --- DateTime: 2022/1/20 21:27
 ---
 
-aspectService.create(TypeEnum.recipeCategory,ConstEnum.modPrefix.."uu-fabricator"):insertInto()
+aspectService.create(TypeEnum.recipeCategory,db.forName("uu-fabricator-category")):insertInto()
 
 
 aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
