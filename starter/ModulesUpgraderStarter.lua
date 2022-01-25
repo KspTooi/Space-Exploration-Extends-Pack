@@ -10,7 +10,8 @@ require("enums.TypeEnum")
 require("enums.ItemEnum")
 require("enums.ToolEnum")
 require("enums.FluidEnum")
-
+require("enums.RecipeCategoryEnum")
+require("enums.SubgroupEnum")
 
 
 require("modules.SupportComponent.vanilla.BarrelRecipeUpgrader")

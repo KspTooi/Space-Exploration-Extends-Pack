@@ -10,7 +10,8 @@ require("enums.TypeEnum")
 require("enums.ItemEnum")
 require("enums.ToolEnum")
 require("enums.FluidEnum")
-
+require("enums.RecipeCategoryEnum")
+require("enums.SubgroupEnum")
 
 --UU液体
 require("modules.InnerComponent.modules.UUBase.Entity")
