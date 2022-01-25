@@ -18,7 +18,7 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
             module_slots = 4
         })
 
-        :setEntityCraftingCategories({ConstEnum.modPrefix.."uu-fabricator"})
+        :setEntityCraftingCategories({db.forName("uu-fabricator-category")})
 
         :setEntityCollisionBox({{-2.9, -2.9}, {2.9, 2.9}})  --左右 上下
         :setEntitySelectionBox({{-3.2, -3.2}, {3.2, 3.2}})
