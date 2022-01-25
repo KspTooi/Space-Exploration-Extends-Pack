@@ -5,9 +5,12 @@
 ---
 
 
-
 local uuGenerateResult = {
-    {type = TypeEnum.item, name = ConstEnum.modPrefix.."uu-matter", amount = 1, catalyst_amount = 1}
+    {
+      type = TypeEnum.item,
+      name = db.forName("uu-matter"),
+      amount = 1, catalyst_amount = 1
+    }
 }
 
 local oreToUUMatter = {
