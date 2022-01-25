@@ -3,6 +3,8 @@
 --- Created by KspTooi.
 --- DateTime: 2022/1/25 15:31
 ---
+---
+local aspectIngredients = require("aspect.AspectIngredients")
 
 local db = {}
 
@@ -14,3 +16,20 @@ end
 function db.forRes(resPath)
     return ConstEnum.modulesPath..resPath
 end
+
+
+function db.buildColor(r,g,b,a)
+    return {r=r,g=g,b=b,a=a}
+end
+
+function db.buildIngredients(type,name,amount,catalystAmount)
+
+    aspectIngredients.create({})
+    aspectIngredients:insert(type,name,amount,catalystAmount)
+
+    return aspectIngredients
+end
+
+
+
+return db

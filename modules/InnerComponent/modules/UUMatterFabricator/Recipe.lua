@@ -21,7 +21,7 @@ aspectService.create(TypeEnum.recipe,ConstEnum.modPrefix.."uu-generate-iron")
         :getSame():setName(ConstEnum.modPrefix.."uu-generate-copper")
         :setRecipeIngredients({{ type=TypeEnum.item , name=ItemEnum.copperOre , amount=1}})
         :insertInto()
-
+        
         :getSame():setName(ConstEnum.modPrefix.."uu-generate-stone")
         :setRecipeIngredients({{ type=TypeEnum.item , name=ItemEnum.stone , amount=1}})
         :insertInto()
