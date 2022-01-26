@@ -4,7 +4,97 @@
 --- DateTime: 2022/1/26 2:03
 ---
 
+
 aspectService.create(TypeEnum.recipeCategory,db.forName("uu-duplicator-category")):insertInto()
+
+
+local fluidBox = {
+    {
+        production_type = "input",
+        --pipe_picture = assembler2pipepictures(),
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = 1,
+        pipe_connections = { { type = "input", position = { 0, -3 } } },
+        --secondary_draw_orders = { north = -1 }
+    },
+    {
+        production_type = "input",
+        --pipe_picture = assembler2pipepictures(),
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = 1,
+        pipe_connections = { { type = "output", position = { 0, 3 } } },
+        --secondary_draw_orders = { north = -1 }
+    }, {
+        production_type = "input",
+        --pipe_picture = assembler2pipepictures(),
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = 1,
+        pipe_connections = { { type = "input", position = { -3, 0 } } },
+        --secondary_draw_orders = { north = -1 }
+    },
+    {
+        production_type = "input",
+        --pipe_picture = assembler2pipepictures(),
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = 1,
+        pipe_connections = { { type = "output", position = { 3, 0 } } },
+        --secondary_draw_orders = { north = -1 }
+    },
+    off_when_no_fluid_recipe = false
+}
+
+local animation = {
+
+    layers = {
+        {
+            filename = db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator.png"),
+            priority = "high",
+            width = 512,
+            height = 512,
+            frame_count = 32,
+            line_length = 8,
+            shift = util.by_pixel(-4, -10),
+            scale = 0.4,
+            hr_version = {
+                filename = db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator.png"),
+                priority = "high",
+                width = 512,
+                height = 512,
+                frame_count = 32,
+                line_length = 8,
+                shift = util.by_pixel(-4, -10),
+                scale = 0.4
+            }
+        },
+        {
+            filename = db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator-shadow.png"),
+            priority = "high",
+            width = 512,
+            height = 512,
+            frame_count = 32,
+            line_length = 8,
+            draw_as_shadow = true,
+            shift = util.by_pixel(-3.5, -10),
+            scale = 0.4,
+            hr_version = {
+                filename = db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator-shadow.png"),
+                priority = "high",
+                width = 512,
+                height = 512,
+                frame_count = 32,
+                line_length = 8,
+                draw_as_shadow = true,
+                shift = util.by_pixel(-3.5, -10),
+                scale = 0.4
+            }
+        }
+    }
+
+}
 
 
 
@@ -17,65 +107,16 @@ aspectConverter.toAssemblingMachine(aspectService.create(TypeEnum.assemblingMach
         :setModuleSpecification({ module_slots = 4 })
         :setAllowedEffects({"consumption", "speed", "productivity", "pollution"})
         :setCraftingCategories({db.forName("uu-duplicator-category")})
-        :setCollisionBox({{-2.9, -2.9}, {2.9, 2.9}})
-        :setSelectionBox({{-3.2, -3.2}, {3.2, 3.2}})
-        :setDrawingBox({{-3, -3}, {3, 3}})
+        :setCollisionBox({ { -2.2, -2.2 }, { 2.2, 2.2 } })
+        :setSelectionBox({ { -2.5, -2.5 },{ 2.5, 2.5 } })
+        :setDrawingBox({ { -5, -5 }, { 5, 5 } })
         :setEnergyUsage(db.buildEnergyAsKW(20000))
         :setEnergySource({
             type = "electric",
             usage_priority = "secondary-input",
             emissions_per_minute = 2
         })
-
         :setMinable({mining_time = 3, result = db.forName("uu-duplicator")})
-
-        :setAnimation({
-
-            layers ={
-                {
-                    filename = db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator.png"),
-                    priority = "high",
-                    width = 512,
-                    height = 512,
-                    frame_count = 32,
-                    line_length = 8,
-                    shift = util.by_pixel(0, 0),
-                    scale = 0.52,
-                    hr_version =
-                    {
-                        filename = db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator.png"),
-                        priority = "high",
-                        width = 512,
-                        height = 512,
-                        frame_count = 32,
-                        line_length = 8,
-                        shift = util.by_pixel(0, 0),
-                        scale = 0.52
-                    }
-                },
-                {
-                    filename = db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator-shadow.png"),
-                    priority = "high",
-                    width = 512,
-                    height = 512,
-                    frame_count = 32,
-                    line_length = 8,
-                    draw_as_shadow = true,
-                    shift = util.by_pixel(0, 0),
-                    scale = 0.52,
-                    hr_version =
-                    {
-                        filename = db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator-shadow.png"),
-                        priority = "high",
-                        width = 512,
-                        height = 512,
-                        frame_count = 32,
-                        line_length = 8,
-                        draw_as_shadow = true,
-                        shift = util.by_pixel(0, 0),
-                        scale = 0.52
-                    }
-                }
-            }
-
-}):insertInto()
+        :setFluidBoxes(fluidBox)
+        :setAnimation(animation)
+        :insertInto()
