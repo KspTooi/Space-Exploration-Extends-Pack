@@ -7,12 +7,87 @@
 
 aspectService.create(TypeEnum.recipeCategory,db.forName("uu-duplicator-category")):insertInto()
 
+local function pipePic()
+    return
+    {
+        north =
+        {
+            filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-N.png",
+            priority = "extra-high",
+            width = 35,
+            height = 18,
+            shift = util.by_pixel(2.5, 14),
+            hr_version =
+            {
+                filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-pipe-N.png",
+                priority = "extra-high",
+                width = 71,
+                height = 38,
+                shift = util.by_pixel(2.25, 13.5),
+                scale = 0.5
+            }
+        },
+        east =
+        {
+            filename = db.forRes("UUDuplicator/res/hr-pipe-E.png"),
+            priority = "extra-high",
+            width = 42,
+            height = 76,
+            shift = util.by_pixel(-18, 1),
+            hr_version =
+            {
+                filename = db.forRes("UUDuplicator/res/hr-pipe-E.png"),
+                priority = "extra-high",
+                width = 42,
+                height = 76,
+                shift = util.by_pixel(-18, 1),
+                scale = 0.5
+            }
+        },
+        south =
+        {
+            filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-S.png",
+            priority = "extra-high",
+            width = 44,
+            height = 31,
+            shift = util.by_pixel(0, -31.5),
+            hr_version =
+            {
+                filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-pipe-S.png",
+                priority = "extra-high",
+                width = 88,
+                height = 61,
+                shift = util.by_pixel(0, -31.25),
+                scale = 0.5
+            }
+        },
+        west =
+        {
+            filename = db.forRes("UUDuplicator/res/hr-pipe-W.png"),
+            priority = "extra-high",
+            width = 39,
+            height = 73,
+            shift = util.by_pixel(18, 1.5),
+            hr_version =
+            {
+                filename = db.forRes("UUDuplicator/res/hr-pipe-W.png"),
+                priority = "extra-high",
+                width = 39,
+                height = 73,
+                shift = util.by_pixel(18, 1.25),
+                scale = 0.5
+            }
+        }
+    }
+end
+
+
 
 local fluidBox = {
     {
         production_type = "input",
         --pipe_picture = assembler2pipepictures(),
-        pipe_covers = pipecoverspictures(),
+--[[        pipe_covers = pipecoverspictures(),]]
         base_area = 10,
         base_level = 1,
         pipe_connections = { { type = "input", position = { 0, -3 } } },
@@ -21,27 +96,27 @@ local fluidBox = {
     {
         production_type = "input",
         --pipe_picture = assembler2pipepictures(),
-        pipe_covers = pipecoverspictures(),
+--[[        pipe_covers = pipecoverspictures(),]]
         base_area = 10,
         base_level = 1,
-        pipe_connections = { { type = "output", position = { 0, 3 } } },
+        pipe_connections = { { type = "output", position = { 0, 2.8 } } },
         --secondary_draw_orders = { north = -1 }
     }, {
         production_type = "input",
-        --pipe_picture = assembler2pipepictures(),
-        pipe_covers = pipecoverspictures(),
+--[[        pipe_picture = pipePic(),
+        pipe_covers = pipecoverspictures(),]]
         base_area = 10,
         base_level = 1,
-        pipe_connections = { { type = "input", position = { -3, 0 } } },
-        --secondary_draw_orders = { north = -1 }
+        pipe_connections = { { type = "input", position = { -2.7, 0 } } },
+        secondary_draw_orders = { north = -1 }
     },
     {
         production_type = "input",
-        --pipe_picture = assembler2pipepictures(),
-        pipe_covers = pipecoverspictures(),
+--[[        pipe_picture = pipePic(),
+        pipe_covers = pipecoverspictures(),]]
         base_area = 10,
         base_level = 1,
-        pipe_connections = { { type = "output", position = { 3, 0 } } },
+        pipe_connections = { { type = "output", position = { 2.7, 0 } } },
         --secondary_draw_orders = { north = -1 }
     },
     off_when_no_fluid_recipe = false
@@ -57,7 +132,7 @@ local animation = {
             height = 512,
             frame_count = 32,
             line_length = 8,
-            shift = util.by_pixel(-4, -10),
+            shift = util.by_pixel(-3.5, -13),
             scale = 0.4,
             hr_version = {
                 filename = db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator.png"),
@@ -66,7 +141,7 @@ local animation = {
                 height = 512,
                 frame_count = 32,
                 line_length = 8,
-                shift = util.by_pixel(-4, -10),
+                shift = util.by_pixel(-3.5, -13),
                 scale = 0.4
             }
         },
@@ -109,7 +184,7 @@ aspectConverter.toAssemblingMachine(aspectService.create(TypeEnum.assemblingMach
         :setCraftingCategories({db.forName("uu-duplicator-category")})
         :setCollisionBox({ { -2.2, -2.2 }, { 2.2, 2.2 } })
         :setSelectionBox({ { -2.5, -2.5 },{ 2.5, 2.5 } })
-        :setDrawingBox({ { -5, -5 }, { 5, 5 } })
+        :setDrawingBox({ { -5.2, -5 }, { 5.2, 5 } })
         :setEnergyUsage(db.buildEnergyAsKW(20000))
         :setEnergySource({
             type = "electric",
