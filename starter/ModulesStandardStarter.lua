@@ -12,6 +12,7 @@ require("enums.ToolEnum")
 require("enums.FluidEnum")
 require("enums.RecipeCategoryEnum")
 require("enums.SubgroupEnum")
+require("enums.ExplosionEnum")
 
 --UU液体
 require("modules.InnerComponent.modules.UUBase.Entity")

@@ -12,6 +12,7 @@ require("enums.ToolEnum")
 require("enums.FluidEnum")
 require("enums.RecipeCategoryEnum")
 require("enums.SubgroupEnum")
+require("enums.ExplosionEnum")
 
 
 require("modules.SupportComponent.vanilla.BarrelRecipeUpgrader")
