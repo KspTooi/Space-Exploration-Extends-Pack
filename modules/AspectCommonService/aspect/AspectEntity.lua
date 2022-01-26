@@ -163,419 +163,419 @@ end
 ----通用内部操作方法 ----- 结束 -----<<<<
 
 
-function aspectEntity:getEntityIcons(icons)
+function aspectEntity:getIcons(icons)
 	return self:getProperty("icons",icons)
 end
 
-function aspectEntity:setEntityIcons(icons)
+function aspectEntity:setIcons(icons)
 	return self:setProperty("icons",icons)
 end
 
-function aspectEntity:getEntityIcon(icon)
+function aspectEntity:getIcon(icon)
 	return self:getProperty("icon",icon)
 end
 
-function aspectEntity:setEntityIcon(icon)
+function aspectEntity:setIcon(icon)
 	return self:setProperty("icon",icon)
 end
 
-function aspectEntity:getEntityIconSize(IconSpecification)
+function aspectEntity:getIconSize(IconSpecification)
 	return self:getProperty("icon_size(IconSpecification)",iconSize(IconSpecification))
 end
 
-function aspectEntity:setEntityIconSize(IconSpecification)
+function aspectEntity:setIconSize(IconSpecification)
 	return self:setProperty("icon_size(IconSpecification)",iconSize(IconSpecification))
 end
 
-function aspectEntity:getEntityAdditionalPastableEntities(additionalPastableEntities)
+function aspectEntity:getAdditionalPastableEntities(additionalPastableEntities)
 	return self:getProperty("additional_pastable_entities",additionalPastableEntities)
 end
 
-function aspectEntity:setEntityAdditionalPastableEntities(additionalPastableEntities)
+function aspectEntity:setAdditionalPastableEntities(additionalPastableEntities)
 	return self:setProperty("additional_pastable_entities",additionalPastableEntities)
 end
 
-function aspectEntity:getEntityAlertIconScale(alertIconScale)
+function aspectEntity:getAlertIconScale(alertIconScale)
 	return self:getProperty("alert_icon_scale",alertIconScale)
 end
 
-function aspectEntity:setEntityAlertIconScale(alertIconScale)
+function aspectEntity:setAlertIconScale(alertIconScale)
 	return self:setProperty("alert_icon_scale",alertIconScale)
 end
 
-function aspectEntity:getEntityAlertIconShift(alertIconShift)
+function aspectEntity:getAlertIconShift(alertIconShift)
 	return self:getProperty("alert_icon_shift",alertIconShift)
 end
 
-function aspectEntity:setEntityAlertIconShift(alertIconShift)
+function aspectEntity:setAlertIconShift(alertIconShift)
 	return self:setProperty("alert_icon_shift",alertIconShift)
 end
 
-function aspectEntity:getEntityAllowCopyPaste(allowCopyPaste)
+function aspectEntity:getAllowCopyPaste(allowCopyPaste)
 	return self:getProperty("allow_copy_paste",allowCopyPaste)
 end
 
-function aspectEntity:setEntityAllowCopyPaste(allowCopyPaste)
+function aspectEntity:setAllowCopyPaste(allowCopyPaste)
 	return self:setProperty("allow_copy_paste",allowCopyPaste)
 end
 
-function aspectEntity:getEntityAutoplace(autoplace)
+function aspectEntity:getAutoplace(autoplace)
 	return self:getProperty("autoplace",autoplace)
 end
 
-function aspectEntity:setEntityAutoplace(autoplace)
+function aspectEntity:setAutoplace(autoplace)
 	return self:setProperty("autoplace",autoplace)
 end
 
-function aspectEntity:getEntityBuildBaseEvolutionRequirement(buildBaseEvolutionRequirement)
+function aspectEntity:getBuildBaseEvolutionRequirement(buildBaseEvolutionRequirement)
 	return self:getProperty("build_base_evolution_requirement",buildBaseEvolutionRequirement)
 end
 
-function aspectEntity:setEntityBuildBaseEvolutionRequirement(buildBaseEvolutionRequirement)
+function aspectEntity:setBuildBaseEvolutionRequirement(buildBaseEvolutionRequirement)
 	return self:setProperty("build_base_evolution_requirement",buildBaseEvolutionRequirement)
 end
 
-function aspectEntity:getEntityBuildSound(buildSound)
+function aspectEntity:getBuildSound(buildSound)
 	return self:getProperty("build_sound",buildSound)
 end
 
-function aspectEntity:setEntityBuildSound(buildSound)
+function aspectEntity:setBuildSound(buildSound)
 	return self:setProperty("build_sound",buildSound)
 end
 
-function aspectEntity:getEntityCloseSound(closeSound)
+function aspectEntity:getCloseSound(closeSound)
 	return self:getProperty("close_sound",closeSound)
 end
 
-function aspectEntity:setEntityCloseSound(closeSound)
+function aspectEntity:setCloseSound(closeSound)
 	return self:setProperty("close_sound",closeSound)
 end
 
-function aspectEntity:getEntityCollisionBox(collisionBox)
+function aspectEntity:getCollisionBox(collisionBox)
 	return self:getProperty("collision_box",collisionBox)
 end
 
-function aspectEntity:setEntityCollisionBox(collisionBox)
+function aspectEntity:setCollisionBox(collisionBox)
 	return self:setProperty("collision_box",collisionBox)
 end
 
-function aspectEntity:getEntityCollisionMask(collisionMask)
+function aspectEntity:getCollisionMask(collisionMask)
 	return self:getProperty("collision_mask",collisionMask)
 end
 
-function aspectEntity:setEntityCollisionMask(collisionMask)
+function aspectEntity:setCollisionMask(collisionMask)
 	return self:setProperty("collision_mask",collisionMask)
 end
 
-function aspectEntity:getEntityCreatedEffect(createdEffect)
+function aspectEntity:getCreatedEffect(createdEffect)
 	return self:getProperty("created_effect",createdEffect)
 end
 
-function aspectEntity:setEntityCreatedEffect(createdEffect)
+function aspectEntity:setCreatedEffect(createdEffect)
 	return self:setProperty("created_effect",createdEffect)
 end
 
-function aspectEntity:getEntityCreatedSmoke(createdSmoke)
+function aspectEntity:getCreatedSmoke(createdSmoke)
 	return self:getProperty("created_smoke",createdSmoke)
 end
 
-function aspectEntity:setEntityCreatedSmoke(createdSmoke)
+function aspectEntity:setCreatedSmoke(createdSmoke)
 	return self:setProperty("created_smoke",createdSmoke)
 end
 
-function aspectEntity:getEntityDrawingBox(drawingBox)
+function aspectEntity:getDrawingBox(drawingBox)
 	return self:getProperty("drawing_box",drawingBox)
 end
 
-function aspectEntity:setEntityDrawingBox(drawingBox)
+function aspectEntity:setDrawingBox(drawingBox)
 	return self:setProperty("drawing_box",drawingBox)
 end
 
-function aspectEntity:getEntityEmissionsPerSecond(emissionsPerSecond)
+function aspectEntity:getEmissionsPerSecond(emissionsPerSecond)
 	return self:getProperty("emissions_per_second",emissionsPerSecond)
 end
 
-function aspectEntity:setEntityEmissionsPerSecond(emissionsPerSecond)
+function aspectEntity:setEmissionsPerSecond(emissionsPerSecond)
 	return self:setProperty("emissions_per_second",emissionsPerSecond)
 end
 
-function aspectEntity:getEntityEnemyMapColor(enemyMapColor)
+function aspectEntity:getEnemyMapColor(enemyMapColor)
 	return self:getProperty("enemy_map_color",enemyMapColor)
 end
 
-function aspectEntity:setEntityEnemyMapColor(enemyMapColor)
+function aspectEntity:setEnemyMapColor(enemyMapColor)
 	return self:setProperty("enemy_map_color",enemyMapColor)
 end
 
-function aspectEntity:getEntityFastReplaceableGroup(fastReplaceableGroup)
+function aspectEntity:getFastReplaceableGroup(fastReplaceableGroup)
 	return self:getProperty("fast_replaceable_group",fastReplaceableGroup)
 end
 
-function aspectEntity:setEntityFastReplaceableGroup(fastReplaceableGroup)
+function aspectEntity:setFastReplaceableGroup(fastReplaceableGroup)
 	return self:setProperty("fast_replaceable_group",fastReplaceableGroup)
 end
 
-function aspectEntity:getEntityFlags(flags)
+function aspectEntity:getFlags(flags)
 	return self:getProperty("flags",flags)
 end
 
-function aspectEntity:setEntityFlags(flags)
+function aspectEntity:setFlags(flags)
 	return self:setProperty("flags",flags)
 end
 
-function aspectEntity:getEntityFriendlyMapColor(friendlyMapColor)
+function aspectEntity:getFriendlyMapColor(friendlyMapColor)
 	return self:getProperty("friendly_map_color",friendlyMapColor)
 end
 
-function aspectEntity:setEntityFriendlyMapColor(friendlyMapColor)
+function aspectEntity:setFriendlyMapColor(friendlyMapColor)
 	return self:setProperty("friendly_map_color",friendlyMapColor)
 end
 
-function aspectEntity:getEntityHitVisualizationBox(hitVisualizationBox)
+function aspectEntity:getHitVisualizationBox(hitVisualizationBox)
 	return self:getProperty("hit_visualization_box",hitVisualizationBox)
 end
 
-function aspectEntity:setEntityHitVisualizationBox(hitVisualizationBox)
+function aspectEntity:setHitVisualizationBox(hitVisualizationBox)
 	return self:setProperty("hit_visualization_box",hitVisualizationBox)
 end
 
-function aspectEntity:getEntityMapColor(mapColor)
+function aspectEntity:getMapColor(mapColor)
 	return self:getProperty("map_color",mapColor)
 end
 
-function aspectEntity:setEntityMapColor(mapColor)
+function aspectEntity:setMapColor(mapColor)
 	return self:setProperty("map_color",mapColor)
 end
 
-function aspectEntity:getEntityMapGeneratorBoundingBox(mapGeneratorBoundingBox)
+function aspectEntity:getMapGeneratorBoundingBox(mapGeneratorBoundingBox)
 	return self:getProperty("map_generator_bounding_box",mapGeneratorBoundingBox)
 end
 
-function aspectEntity:setEntityMapGeneratorBoundingBox(mapGeneratorBoundingBox)
+function aspectEntity:setMapGeneratorBoundingBox(mapGeneratorBoundingBox)
 	return self:setProperty("map_generator_bounding_box",mapGeneratorBoundingBox)
 end
 
-function aspectEntity:getEntityMinable(minable)
+function aspectEntity:getMinable(minable)
 	return self:getProperty("minable",minable)
 end
 
-function aspectEntity:setEntityMinable(minable)
+function aspectEntity:setMinable(minable)
 	return self:setProperty("minable",minable)
 end
 
-function aspectEntity:getEntityMinedSound(minedSound)
+function aspectEntity:getMinedSound(minedSound)
 	return self:getProperty("mined_sound",minedSound)
 end
 
-function aspectEntity:setEntityMinedSound(minedSound)
+function aspectEntity:setMinedSound(minedSound)
 	return self:setProperty("mined_sound",minedSound)
 end
 
-function aspectEntity:getEntityMiningSound(miningSound)
+function aspectEntity:getMiningSound(miningSound)
 	return self:getProperty("mining_sound",miningSound)
 end
 
-function aspectEntity:setEntityMiningSound(miningSound)
+function aspectEntity:setMiningSound(miningSound)
 	return self:setProperty("mining_sound",miningSound)
 end
 
-function aspectEntity:getEntityNextUpgrade(nextUpgrade)
+function aspectEntity:getNextUpgrade(nextUpgrade)
 	return self:getProperty("next_upgrade",nextUpgrade)
 end
 
-function aspectEntity:setEntityNextUpgrade(nextUpgrade)
+function aspectEntity:setNextUpgrade(nextUpgrade)
 	return self:setProperty("next_upgrade",nextUpgrade)
 end
 
-function aspectEntity:getEntityOpenSound(openSound)
+function aspectEntity:getOpenSound(openSound)
 	return self:getProperty("open_sound",openSound)
 end
 
-function aspectEntity:setEntityOpenSound(openSound)
+function aspectEntity:setOpenSound(openSound)
 	return self:setProperty("open_sound",openSound)
 end
 
-function aspectEntity:getEntityPlaceableBy(placeableBy)
+function aspectEntity:getPlaceableBy(placeableBy)
 	return self:getProperty("placeable_by",placeableBy)
 end
 
-function aspectEntity:setEntityPlaceableBy(placeableBy)
+function aspectEntity:setPlaceableBy(placeableBy)
 	return self:setProperty("placeable_by",placeableBy)
 end
 
-function aspectEntity:getEntityProtectedFromTileBuilding(protectedFromTileBuilding)
+function aspectEntity:getProtectedFromTileBuilding(protectedFromTileBuilding)
 	return self:getProperty("protected_from_tile_building",protectedFromTileBuilding)
 end
 
-function aspectEntity:setEntityProtectedFromTileBuilding(protectedFromTileBuilding)
+function aspectEntity:setProtectedFromTileBuilding(protectedFromTileBuilding)
 	return self:setProperty("protected_from_tile_building",protectedFromTileBuilding)
 end
 
-function aspectEntity:getEntityRadiusVisualisationSpecification(radiusVisualisationSpecification)
+function aspectEntity:getRadiusVisualisationSpecification(radiusVisualisationSpecification)
 	return self:getProperty("radius_visualisation_specification",radiusVisualisationSpecification)
 end
 
-function aspectEntity:setEntityRadiusVisualisationSpecification(radiusVisualisationSpecification)
+function aspectEntity:setRadiusVisualisationSpecification(radiusVisualisationSpecification)
 	return self:setProperty("radius_visualisation_specification",radiusVisualisationSpecification)
 end
 
-function aspectEntity:getEntityRemainsWhenMined(remainsWhenMined)
+function aspectEntity:getRemainsWhenMined(remainsWhenMined)
 	return self:getProperty("remains_when_mined",remainsWhenMined)
 end
 
-function aspectEntity:setEntityRemainsWhenMined(remainsWhenMined)
+function aspectEntity:setRemainsWhenMined(remainsWhenMined)
 	return self:setProperty("remains_when_mined",remainsWhenMined)
 end
 
-function aspectEntity:getEntityRemoveDecoratives(removeDecoratives)
+function aspectEntity:getRemoveDecoratives(removeDecoratives)
 	return self:getProperty("remove_decoratives",removeDecoratives)
 end
 
-function aspectEntity:setEntityRemoveDecoratives(removeDecoratives)
+function aspectEntity:setRemoveDecoratives(removeDecoratives)
 	return self:setProperty("remove_decoratives",removeDecoratives)
 end
 
-function aspectEntity:getEntityRotatedSound(rotatedSound)
+function aspectEntity:getRotatedSound(rotatedSound)
 	return self:getProperty("rotated_sound",rotatedSound)
 end
 
-function aspectEntity:setEntityRotatedSound(rotatedSound)
+function aspectEntity:setRotatedSound(rotatedSound)
 	return self:setProperty("rotated_sound",rotatedSound)
 end
 
-function aspectEntity:getEntitySelectableInGame(selectableInGame)
+function aspectEntity:getSelectableInGame(selectableInGame)
 	return self:getProperty("selectable_in_game",selectableInGame)
 end
 
-function aspectEntity:setEntitySelectableInGame(selectableInGame)
+function aspectEntity:setSelectableInGame(selectableInGame)
 	return self:setProperty("selectable_in_game",selectableInGame)
 end
 
-function aspectEntity:getEntitySelectionBox(selectionBox)
+function aspectEntity:getSelectionBox(selectionBox)
 	return self:getProperty("selection_box",selectionBox)
 end
 
-function aspectEntity:setEntitySelectionBox(selectionBox)
+function aspectEntity:setSelectionBox(selectionBox)
 	return self:setProperty("selection_box",selectionBox)
 end
 
-function aspectEntity:getEntitySelectionPriority(selectionPriority)
+function aspectEntity:getSelectionPriority(selectionPriority)
 	return self:getProperty("selection_priority",selectionPriority)
 end
 
-function aspectEntity:setEntitySelectionPriority(selectionPriority)
+function aspectEntity:setSelectionPriority(selectionPriority)
 	return self:setProperty("selection_priority",selectionPriority)
 end
 
-function aspectEntity:getEntityShootingCursorSize(shootingCursorSize)
+function aspectEntity:getShootingCursorSize(shootingCursorSize)
 	return self:getProperty("shooting_cursor_size",shootingCursorSize)
 end
 
-function aspectEntity:setEntityShootingCursorSize(shootingCursorSize)
+function aspectEntity:setShootingCursorSize(shootingCursorSize)
 	return self:setProperty("shooting_cursor_size",shootingCursorSize)
 end
 
-function aspectEntity:getEntityStickerBox(stickerBox)
+function aspectEntity:getStickerBox(stickerBox)
 	return self:getProperty("sticker_box",stickerBox)
 end
 
-function aspectEntity:setEntityStickerBox(stickerBox)
+function aspectEntity:setStickerBox(stickerBox)
 	return self:setProperty("sticker_box",stickerBox)
 end
 
-function aspectEntity:getEntitySubgroup(subgroup)
+function aspectEntity:getSubgroup(subgroup)
 	return self:getProperty("subgroup",subgroup)
 end
 
-function aspectEntity:setEntitySubgroup(subgroup)
+function aspectEntity:setSubgroup(subgroup)
 	return self:setProperty("subgroup",subgroup)
 end
 
-function aspectEntity:getEntityTileHeight(tileHeight)
+function aspectEntity:getTileHeight(tileHeight)
 	return self:getProperty("tile_height",tileHeight)
 end
 
-function aspectEntity:setEntityTileHeight(tileHeight)
+function aspectEntity:setTileHeight(tileHeight)
 	return self:setProperty("tile_height",tileHeight)
 end
 
-function aspectEntity:getEntityTileWidth(tileWidth)
+function aspectEntity:getTileWidth(tileWidth)
 	return self:getProperty("tile_width",tileWidth)
 end
 
-function aspectEntity:setEntityTileWidth(tileWidth)
+function aspectEntity:setTileWidth(tileWidth)
 	return self:setProperty("tile_width",tileWidth)
 end
 
-function aspectEntity:getEntityTriggerTargetMask(triggerTargetMask)
+function aspectEntity:getTriggerTargetMask(triggerTargetMask)
 	return self:getProperty("trigger_target_mask",triggerTargetMask)
 end
 
-function aspectEntity:setEntityTriggerTargetMask(triggerTargetMask)
+function aspectEntity:setTriggerTargetMask(triggerTargetMask)
 	return self:setProperty("trigger_target_mask",triggerTargetMask)
 end
 
-function aspectEntity:getEntityVehicleImpactSound(vehicleImpactSound)
+function aspectEntity:getVehicleImpactSound(vehicleImpactSound)
 	return self:getProperty("vehicle_impact_sound",vehicleImpactSound)
 end
 
-function aspectEntity:setEntityVehicleImpactSound(vehicleImpactSound)
+function aspectEntity:setVehicleImpactSound(vehicleImpactSound)
 	return self:setProperty("vehicle_impact_sound",vehicleImpactSound)
 end
 
-function aspectEntity:getEntityWaterReflection(waterReflection)
+function aspectEntity:getWaterReflection(waterReflection)
 	return self:getProperty("water_reflection",waterReflection)
 end
 
-function aspectEntity:setEntityWaterReflection(waterReflection)
+function aspectEntity:setWaterReflection(waterReflection)
 	return self:setProperty("water_reflection",waterReflection)
 end
 
-function aspectEntity:getEntityWorkingSound(workingSound)
+function aspectEntity:getWorkingSound(workingSound)
 	return self:getProperty("working_sound",workingSound)
 end
 
-function aspectEntity:setEntityWorkingSound(workingSound)
+function aspectEntity:setWorkingSound(workingSound)
 	return self:setProperty("working_sound",workingSound)
 end
 
-function aspectEntity:getEntityName(name)
+function aspectEntity:getName(name)
 	return self:getProperty("name",name)
 end
 
-function aspectEntity:setEntityName(name)
+function aspectEntity:setName(name)
 	return self:setProperty("name",name)
 end
 
-function aspectEntity:getEntityType(type)
+function aspectEntity:getType(type)
 	return self:getProperty("type",type)
 end
 
-function aspectEntity:setEntityType(type)
+function aspectEntity:setType(type)
 	return self:setProperty("type",type)
 end
 
-function aspectEntity:getEntityLocalisedDescription(localisedDescription)
+function aspectEntity:getLocalisedDescription(localisedDescription)
 	return self:getProperty("localised_description",localisedDescription)
 end
 
-function aspectEntity:setEntityLocalisedDescription(localisedDescription)
+function aspectEntity:setLocalisedDescription(localisedDescription)
 	return self:setProperty("localised_description",localisedDescription)
 end
 
-function aspectEntity:getEntityLocalisedName(localisedName)
+function aspectEntity:getLocalisedName(localisedName)
 	return self:getProperty("localised_name",localisedName)
 end
 
-function aspectEntity:setEntityLocalisedName(localisedName)
+function aspectEntity:setLocalisedName(localisedName)
 	return self:setProperty("localised_name",localisedName)
 end
 
-function aspectEntity:getEntityOrder(order)
+function aspectEntity:getOrder(order)
 	return self:getProperty("order",order)
 end
 
-function aspectEntity:setEntityOrder(order)
+function aspectEntity:setOrder(order)
 	return self:setProperty("order",order)
 end
 

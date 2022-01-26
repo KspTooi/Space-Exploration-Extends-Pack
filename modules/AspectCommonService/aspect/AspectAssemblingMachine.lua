@@ -163,763 +163,763 @@ end
 ----通用内部操作方法 ----- 结束 -----<<<<
 
 
-function aspectAssemblingMachine:getAssemblingMachineFixedRecipe(fixedRecipe)
+function aspectAssemblingMachine:getFixedRecipe(fixedRecipe)
 	return self:getProperty("fixed_recipe",fixedRecipe)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineFixedRecipe(fixedRecipe)
+function aspectAssemblingMachine:getFixedRecipe(fixedRecipe)
 	return self:setProperty("fixed_recipe",fixedRecipe)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineGuiTitleKey(guiTitleKey)
+function aspectAssemblingMachine:getGuiTitleKey(guiTitleKey)
 	return self:getProperty("gui_title_key",guiTitleKey)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineGuiTitleKey(guiTitleKey)
+function aspectAssemblingMachine:getGuiTitleKey(guiTitleKey)
 	return self:setProperty("gui_title_key",guiTitleKey)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineIngredientCount(ingredientCount)
+function aspectAssemblingMachine:getIngredientCount(ingredientCount)
 	return self:getProperty("ingredient_count",ingredientCount)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineIngredientCount(ingredientCount)
+function aspectAssemblingMachine:getIngredientCount(ingredientCount)
 	return self:setProperty("ingredient_count",ingredientCount)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineCraftingCategories(craftingCategories)
+function aspectAssemblingMachine:getCraftingCategories(craftingCategories)
 	return self:getProperty("crafting_categories",craftingCategories)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineCraftingCategories(craftingCategories)
+function aspectAssemblingMachine:getCraftingCategories(craftingCategories)
 	return self:setProperty("crafting_categories",craftingCategories)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineCraftingSpeed(craftingSpeed)
+function aspectAssemblingMachine:getCraftingSpeed(craftingSpeed)
 	return self:getProperty("crafting_speed",craftingSpeed)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineCraftingSpeed(craftingSpeed)
+function aspectAssemblingMachine:getCraftingSpeed(craftingSpeed)
 	return self:setProperty("crafting_speed",craftingSpeed)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineEnergySource(energySource)
+function aspectAssemblingMachine:getEnergySource(energySource)
 	return self:getProperty("energy_source",energySource)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineEnergySource(energySource)
+function aspectAssemblingMachine:getEnergySource(energySource)
 	return self:setProperty("energy_source",energySource)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineEnergyUsage(energyUsage)
+function aspectAssemblingMachine:getEnergyUsage(energyUsage)
 	return self:getProperty("energy_usage",energyUsage)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineEnergyUsage(energyUsage)
+function aspectAssemblingMachine:getEnergyUsage(energyUsage)
 	return self:setProperty("energy_usage",energyUsage)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineAllowedEffects(allowedEffects)
+function aspectAssemblingMachine:getAllowedEffects(allowedEffects)
 	return self:getProperty("allowed_effects",allowedEffects)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineAllowedEffects(allowedEffects)
+function aspectAssemblingMachine:getAllowedEffects(allowedEffects)
 	return self:setProperty("allowed_effects",allowedEffects)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineAlwaysDrawIdleAnimation(alwaysDrawIdleAnimation)
+function aspectAssemblingMachine:getAlwaysDrawIdleAnimation(alwaysDrawIdleAnimation)
 	return self:getProperty("always_draw_idle_animation",alwaysDrawIdleAnimation)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineAlwaysDrawIdleAnimation(alwaysDrawIdleAnimation)
+function aspectAssemblingMachine:getAlwaysDrawIdleAnimation(alwaysDrawIdleAnimation)
 	return self:setProperty("always_draw_idle_animation",alwaysDrawIdleAnimation)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineAnimation(animation)
+function aspectAssemblingMachine:getAnimation(animation)
 	return self:getProperty("animation",animation)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineAnimation(animation)
+function aspectAssemblingMachine:getAnimation(animation)
 	return self:setProperty("animation",animation)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineBaseProductivity(baseProductivity)
+function aspectAssemblingMachine:getBaseProductivity(baseProductivity)
 	return self:getProperty("base_productivity",baseProductivity)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineBaseProductivity(baseProductivity)
+function aspectAssemblingMachine:getBaseProductivity(baseProductivity)
 	return self:setProperty("base_productivity",baseProductivity)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineDefaultRecipeTint(defaultRecipeTint)
+function aspectAssemblingMachine:getDefaultRecipeTint(defaultRecipeTint)
 	return self:getProperty("default_recipe_tint",defaultRecipeTint)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineDefaultRecipeTint(defaultRecipeTint)
+function aspectAssemblingMachine:getDefaultRecipeTint(defaultRecipeTint)
 	return self:setProperty("default_recipe_tint",defaultRecipeTint)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineDrawEntityInfoIconBackground(drawEntityInfoIconBackground)
+function aspectAssemblingMachine:getDrawEntityInfoIconBackground(drawEntityInfoIconBackground)
 	return self:getProperty("draw_entity_info_icon_background",drawEntityInfoIconBackground)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineDrawEntityInfoIconBackground(drawEntityInfoIconBackground)
+function aspectAssemblingMachine:getDrawEntityInfoIconBackground(drawEntityInfoIconBackground)
 	return self:setProperty("draw_entity_info_icon_background",drawEntityInfoIconBackground)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineEntityInfoIconShift(entityInfoIconShift)
+function aspectAssemblingMachine:getEntityInfoIconShift(entityInfoIconShift)
 	return self:getProperty("entity_info_icon_shift",entityInfoIconShift)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineEntityInfoIconShift(entityInfoIconShift)
+function aspectAssemblingMachine:getEntityInfoIconShift(entityInfoIconShift)
 	return self:setProperty("entity_info_icon_shift",entityInfoIconShift)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineFluidBoxes(fluidBoxes)
+function aspectAssemblingMachine:getFluidBoxes(fluidBoxes)
 	return self:getProperty("fluid_boxes",fluidBoxes)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineFluidBoxes(fluidBoxes)
+function aspectAssemblingMachine:getFluidBoxes(fluidBoxes)
 	return self:setProperty("fluid_boxes",fluidBoxes)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineIdleAnimation(idleAnimation)
+function aspectAssemblingMachine:getIdleAnimation(idleAnimation)
 	return self:getProperty("idle_animation",idleAnimation)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineIdleAnimation(idleAnimation)
+function aspectAssemblingMachine:getIdleAnimation(idleAnimation)
 	return self:setProperty("idle_animation",idleAnimation)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineMatchAnimationSpeedToActivity(matchAnimationSpeedToActivity)
+function aspectAssemblingMachine:getMatchAnimationSpeedToActivity(matchAnimationSpeedToActivity)
 	return self:getProperty("match_animation_speed_to_activity",matchAnimationSpeedToActivity)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineMatchAnimationSpeedToActivity(matchAnimationSpeedToActivity)
+function aspectAssemblingMachine:getMatchAnimationSpeedToActivity(matchAnimationSpeedToActivity)
 	return self:setProperty("match_animation_speed_to_activity",matchAnimationSpeedToActivity)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineModuleSpecification(moduleSpecification)
+function aspectAssemblingMachine:getModuleSpecification(moduleSpecification)
 	return self:getProperty("module_specification",moduleSpecification)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineModuleSpecification(moduleSpecification)
+function aspectAssemblingMachine:getModuleSpecification(moduleSpecification)
 	return self:setProperty("module_specification",moduleSpecification)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineReturnIngredientsOnChange(returnIngredientsOnChange)
+function aspectAssemblingMachine:getReturnIngredientsOnChange(returnIngredientsOnChange)
 	return self:getProperty("return_ingredients_on_change",returnIngredientsOnChange)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineReturnIngredientsOnChange(returnIngredientsOnChange)
+function aspectAssemblingMachine:getReturnIngredientsOnChange(returnIngredientsOnChange)
 	return self:setProperty("return_ingredients_on_change",returnIngredientsOnChange)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineScaleEntityInfoIcon(scaleEntityInfoIcon)
+function aspectAssemblingMachine:getScaleEntityInfoIcon(scaleEntityInfoIcon)
 	return self:getProperty("scale_entity_info_icon",scaleEntityInfoIcon)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineScaleEntityInfoIcon(scaleEntityInfoIcon)
+function aspectAssemblingMachine:getScaleEntityInfoIcon(scaleEntityInfoIcon)
 	return self:setProperty("scale_entity_info_icon",scaleEntityInfoIcon)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineShiftAnimationTransitionDuration(shiftAnimationTransitionDuration)
+function aspectAssemblingMachine:getShiftAnimationTransitionDuration(shiftAnimationTransitionDuration)
 	return self:getProperty("shift_animation_transition_duration",shiftAnimationTransitionDuration)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineShiftAnimationTransitionDuration(shiftAnimationTransitionDuration)
+function aspectAssemblingMachine:getShiftAnimationTransitionDuration(shiftAnimationTransitionDuration)
 	return self:setProperty("shift_animation_transition_duration",shiftAnimationTransitionDuration)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineShiftAnimationWaypointStopDuration(shiftAnimationWaypointStopDuration)
+function aspectAssemblingMachine:getShiftAnimationWaypointStopDuration(shiftAnimationWaypointStopDuration)
 	return self:getProperty("shift_animation_waypoint_stop_duration",shiftAnimationWaypointStopDuration)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineShiftAnimationWaypointStopDuration(shiftAnimationWaypointStopDuration)
+function aspectAssemblingMachine:getShiftAnimationWaypointStopDuration(shiftAnimationWaypointStopDuration)
 	return self:setProperty("shift_animation_waypoint_stop_duration",shiftAnimationWaypointStopDuration)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineShiftAnimationWaypoints(shiftAnimationWaypoints)
+function aspectAssemblingMachine:getShiftAnimationWaypoints(shiftAnimationWaypoints)
 	return self:getProperty("shift_animation_waypoints",shiftAnimationWaypoints)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineShiftAnimationWaypoints(shiftAnimationWaypoints)
+function aspectAssemblingMachine:getShiftAnimationWaypoints(shiftAnimationWaypoints)
 	return self:setProperty("shift_animation_waypoints",shiftAnimationWaypoints)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineShowRecipeIcon(showRecipeIcon)
+function aspectAssemblingMachine:getShowRecipeIcon(showRecipeIcon)
 	return self:getProperty("show_recipe_icon",showRecipeIcon)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineShowRecipeIcon(showRecipeIcon)
+function aspectAssemblingMachine:getShowRecipeIcon(showRecipeIcon)
 	return self:setProperty("show_recipe_icon",showRecipeIcon)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineShowRecipeIconOnMap(showRecipeIconOnMap)
+function aspectAssemblingMachine:getShowRecipeIconOnMap(showRecipeIconOnMap)
 	return self:getProperty("show_recipe_icon_on_map",showRecipeIconOnMap)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineShowRecipeIconOnMap(showRecipeIconOnMap)
+function aspectAssemblingMachine:getShowRecipeIconOnMap(showRecipeIconOnMap)
 	return self:setProperty("show_recipe_icon_on_map",showRecipeIconOnMap)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineStatusColors(statusColors)
+function aspectAssemblingMachine:getStatusColors(statusColors)
 	return self:getProperty("status_colors",statusColors)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineStatusColors(statusColors)
+function aspectAssemblingMachine:getStatusColors(statusColors)
 	return self:setProperty("status_colors",statusColors)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineWorkingVisualisations(workingVisualisations)
+function aspectAssemblingMachine:getWorkingVisualisations(workingVisualisations)
 	return self:getProperty("working_visualisations",workingVisualisations)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineWorkingVisualisations(workingVisualisations)
+function aspectAssemblingMachine:getWorkingVisualisations(workingVisualisations)
 	return self:setProperty("working_visualisations",workingVisualisations)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineAlertWhenDamaged(alertWhenDamaged)
+function aspectAssemblingMachine:getAlertWhenDamaged(alertWhenDamaged)
 	return self:getProperty("alert_when_damaged",alertWhenDamaged)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineAlertWhenDamaged(alertWhenDamaged)
+function aspectAssemblingMachine:getAlertWhenDamaged(alertWhenDamaged)
 	return self:setProperty("alert_when_damaged",alertWhenDamaged)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineAttackReaction(attackReaction)
+function aspectAssemblingMachine:getAttackReaction(attackReaction)
 	return self:getProperty("attack_reaction",attackReaction)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineAttackReaction(attackReaction)
+function aspectAssemblingMachine:getAttackReaction(attackReaction)
 	return self:setProperty("attack_reaction",attackReaction)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineCorpse(corpse)
+function aspectAssemblingMachine:getCorpse(corpse)
 	return self:getProperty("corpse",corpse)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineCorpse(corpse)
+function aspectAssemblingMachine:getCorpse(corpse)
 	return self:setProperty("corpse",corpse)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineCreateGhostOnDeath(createGhostOnDeath)
+function aspectAssemblingMachine:getCreateGhostOnDeath(createGhostOnDeath)
 	return self:getProperty("create_ghost_on_death",createGhostOnDeath)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineCreateGhostOnDeath(createGhostOnDeath)
+function aspectAssemblingMachine:getCreateGhostOnDeath(createGhostOnDeath)
 	return self:setProperty("create_ghost_on_death",createGhostOnDeath)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineDamagedTriggerEffect(damagedTriggerEffect)
+function aspectAssemblingMachine:getDamagedTriggerEffect(damagedTriggerEffect)
 	return self:getProperty("damaged_trigger_effect",damagedTriggerEffect)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineDamagedTriggerEffect(damagedTriggerEffect)
+function aspectAssemblingMachine:getDamagedTriggerEffect(damagedTriggerEffect)
 	return self:setProperty("damaged_trigger_effect",damagedTriggerEffect)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineDyingExplosion(dyingExplosion)
+function aspectAssemblingMachine:getDyingExplosion(dyingExplosion)
 	return self:getProperty("dying_explosion",dyingExplosion)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineDyingExplosion(dyingExplosion)
+function aspectAssemblingMachine:getDyingExplosion(dyingExplosion)
 	return self:setProperty("dying_explosion",dyingExplosion)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineDyingTriggerEffect(dyingTriggerEffect)
+function aspectAssemblingMachine:getDyingTriggerEffect(dyingTriggerEffect)
 	return self:getProperty("dying_trigger_effect",dyingTriggerEffect)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineDyingTriggerEffect(dyingTriggerEffect)
+function aspectAssemblingMachine:getDyingTriggerEffect(dyingTriggerEffect)
 	return self:setProperty("dying_trigger_effect",dyingTriggerEffect)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineHealingPerTick(healingPerTick)
+function aspectAssemblingMachine:getHealingPerTick(healingPerTick)
 	return self:getProperty("healing_per_tick",healingPerTick)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineHealingPerTick(healingPerTick)
+function aspectAssemblingMachine:getHealingPerTick(healingPerTick)
 	return self:setProperty("healing_per_tick",healingPerTick)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineHideResistances(hideResistances)
+function aspectAssemblingMachine:getHideResistances(hideResistances)
 	return self:getProperty("hide_resistances",hideResistances)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineHideResistances(hideResistances)
+function aspectAssemblingMachine:getHideResistances(hideResistances)
 	return self:setProperty("hide_resistances",hideResistances)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineIntegrationPatch(integrationPatch)
+function aspectAssemblingMachine:getIntegrationPatch(integrationPatch)
 	return self:getProperty("integration_patch",integrationPatch)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineIntegrationPatch(integrationPatch)
+function aspectAssemblingMachine:getIntegrationPatch(integrationPatch)
 	return self:setProperty("integration_patch",integrationPatch)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineIntegrationPatchRenderLayer(integrationPatchRenderLayer)
+function aspectAssemblingMachine:getIntegrationPatchRenderLayer(integrationPatchRenderLayer)
 	return self:getProperty("integration_patch_render_layer",integrationPatchRenderLayer)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineIntegrationPatchRenderLayer(integrationPatchRenderLayer)
+function aspectAssemblingMachine:getIntegrationPatchRenderLayer(integrationPatchRenderLayer)
 	return self:setProperty("integration_patch_render_layer",integrationPatchRenderLayer)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineLoot(loot)
+function aspectAssemblingMachine:getLoot(loot)
 	return self:getProperty("loot",loot)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineLoot(loot)
+function aspectAssemblingMachine:getLoot(loot)
 	return self:setProperty("loot",loot)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineMaxHealth(maxHealth)
+function aspectAssemblingMachine:getMaxHealth(maxHealth)
 	return self:getProperty("max_health",maxHealth)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineMaxHealth(maxHealth)
+function aspectAssemblingMachine:getMaxHealth(maxHealth)
 	return self:setProperty("max_health",maxHealth)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineRandomCorpseVariation(randomCorpseVariation)
+function aspectAssemblingMachine:getRandomCorpseVariation(randomCorpseVariation)
 	return self:getProperty("random_corpse_variation",randomCorpseVariation)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineRandomCorpseVariation(randomCorpseVariation)
+function aspectAssemblingMachine:getRandomCorpseVariation(randomCorpseVariation)
 	return self:setProperty("random_corpse_variation",randomCorpseVariation)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineRepairSound(repairSound)
+function aspectAssemblingMachine:getRepairSound(repairSound)
 	return self:getProperty("repair_sound",repairSound)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineRepairSound(repairSound)
+function aspectAssemblingMachine:getRepairSound(repairSound)
 	return self:setProperty("repair_sound",repairSound)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineRepairSpeedModifier(repairSpeedModifier)
+function aspectAssemblingMachine:getRepairSpeedModifier(repairSpeedModifier)
 	return self:getProperty("repair_speed_modifier",repairSpeedModifier)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineRepairSpeedModifier(repairSpeedModifier)
+function aspectAssemblingMachine:getRepairSpeedModifier(repairSpeedModifier)
 	return self:setProperty("repair_speed_modifier",repairSpeedModifier)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineResistances(resistances)
+function aspectAssemblingMachine:getResistances(resistances)
 	return self:getProperty("resistances",resistances)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineResistances(resistances)
+function aspectAssemblingMachine:getResistances(resistances)
 	return self:setProperty("resistances",resistances)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineIcons(icons)
+function aspectAssemblingMachine:getIcons(icons)
 	return self:getProperty("icons",icons)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineIcons(icons)
+function aspectAssemblingMachine:getIcons(icons)
 	return self:setProperty("icons",icons)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineIcon(icon)
+function aspectAssemblingMachine:getIcon(icon)
 	return self:getProperty("icon",icon)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineIcon(icon)
+function aspectAssemblingMachine:getIcon(icon)
 	return self:setProperty("icon",icon)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineIconSize(iconSize)
+function aspectAssemblingMachine:getIconSize(iconSize)
 	return self:getProperty("icon_size",iconSize)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineIconSize(iconSize)
+function aspectAssemblingMachine:getIconSize(iconSize)
 	return self:setProperty("icon_size",iconSize)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineAdditionalPastableEntities(additionalPastableEntities)
+function aspectAssemblingMachine:getAdditionalPastableEntities(additionalPastableEntities)
 	return self:getProperty("additional_pastable_entities",additionalPastableEntities)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineAdditionalPastableEntities(additionalPastableEntities)
+function aspectAssemblingMachine:getAdditionalPastableEntities(additionalPastableEntities)
 	return self:setProperty("additional_pastable_entities",additionalPastableEntities)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineAlertIconScale(alertIconScale)
+function aspectAssemblingMachine:getAlertIconScale(alertIconScale)
 	return self:getProperty("alert_icon_scale",alertIconScale)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineAlertIconScale(alertIconScale)
+function aspectAssemblingMachine:getAlertIconScale(alertIconScale)
 	return self:setProperty("alert_icon_scale",alertIconScale)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineAlertIconShift(alertIconShift)
+function aspectAssemblingMachine:getAlertIconShift(alertIconShift)
 	return self:getProperty("alert_icon_shift",alertIconShift)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineAlertIconShift(alertIconShift)
+function aspectAssemblingMachine:getAlertIconShift(alertIconShift)
 	return self:setProperty("alert_icon_shift",alertIconShift)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineAllowCopyPaste(allowCopyPaste)
+function aspectAssemblingMachine:getAllowCopyPaste(allowCopyPaste)
 	return self:getProperty("allow_copy_paste",allowCopyPaste)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineAllowCopyPaste(allowCopyPaste)
+function aspectAssemblingMachine:getAllowCopyPaste(allowCopyPaste)
 	return self:setProperty("allow_copy_paste",allowCopyPaste)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineAutoplace(autoplace)
+function aspectAssemblingMachine:getAutoplace(autoplace)
 	return self:getProperty("autoplace",autoplace)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineAutoplace(autoplace)
+function aspectAssemblingMachine:getAutoplace(autoplace)
 	return self:setProperty("autoplace",autoplace)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineBuildBaseEvolutionRequirement(buildBaseEvolutionRequirement)
+function aspectAssemblingMachine:getBuildBaseEvolutionRequirement(buildBaseEvolutionRequirement)
 	return self:getProperty("build_base_evolution_requirement",buildBaseEvolutionRequirement)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineBuildBaseEvolutionRequirement(buildBaseEvolutionRequirement)
+function aspectAssemblingMachine:getBuildBaseEvolutionRequirement(buildBaseEvolutionRequirement)
 	return self:setProperty("build_base_evolution_requirement",buildBaseEvolutionRequirement)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineBuildSound(buildSound)
+function aspectAssemblingMachine:getBuildSound(buildSound)
 	return self:getProperty("build_sound",buildSound)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineBuildSound(buildSound)
+function aspectAssemblingMachine:getBuildSound(buildSound)
 	return self:setProperty("build_sound",buildSound)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineCloseSound(closeSound)
+function aspectAssemblingMachine:getCloseSound(closeSound)
 	return self:getProperty("close_sound",closeSound)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineCloseSound(closeSound)
+function aspectAssemblingMachine:getCloseSound(closeSound)
 	return self:setProperty("close_sound",closeSound)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineCollisionBox(collisionBox)
+function aspectAssemblingMachine:getCollisionBox(collisionBox)
 	return self:getProperty("collision_box",collisionBox)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineCollisionBox(collisionBox)
+function aspectAssemblingMachine:getCollisionBox(collisionBox)
 	return self:setProperty("collision_box",collisionBox)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineCollisionMask(collisionMask)
+function aspectAssemblingMachine:getCollisionMask(collisionMask)
 	return self:getProperty("collision_mask",collisionMask)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineCollisionMask(collisionMask)
+function aspectAssemblingMachine:getCollisionMask(collisionMask)
 	return self:setProperty("collision_mask",collisionMask)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineCreatedEffect(createdEffect)
+function aspectAssemblingMachine:getCreatedEffect(createdEffect)
 	return self:getProperty("created_effect",createdEffect)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineCreatedEffect(createdEffect)
+function aspectAssemblingMachine:getCreatedEffect(createdEffect)
 	return self:setProperty("created_effect",createdEffect)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineCreatedSmoke(createdSmoke)
+function aspectAssemblingMachine:getCreatedSmoke(createdSmoke)
 	return self:getProperty("created_smoke",createdSmoke)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineCreatedSmoke(createdSmoke)
+function aspectAssemblingMachine:getCreatedSmoke(createdSmoke)
 	return self:setProperty("created_smoke",createdSmoke)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineDrawingBox(drawingBox)
+function aspectAssemblingMachine:getDrawingBox(drawingBox)
 	return self:getProperty("drawing_box",drawingBox)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineDrawingBox(drawingBox)
+function aspectAssemblingMachine:getDrawingBox(drawingBox)
 	return self:setProperty("drawing_box",drawingBox)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineEmissionsPerSecond(emissionsPerSecond)
+function aspectAssemblingMachine:getEmissionsPerSecond(emissionsPerSecond)
 	return self:getProperty("emissions_per_second",emissionsPerSecond)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineEmissionsPerSecond(emissionsPerSecond)
+function aspectAssemblingMachine:getEmissionsPerSecond(emissionsPerSecond)
 	return self:setProperty("emissions_per_second",emissionsPerSecond)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineEnemyMapColor(enemyMapColor)
+function aspectAssemblingMachine:getEnemyMapColor(enemyMapColor)
 	return self:getProperty("enemy_map_color",enemyMapColor)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineEnemyMapColor(enemyMapColor)
+function aspectAssemblingMachine:getEnemyMapColor(enemyMapColor)
 	return self:setProperty("enemy_map_color",enemyMapColor)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineFastReplaceableGroup(fastReplaceableGroup)
+function aspectAssemblingMachine:getFastReplaceableGroup(fastReplaceableGroup)
 	return self:getProperty("fast_replaceable_group",fastReplaceableGroup)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineFastReplaceableGroup(fastReplaceableGroup)
+function aspectAssemblingMachine:getFastReplaceableGroup(fastReplaceableGroup)
 	return self:setProperty("fast_replaceable_group",fastReplaceableGroup)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineFlags(flags)
+function aspectAssemblingMachine:getFlags(flags)
 	return self:getProperty("flags",flags)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineFlags(flags)
+function aspectAssemblingMachine:getFlags(flags)
 	return self:setProperty("flags",flags)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineFriendlyMapColor(friendlyMapColor)
+function aspectAssemblingMachine:getFriendlyMapColor(friendlyMapColor)
 	return self:getProperty("friendly_map_color",friendlyMapColor)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineFriendlyMapColor(friendlyMapColor)
+function aspectAssemblingMachine:getFriendlyMapColor(friendlyMapColor)
 	return self:setProperty("friendly_map_color",friendlyMapColor)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineHitVisualizationBox(hitVisualizationBox)
+function aspectAssemblingMachine:getHitVisualizationBox(hitVisualizationBox)
 	return self:getProperty("hit_visualization_box",hitVisualizationBox)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineHitVisualizationBox(hitVisualizationBox)
+function aspectAssemblingMachine:getHitVisualizationBox(hitVisualizationBox)
 	return self:setProperty("hit_visualization_box",hitVisualizationBox)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineMapColor(mapColor)
+function aspectAssemblingMachine:getMapColor(mapColor)
 	return self:getProperty("map_color",mapColor)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineMapColor(mapColor)
+function aspectAssemblingMachine:getMapColor(mapColor)
 	return self:setProperty("map_color",mapColor)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineMapGeneratorBoundingBox(mapGeneratorBoundingBox)
+function aspectAssemblingMachine:getMapGeneratorBoundingBox(mapGeneratorBoundingBox)
 	return self:getProperty("map_generator_bounding_box",mapGeneratorBoundingBox)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineMapGeneratorBoundingBox(mapGeneratorBoundingBox)
+function aspectAssemblingMachine:getMapGeneratorBoundingBox(mapGeneratorBoundingBox)
 	return self:setProperty("map_generator_bounding_box",mapGeneratorBoundingBox)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineMinable(minable)
+function aspectAssemblingMachine:getMinable(minable)
 	return self:getProperty("minable",minable)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineMinable(minable)
+function aspectAssemblingMachine:getMinable(minable)
 	return self:setProperty("minable",minable)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineMinedSound(minedSound)
+function aspectAssemblingMachine:getMinedSound(minedSound)
 	return self:getProperty("mined_sound",minedSound)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineMinedSound(minedSound)
+function aspectAssemblingMachine:getMinedSound(minedSound)
 	return self:setProperty("mined_sound",minedSound)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineMiningSound(miningSound)
+function aspectAssemblingMachine:getMiningSound(miningSound)
 	return self:getProperty("mining_sound",miningSound)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineMiningSound(miningSound)
+function aspectAssemblingMachine:getMiningSound(miningSound)
 	return self:setProperty("mining_sound",miningSound)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineNextUpgrade(nextUpgrade)
+function aspectAssemblingMachine:getNextUpgrade(nextUpgrade)
 	return self:getProperty("next_upgrade",nextUpgrade)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineNextUpgrade(nextUpgrade)
+function aspectAssemblingMachine:getNextUpgrade(nextUpgrade)
 	return self:setProperty("next_upgrade",nextUpgrade)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineOpenSound(openSound)
+function aspectAssemblingMachine:getOpenSound(openSound)
 	return self:getProperty("open_sound",openSound)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineOpenSound(openSound)
+function aspectAssemblingMachine:getOpenSound(openSound)
 	return self:setProperty("open_sound",openSound)
 end
 
-function aspectAssemblingMachine:getAssemblingMachinePlaceableBy(placeableBy)
+function aspectAssemblingMachine:getPlaceableBy(placeableBy)
 	return self:getProperty("placeable_by",placeableBy)
 end
 
-function aspectAssemblingMachine:setAssemblingMachinePlaceableBy(placeableBy)
+function aspectAssemblingMachine:getPlaceableBy(placeableBy)
 	return self:setProperty("placeable_by",placeableBy)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineRadiusVisualisationSpecification(radiusVisualisationSpecification)
+function aspectAssemblingMachine:getRadiusVisualisationSpecification(radiusVisualisationSpecification)
 	return self:getProperty("radius_visualisation_specification",radiusVisualisationSpecification)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineRadiusVisualisationSpecification(radiusVisualisationSpecification)
+function aspectAssemblingMachine:getRadiusVisualisationSpecification(radiusVisualisationSpecification)
 	return self:setProperty("radius_visualisation_specification",radiusVisualisationSpecification)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineRemainsWhenMined(remainsWhenMined)
+function aspectAssemblingMachine:getRemainsWhenMined(remainsWhenMined)
 	return self:getProperty("remains_when_mined",remainsWhenMined)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineRemainsWhenMined(remainsWhenMined)
+function aspectAssemblingMachine:getRemainsWhenMined(remainsWhenMined)
 	return self:setProperty("remains_when_mined",remainsWhenMined)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineRemoveDecoratives(removeDecoratives)
+function aspectAssemblingMachine:getRemoveDecoratives(removeDecoratives)
 	return self:getProperty("remove_decoratives",removeDecoratives)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineRemoveDecoratives(removeDecoratives)
+function aspectAssemblingMachine:getRemoveDecoratives(removeDecoratives)
 	return self:setProperty("remove_decoratives",removeDecoratives)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineRotatedSound(rotatedSound)
+function aspectAssemblingMachine:getRotatedSound(rotatedSound)
 	return self:getProperty("rotated_sound",rotatedSound)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineRotatedSound(rotatedSound)
+function aspectAssemblingMachine:getRotatedSound(rotatedSound)
 	return self:setProperty("rotated_sound",rotatedSound)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineSelectableInGame(selectableInGame)
+function aspectAssemblingMachine:getSelectableInGame(selectableInGame)
 	return self:getProperty("selectable_in_game",selectableInGame)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineSelectableInGame(selectableInGame)
+function aspectAssemblingMachine:getSelectableInGame(selectableInGame)
 	return self:setProperty("selectable_in_game",selectableInGame)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineSelectionBox(selectionBox)
+function aspectAssemblingMachine:getSelectionBox(selectionBox)
 	return self:getProperty("selection_box",selectionBox)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineSelectionBox(selectionBox)
+function aspectAssemblingMachine:getSelectionBox(selectionBox)
 	return self:setProperty("selection_box",selectionBox)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineSelectionPriority(selectionPriority)
+function aspectAssemblingMachine:getSelectionPriority(selectionPriority)
 	return self:getProperty("selection_priority",selectionPriority)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineSelectionPriority(selectionPriority)
+function aspectAssemblingMachine:getSelectionPriority(selectionPriority)
 	return self:setProperty("selection_priority",selectionPriority)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineShootingCursorSize(shootingCursorSize)
+function aspectAssemblingMachine:getShootingCursorSize(shootingCursorSize)
 	return self:getProperty("shooting_cursor_size",shootingCursorSize)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineShootingCursorSize(shootingCursorSize)
+function aspectAssemblingMachine:getShootingCursorSize(shootingCursorSize)
 	return self:setProperty("shooting_cursor_size",shootingCursorSize)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineStickerBox(stickerBox)
+function aspectAssemblingMachine:getStickerBox(stickerBox)
 	return self:getProperty("sticker_box",stickerBox)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineStickerBox(stickerBox)
+function aspectAssemblingMachine:getStickerBox(stickerBox)
 	return self:setProperty("sticker_box",stickerBox)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineSubgroup(subgroup)
+function aspectAssemblingMachine:getSubgroup(subgroup)
 	return self:getProperty("subgroup",subgroup)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineSubgroup(subgroup)
+function aspectAssemblingMachine:getSubgroup(subgroup)
 	return self:setProperty("subgroup",subgroup)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineTileHeight(tileHeight)
+function aspectAssemblingMachine:getTileHeight(tileHeight)
 	return self:getProperty("tile_height",tileHeight)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineTileHeight(tileHeight)
+function aspectAssemblingMachine:getTileHeight(tileHeight)
 	return self:setProperty("tile_height",tileHeight)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineTileWidth(tileWidth)
+function aspectAssemblingMachine:getTileWidth(tileWidth)
 	return self:getProperty("tile_width",tileWidth)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineTileWidth(tileWidth)
+function aspectAssemblingMachine:getTileWidth(tileWidth)
 	return self:setProperty("tile_width",tileWidth)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineTriggerTargetMask(triggerTargetMask)
+function aspectAssemblingMachine:getTriggerTargetMask(triggerTargetMask)
 	return self:getProperty("trigger_target_mask",triggerTargetMask)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineTriggerTargetMask(triggerTargetMask)
+function aspectAssemblingMachine:getTriggerTargetMask(triggerTargetMask)
 	return self:setProperty("trigger_target_mask",triggerTargetMask)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineVehicleImpactSound(vehicleImpactSound)
+function aspectAssemblingMachine:getVehicleImpactSound(vehicleImpactSound)
 	return self:getProperty("vehicle_impact_sound",vehicleImpactSound)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineVehicleImpactSound(vehicleImpactSound)
+function aspectAssemblingMachine:getVehicleImpactSound(vehicleImpactSound)
 	return self:setProperty("vehicle_impact_sound",vehicleImpactSound)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineWaterReflection(waterReflection)
+function aspectAssemblingMachine:getWaterReflection(waterReflection)
 	return self:getProperty("water_reflection",waterReflection)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineWaterReflection(waterReflection)
+function aspectAssemblingMachine:getWaterReflection(waterReflection)
 	return self:setProperty("water_reflection",waterReflection)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineWorkingSound(workingSound)
+function aspectAssemblingMachine:getWorkingSound(workingSound)
 	return self:getProperty("working_sound",workingSound)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineWorkingSound(workingSound)
+function aspectAssemblingMachine:getWorkingSound(workingSound)
 	return self:setProperty("working_sound",workingSound)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineName(name)
+function aspectAssemblingMachine:getName(name)
 	return self:getProperty("name",name)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineName(name)
+function aspectAssemblingMachine:getName(name)
 	return self:setProperty("name",name)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineType(type)
+function aspectAssemblingMachine:getType(type)
 	return self:getProperty("type",type)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineType(type)
+function aspectAssemblingMachine:getType(type)
 	return self:setProperty("type",type)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineLocalisedDescription(localisedDescription)
+function aspectAssemblingMachine:getLocalisedDescription(localisedDescription)
 	return self:getProperty("localised_description",localisedDescription)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineLocalisedDescription(localisedDescription)
+function aspectAssemblingMachine:getLocalisedDescription(localisedDescription)
 	return self:setProperty("localised_description",localisedDescription)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineLocalisedName(localisedName)
+function aspectAssemblingMachine:getLocalisedName(localisedName)
 	return self:getProperty("localised_name",localisedName)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineLocalisedName(localisedName)
+function aspectAssemblingMachine:getLocalisedName(localisedName)
 	return self:setProperty("localised_name",localisedName)
 end
 
-function aspectAssemblingMachine:getAssemblingMachineOrder(order)
+function aspectAssemblingMachine:getOrder(order)
 	return self:getProperty("order",order)
 end
 
-function aspectAssemblingMachine:setAssemblingMachineOrder(order)
+function aspectAssemblingMachine:getOrder(order)
 	return self:setProperty("order",order)
 end
 

@@ -163,275 +163,275 @@ end
 ----通用内部操作方法 ----- 结束 -----<<<<
 
 
-function aspectRecipe:getRecipeIngredients(ingredients)
+function aspectRecipe:getIngredients(ingredients)
 	return self:getProperty("ingredients",ingredients)
 end
 
-function aspectRecipe:setRecipeIngredients(ingredients)
+function aspectRecipe:setIngredients(ingredients)
 	return self:setProperty("ingredients",ingredients)
 end
 
-function aspectRecipe:getRecipeAllowAsIntermediate(allowAsIntermediate)
+function aspectRecipe:getAllowAsIntermediate(allowAsIntermediate)
 	return self:getProperty("allow_as_intermediate",allowAsIntermediate)
 end
 
-function aspectRecipe:setRecipeAllowAsIntermediate(allowAsIntermediate)
+function aspectRecipe:setAllowAsIntermediate(allowAsIntermediate)
 	return self:setProperty("allow_as_intermediate",allowAsIntermediate)
 end
 
-function aspectRecipe:getRecipeAllowDecomposition(allowDecomposition)
+function aspectRecipe:getAllowDecomposition(allowDecomposition)
 	return self:getProperty("allow_decomposition",allowDecomposition)
 end
 
-function aspectRecipe:setRecipeAllowDecomposition(allowDecomposition)
+function aspectRecipe:setAllowDecomposition(allowDecomposition)
 	return self:setProperty("allow_decomposition",allowDecomposition)
 end
 
-function aspectRecipe:getRecipeAllowInserterOverload(allowInserterOverload)
+function aspectRecipe:getAllowInserterOverload(allowInserterOverload)
 	return self:getProperty("allow_inserter_overload",allowInserterOverload)
 end
 
-function aspectRecipe:setRecipeAllowInserterOverload(allowInserterOverload)
+function aspectRecipe:setAllowInserterOverload(allowInserterOverload)
 	return self:setProperty("allow_inserter_overload",allowInserterOverload)
 end
 
-function aspectRecipe:getRecipeAllowIntermediates(allowIntermediates)
+function aspectRecipe:getAllowIntermediates(allowIntermediates)
 	return self:getProperty("allow_intermediates",allowIntermediates)
 end
 
-function aspectRecipe:setRecipeAllowIntermediates(allowIntermediates)
+function aspectRecipe:setAllowIntermediates(allowIntermediates)
 	return self:setProperty("allow_intermediates",allowIntermediates)
 end
 
-function aspectRecipe:getRecipeAlwaysShowMadeIn(alwaysShowMadeIn)
+function aspectRecipe:getAlwaysShowMadeIn(alwaysShowMadeIn)
 	return self:getProperty("always_show_made_in",alwaysShowMadeIn)
 end
 
-function aspectRecipe:setRecipeAlwaysShowMadeIn(alwaysShowMadeIn)
+function aspectRecipe:setAlwaysShowMadeIn(alwaysShowMadeIn)
 	return self:setProperty("always_show_made_in",alwaysShowMadeIn)
 end
 
-function aspectRecipe:getRecipeAlwaysShowProducts(alwaysShowProducts)
+function aspectRecipe:getAlwaysShowProducts(alwaysShowProducts)
 	return self:getProperty("always_show_products",alwaysShowProducts)
 end
 
-function aspectRecipe:setRecipeAlwaysShowProducts(alwaysShowProducts)
+function aspectRecipe:setAlwaysShowProducts(alwaysShowProducts)
 	return self:setProperty("always_show_products",alwaysShowProducts)
 end
 
-function aspectRecipe:getRecipeCategory(category)
+function aspectRecipe:getCategory(category)
 	return self:getProperty("category",category)
 end
 
-function aspectRecipe:setRecipeCategory(category)
+function aspectRecipe:setCategory(category)
 	return self:setProperty("category",category)
 end
 
-function aspectRecipe:getRecipeCraftingMachineTint(craftingMachineTint)
+function aspectRecipe:getCraftingMachineTint(craftingMachineTint)
 	return self:getProperty("crafting_machine_tint",craftingMachineTint)
 end
 
-function aspectRecipe:setRecipeCraftingMachineTint(craftingMachineTint)
+function aspectRecipe:setCraftingMachineTint(craftingMachineTint)
 	return self:setProperty("crafting_machine_tint",craftingMachineTint)
 end
 
-function aspectRecipe:getRecipeEmissionsMultiplier(emissionsMultiplier)
+function aspectRecipe:getEmissionsMultiplier(emissionsMultiplier)
 	return self:getProperty("emissions_multiplier",emissionsMultiplier)
 end
 
-function aspectRecipe:setRecipeEmissionsMultiplier(emissionsMultiplier)
+function aspectRecipe:setEmissionsMultiplier(emissionsMultiplier)
 	return self:setProperty("emissions_multiplier",emissionsMultiplier)
 end
 
-function aspectRecipe:getRecipeEnabled(enabled)
+function aspectRecipe:getEnabled(enabled)
 	return self:getProperty("enabled",enabled)
 end
 
-function aspectRecipe:setRecipeEnabled(enabled)
+function aspectRecipe:setEnabled(enabled)
 	return self:setProperty("enabled",enabled)
 end
 
-function aspectRecipe:getRecipeEnergyRequired(energyRequired)
+function aspectRecipe:getEnergyRequired(energyRequired)
 	return self:getProperty("energy_required",energyRequired)
 end
 
-function aspectRecipe:setRecipeEnergyRequired(energyRequired)
+function aspectRecipe:setEnergyRequired(energyRequired)
 	return self:setProperty("energy_required",energyRequired)
 end
 
-function aspectRecipe:getRecipeExpensive(expensive)
+function aspectRecipe:getExpensive(expensive)
 	return self:getProperty("expensive",expensive)
 end
 
-function aspectRecipe:setRecipeExpensive(expensive)
+function aspectRecipe:setExpensive(expensive)
 	return self:setProperty("expensive",expensive)
 end
 
-function aspectRecipe:getRecipeHidden(hidden)
+function aspectRecipe:getHidden(hidden)
 	return self:getProperty("hidden",hidden)
 end
 
-function aspectRecipe:setRecipeHidden(hidden)
+function aspectRecipe:setHidden(hidden)
 	return self:setProperty("hidden",hidden)
 end
 
-function aspectRecipe:getRecipeHideFromPlayerCrafting(hideFromPlayerCrafting)
+function aspectRecipe:getHideFromPlayerCrafting(hideFromPlayerCrafting)
 	return self:getProperty("hide_from_player_crafting",hideFromPlayerCrafting)
 end
 
-function aspectRecipe:setRecipeHideFromPlayerCrafting(hideFromPlayerCrafting)
+function aspectRecipe:setHideFromPlayerCrafting(hideFromPlayerCrafting)
 	return self:setProperty("hide_from_player_crafting",hideFromPlayerCrafting)
 end
 
-function aspectRecipe:getRecipeHideFromStats(hideFromStats)
+function aspectRecipe:getHideFromStats(hideFromStats)
 	return self:getProperty("hide_from_stats",hideFromStats)
 end
 
-function aspectRecipe:setRecipeHideFromStats(hideFromStats)
+function aspectRecipe:setHideFromStats(hideFromStats)
 	return self:setProperty("hide_from_stats",hideFromStats)
 end
 
-function aspectRecipe:getRecipeIcons(icons)
+function aspectRecipe:getIcons(icons)
 	return self:getProperty("icons",icons)
 end
 
-function aspectRecipe:setRecipeIcons(icons)
+function aspectRecipe:setIcons(icons)
 	return self:setProperty("icons",icons)
 end
 
-function aspectRecipe:getRecipeIcon(icon)
+function aspectRecipe:getIcon(icon)
 	return self:getProperty("icon",icon)
 end
 
-function aspectRecipe:setRecipeIcon(icon)
+function aspectRecipe:setIcon(icon)
 	return self:setProperty("icon",icon)
 end
 
-function aspectRecipe:getRecipeIconSize(iconSize)
+function aspectRecipe:getIconSize(iconSize)
 	return self:getProperty("icon_size",iconSize)
 end
 
-function aspectRecipe:setRecipeIconSize(iconSize)
+function aspectRecipe:setIconSize(iconSize)
 	return self:setProperty("icon_size",iconSize)
 end
 
-function aspectRecipe:getRecipeMainProduct(mainProduct)
+function aspectRecipe:getMainProduct(mainProduct)
 	return self:getProperty("main_product",mainProduct)
 end
 
-function aspectRecipe:setRecipeMainProduct(mainProduct)
+function aspectRecipe:setMainProduct(mainProduct)
 	return self:setProperty("main_product",mainProduct)
 end
 
-function aspectRecipe:getRecipeNormal(normal)
+function aspectRecipe:getNormal(normal)
 	return self:getProperty("normal",normal)
 end
 
-function aspectRecipe:setRecipeNormal(normal)
+function aspectRecipe:setNormal(normal)
 	return self:setProperty("normal",normal)
 end
 
-function aspectRecipe:getRecipeOverloadMultiplier(overloadMultiplier)
+function aspectRecipe:getOverloadMultiplier(overloadMultiplier)
 	return self:getProperty("overload_multiplier",overloadMultiplier)
 end
 
-function aspectRecipe:setRecipeOverloadMultiplier(overloadMultiplier)
+function aspectRecipe:setOverloadMultiplier(overloadMultiplier)
 	return self:setProperty("overload_multiplier",overloadMultiplier)
 end
 
-function aspectRecipe:getRecipeRequesterPasteMultiplier(requesterPasteMultiplier)
+function aspectRecipe:getRequesterPasteMultiplier(requesterPasteMultiplier)
 	return self:getProperty("requester_paste_multiplier",requesterPasteMultiplier)
 end
 
-function aspectRecipe:setRecipeRequesterPasteMultiplier(requesterPasteMultiplier)
+function aspectRecipe:setRequesterPasteMultiplier(requesterPasteMultiplier)
 	return self:setProperty("requester_paste_multiplier",requesterPasteMultiplier)
 end
 
-function aspectRecipe:getRecipeResult(result)
+function aspectRecipe:getResult(result)
 	return self:getProperty("result",result)
 end
 
-function aspectRecipe:setRecipeResult(result)
+function aspectRecipe:setResult(result)
 	return self:setProperty("result",result)
 end
 
-function aspectRecipe:getRecipeResultCount(resultCount)
+function aspectRecipe:getResultCount(resultCount)
 	return self:getProperty("result_count",resultCount)
 end
 
-function aspectRecipe:setRecipeResultCount(resultCount)
+function aspectRecipe:setResultCount(resultCount)
 	return self:setProperty("result_count",resultCount)
 end
 
-function aspectRecipe:getRecipeResults(results)
+function aspectRecipe:getResults(results)
 	return self:getProperty("results",results)
 end
 
-function aspectRecipe:setRecipeResults(results)
+function aspectRecipe:setResults(results)
 	return self:setProperty("results",results)
 end
 
-function aspectRecipe:getRecipeShowAmountInTitle(showAmountInTitle)
+function aspectRecipe:getShowAmountInTitle(showAmountInTitle)
 	return self:getProperty("show_amount_in_title",showAmountInTitle)
 end
 
-function aspectRecipe:setRecipeShowAmountInTitle(showAmountInTitle)
+function aspectRecipe:setShowAmountInTitle(showAmountInTitle)
 	return self:setProperty("show_amount_in_title",showAmountInTitle)
 end
 
-function aspectRecipe:getRecipeSubgroup(subgroup)
+function aspectRecipe:getSubgroup(subgroup)
 	return self:getProperty("subgroup",subgroup)
 end
 
-function aspectRecipe:setRecipeSubgroup(subgroup)
+function aspectRecipe:setSubgroup(subgroup)
 	return self:setProperty("subgroup",subgroup)
 end
 
-function aspectRecipe:getRecipeUnlockResults(unlockResults)
+function aspectRecipe:getUnlockResults(unlockResults)
 	return self:getProperty("unlock_results",unlockResults)
 end
 
-function aspectRecipe:setRecipeUnlockResults(unlockResults)
+function aspectRecipe:setUnlockResults(unlockResults)
 	return self:setProperty("unlock_results",unlockResults)
 end
 
-function aspectRecipe:getRecipeName(name)
+function aspectRecipe:getName(name)
 	return self:getProperty("name",name)
 end
 
-function aspectRecipe:setRecipeName(name)
+function aspectRecipe:setName(name)
 	return self:setProperty("name",name)
 end
 
-function aspectRecipe:getRecipeType(type)
+function aspectRecipe:getType(type)
 	return self:getProperty("type",type)
 end
 
-function aspectRecipe:setRecipeType(type)
+function aspectRecipe:setType(type)
 	return self:setProperty("type",type)
 end
 
-function aspectRecipe:getRecipeLocalisedDescription(localisedDescription)
+function aspectRecipe:getLocalisedDescription(localisedDescription)
 	return self:getProperty("localised_description",localisedDescription)
 end
 
-function aspectRecipe:setRecipeLocalisedDescription(localisedDescription)
+function aspectRecipe:setLocalisedDescription(localisedDescription)
 	return self:setProperty("localised_description",localisedDescription)
 end
 
-function aspectRecipe:getRecipeLocalisedName(localisedName)
+function aspectRecipe:getLocalisedName(localisedName)
 	return self:getProperty("localised_name",localisedName)
 end
 
-function aspectRecipe:setRecipeLocalisedName(localisedName)
+function aspectRecipe:setLocalisedName(localisedName)
 	return self:setProperty("localised_name",localisedName)
 end
 
-function aspectRecipe:getRecipeOrder(order)
+function aspectRecipe:getOrder(order)
 	return self:getProperty("order",order)
 end
 
-function aspectRecipe:setRecipeOrder(order)
+function aspectRecipe:setOrder(order)
 	return self:setProperty("order",order)
 end
 

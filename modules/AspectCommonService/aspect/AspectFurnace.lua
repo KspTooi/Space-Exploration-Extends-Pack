@@ -163,755 +163,755 @@ end
 ----通用内部操作方法 ----- 结束 -----<<<<
 
 
-function aspectFurnace:getFurnaceResultInventorySize(resultInventorySize)
+function aspectFurnace:getResultInventorySize(resultInventorySize)
 	return self:getProperty("result_inventory_size",resultInventorySize)
 end
 
-function aspectFurnace:setFurnaceResultInventorySize(resultInventorySize)
+function aspectFurnace:setResultInventorySize(resultInventorySize)
 	return self:setProperty("result_inventory_size",resultInventorySize)
 end
 
-function aspectFurnace:getFurnaceSourceInventorySize(sourceInventorySize)
+function aspectFurnace:getSourceInventorySize(sourceInventorySize)
 	return self:getProperty("source_inventory_size",sourceInventorySize)
 end
 
-function aspectFurnace:setFurnaceSourceInventorySize(sourceInventorySize)
+function aspectFurnace:setSourceInventorySize(sourceInventorySize)
 	return self:setProperty("source_inventory_size",sourceInventorySize)
 end
 
-function aspectFurnace:getFurnaceCraftingCategories(craftingCategories)
+function aspectFurnace:getCraftingCategories(craftingCategories)
 	return self:getProperty("crafting_categories",craftingCategories)
 end
 
-function aspectFurnace:setFurnaceCraftingCategories(craftingCategories)
+function aspectFurnace:setCraftingCategories(craftingCategories)
 	return self:setProperty("crafting_categories",craftingCategories)
 end
 
-function aspectFurnace:getFurnaceCraftingSpeed(craftingSpeed)
+function aspectFurnace:getCraftingSpeed(craftingSpeed)
 	return self:getProperty("crafting_speed",craftingSpeed)
 end
 
-function aspectFurnace:setFurnaceCraftingSpeed(craftingSpeed)
+function aspectFurnace:setCraftingSpeed(craftingSpeed)
 	return self:setProperty("crafting_speed",craftingSpeed)
 end
 
-function aspectFurnace:getFurnaceEnergySource(energySource)
+function aspectFurnace:getEnergySource(energySource)
 	return self:getProperty("energy_source",energySource)
 end
 
-function aspectFurnace:setFurnaceEnergySource(energySource)
+function aspectFurnace:setEnergySource(energySource)
 	return self:setProperty("energy_source",energySource)
 end
 
-function aspectFurnace:getFurnaceEnergyUsage(energyUsage)
+function aspectFurnace:getEnergyUsage(energyUsage)
 	return self:getProperty("energy_usage",energyUsage)
 end
 
-function aspectFurnace:setFurnaceEnergyUsage(energyUsage)
+function aspectFurnace:setEnergyUsage(energyUsage)
 	return self:setProperty("energy_usage",energyUsage)
 end
 
-function aspectFurnace:getFurnaceAllowedEffects(allowedEffects)
+function aspectFurnace:getAllowedEffects(allowedEffects)
 	return self:getProperty("allowed_effects",allowedEffects)
 end
 
-function aspectFurnace:setFurnaceAllowedEffects(allowedEffects)
+function aspectFurnace:setAllowedEffects(allowedEffects)
 	return self:setProperty("allowed_effects",allowedEffects)
 end
 
-function aspectFurnace:getFurnaceAlwaysDrawIdleAnimation(alwaysDrawIdleAnimation)
+function aspectFurnace:getAlwaysDrawIdleAnimation(alwaysDrawIdleAnimation)
 	return self:getProperty("always_draw_idle_animation",alwaysDrawIdleAnimation)
 end
 
-function aspectFurnace:setFurnaceAlwaysDrawIdleAnimation(alwaysDrawIdleAnimation)
+function aspectFurnace:setAlwaysDrawIdleAnimation(alwaysDrawIdleAnimation)
 	return self:setProperty("always_draw_idle_animation",alwaysDrawIdleAnimation)
 end
 
-function aspectFurnace:getFurnaceAnimation(animation)
+function aspectFurnace:getAnimation(animation)
 	return self:getProperty("animation",animation)
 end
 
-function aspectFurnace:setFurnaceAnimation(animation)
+function aspectFurnace:setAnimation(animation)
 	return self:setProperty("animation",animation)
 end
 
-function aspectFurnace:getFurnaceBaseProductivity(baseProductivity)
+function aspectFurnace:getBaseProductivity(baseProductivity)
 	return self:getProperty("base_productivity",baseProductivity)
 end
 
-function aspectFurnace:setFurnaceBaseProductivity(baseProductivity)
+function aspectFurnace:setBaseProductivity(baseProductivity)
 	return self:setProperty("base_productivity",baseProductivity)
 end
 
-function aspectFurnace:getFurnaceDefaultRecipeTint(defaultRecipeTint)
+function aspectFurnace:getDefaultRecipeTint(defaultRecipeTint)
 	return self:getProperty("default_recipe_tint",defaultRecipeTint)
 end
 
-function aspectFurnace:setFurnaceDefaultRecipeTint(defaultRecipeTint)
+function aspectFurnace:setDefaultRecipeTint(defaultRecipeTint)
 	return self:setProperty("default_recipe_tint",defaultRecipeTint)
 end
 
-function aspectFurnace:getFurnaceDrawEntityInfoIconBackground(drawEntityInfoIconBackground)
+function aspectFurnace:getDrawEntityInfoIconBackground(drawEntityInfoIconBackground)
 	return self:getProperty("draw_entity_info_icon_background",drawEntityInfoIconBackground)
 end
 
-function aspectFurnace:setFurnaceDrawEntityInfoIconBackground(drawEntityInfoIconBackground)
+function aspectFurnace:setDrawEntityInfoIconBackground(drawEntityInfoIconBackground)
 	return self:setProperty("draw_entity_info_icon_background",drawEntityInfoIconBackground)
 end
 
-function aspectFurnace:getFurnaceEntityInfoIconShift(entityInfoIconShift)
+function aspectFurnace:getEntityInfoIconShift(entityInfoIconShift)
 	return self:getProperty("entity_info_icon_shift",entityInfoIconShift)
 end
 
-function aspectFurnace:setFurnaceEntityInfoIconShift(entityInfoIconShift)
+function aspectFurnace:setEntityInfoIconShift(entityInfoIconShift)
 	return self:setProperty("entity_info_icon_shift",entityInfoIconShift)
 end
 
-function aspectFurnace:getFurnaceFluidBoxes(fluidBoxes)
+function aspectFurnace:getFluidBoxes(fluidBoxes)
 	return self:getProperty("fluid_boxes",fluidBoxes)
 end
 
-function aspectFurnace:setFurnaceFluidBoxes(fluidBoxes)
+function aspectFurnace:setFluidBoxes(fluidBoxes)
 	return self:setProperty("fluid_boxes",fluidBoxes)
 end
 
-function aspectFurnace:getFurnaceIdleAnimation(idleAnimation)
+function aspectFurnace:getIdleAnimation(idleAnimation)
 	return self:getProperty("idle_animation",idleAnimation)
 end
 
-function aspectFurnace:setFurnaceIdleAnimation(idleAnimation)
+function aspectFurnace:setIdleAnimation(idleAnimation)
 	return self:setProperty("idle_animation",idleAnimation)
 end
 
-function aspectFurnace:getFurnaceMatchAnimationSpeedToActivity(matchAnimationSpeedToActivity)
+function aspectFurnace:getMatchAnimationSpeedToActivity(matchAnimationSpeedToActivity)
 	return self:getProperty("match_animation_speed_to_activity",matchAnimationSpeedToActivity)
 end
 
-function aspectFurnace:setFurnaceMatchAnimationSpeedToActivity(matchAnimationSpeedToActivity)
+function aspectFurnace:setMatchAnimationSpeedToActivity(matchAnimationSpeedToActivity)
 	return self:setProperty("match_animation_speed_to_activity",matchAnimationSpeedToActivity)
 end
 
-function aspectFurnace:getFurnaceModuleSpecification(moduleSpecification)
+function aspectFurnace:getModuleSpecification(moduleSpecification)
 	return self:getProperty("module_specification",moduleSpecification)
 end
 
-function aspectFurnace:setFurnaceModuleSpecification(moduleSpecification)
+function aspectFurnace:setModuleSpecification(moduleSpecification)
 	return self:setProperty("module_specification",moduleSpecification)
 end
 
-function aspectFurnace:getFurnaceReturnIngredientsOnChange(returnIngredientsOnChange)
+function aspectFurnace:getReturnIngredientsOnChange(returnIngredientsOnChange)
 	return self:getProperty("return_ingredients_on_change",returnIngredientsOnChange)
 end
 
-function aspectFurnace:setFurnaceReturnIngredientsOnChange(returnIngredientsOnChange)
+function aspectFurnace:setReturnIngredientsOnChange(returnIngredientsOnChange)
 	return self:setProperty("return_ingredients_on_change",returnIngredientsOnChange)
 end
 
-function aspectFurnace:getFurnaceScaleEntityInfoIcon(scaleEntityInfoIcon)
+function aspectFurnace:getScaleEntityInfoIcon(scaleEntityInfoIcon)
 	return self:getProperty("scale_entity_info_icon",scaleEntityInfoIcon)
 end
 
-function aspectFurnace:setFurnaceScaleEntityInfoIcon(scaleEntityInfoIcon)
+function aspectFurnace:setScaleEntityInfoIcon(scaleEntityInfoIcon)
 	return self:setProperty("scale_entity_info_icon",scaleEntityInfoIcon)
 end
 
-function aspectFurnace:getFurnaceShiftAnimationTransitionDuration(shiftAnimationTransitionDuration)
+function aspectFurnace:getShiftAnimationTransitionDuration(shiftAnimationTransitionDuration)
 	return self:getProperty("shift_animation_transition_duration",shiftAnimationTransitionDuration)
 end
 
-function aspectFurnace:setFurnaceShiftAnimationTransitionDuration(shiftAnimationTransitionDuration)
+function aspectFurnace:setShiftAnimationTransitionDuration(shiftAnimationTransitionDuration)
 	return self:setProperty("shift_animation_transition_duration",shiftAnimationTransitionDuration)
 end
 
-function aspectFurnace:getFurnaceShiftAnimationWaypointStopDuration(shiftAnimationWaypointStopDuration)
+function aspectFurnace:getShiftAnimationWaypointStopDuration(shiftAnimationWaypointStopDuration)
 	return self:getProperty("shift_animation_waypoint_stop_duration",shiftAnimationWaypointStopDuration)
 end
 
-function aspectFurnace:setFurnaceShiftAnimationWaypointStopDuration(shiftAnimationWaypointStopDuration)
+function aspectFurnace:setShiftAnimationWaypointStopDuration(shiftAnimationWaypointStopDuration)
 	return self:setProperty("shift_animation_waypoint_stop_duration",shiftAnimationWaypointStopDuration)
 end
 
-function aspectFurnace:getFurnaceShiftAnimationWaypoints(shiftAnimationWaypoints)
+function aspectFurnace:getShiftAnimationWaypoints(shiftAnimationWaypoints)
 	return self:getProperty("shift_animation_waypoints",shiftAnimationWaypoints)
 end
 
-function aspectFurnace:setFurnaceShiftAnimationWaypoints(shiftAnimationWaypoints)
+function aspectFurnace:setShiftAnimationWaypoints(shiftAnimationWaypoints)
 	return self:setProperty("shift_animation_waypoints",shiftAnimationWaypoints)
 end
 
-function aspectFurnace:getFurnaceShowRecipeIcon(showRecipeIcon)
+function aspectFurnace:getShowRecipeIcon(showRecipeIcon)
 	return self:getProperty("show_recipe_icon",showRecipeIcon)
 end
 
-function aspectFurnace:setFurnaceShowRecipeIcon(showRecipeIcon)
+function aspectFurnace:setShowRecipeIcon(showRecipeIcon)
 	return self:setProperty("show_recipe_icon",showRecipeIcon)
 end
 
-function aspectFurnace:getFurnaceShowRecipeIconOnMap(showRecipeIconOnMap)
+function aspectFurnace:getShowRecipeIconOnMap(showRecipeIconOnMap)
 	return self:getProperty("show_recipe_icon_on_map",showRecipeIconOnMap)
 end
 
-function aspectFurnace:setFurnaceShowRecipeIconOnMap(showRecipeIconOnMap)
+function aspectFurnace:setShowRecipeIconOnMap(showRecipeIconOnMap)
 	return self:setProperty("show_recipe_icon_on_map",showRecipeIconOnMap)
 end
 
-function aspectFurnace:getFurnaceStatusColors(statusColors)
+function aspectFurnace:getStatusColors(statusColors)
 	return self:getProperty("status_colors",statusColors)
 end
 
-function aspectFurnace:setFurnaceStatusColors(statusColors)
+function aspectFurnace:setStatusColors(statusColors)
 	return self:setProperty("status_colors",statusColors)
 end
 
-function aspectFurnace:getFurnaceWorkingVisualisations(workingVisualisations)
+function aspectFurnace:getWorkingVisualisations(workingVisualisations)
 	return self:getProperty("working_visualisations",workingVisualisations)
 end
 
-function aspectFurnace:setFurnaceWorkingVisualisations(workingVisualisations)
+function aspectFurnace:setWorkingVisualisations(workingVisualisations)
 	return self:setProperty("working_visualisations",workingVisualisations)
 end
 
-function aspectFurnace:getFurnaceAlertWhenDamaged(alertWhenDamaged)
+function aspectFurnace:getAlertWhenDamaged(alertWhenDamaged)
 	return self:getProperty("alert_when_damaged",alertWhenDamaged)
 end
 
-function aspectFurnace:setFurnaceAlertWhenDamaged(alertWhenDamaged)
+function aspectFurnace:setAlertWhenDamaged(alertWhenDamaged)
 	return self:setProperty("alert_when_damaged",alertWhenDamaged)
 end
 
-function aspectFurnace:getFurnaceAttackReaction(attackReaction)
+function aspectFurnace:getAttackReaction(attackReaction)
 	return self:getProperty("attack_reaction",attackReaction)
 end
 
-function aspectFurnace:setFurnaceAttackReaction(attackReaction)
+function aspectFurnace:setAttackReaction(attackReaction)
 	return self:setProperty("attack_reaction",attackReaction)
 end
 
-function aspectFurnace:getFurnaceCorpse(corpse)
+function aspectFurnace:getCorpse(corpse)
 	return self:getProperty("corpse",corpse)
 end
 
-function aspectFurnace:setFurnaceCorpse(corpse)
+function aspectFurnace:setCorpse(corpse)
 	return self:setProperty("corpse",corpse)
 end
 
-function aspectFurnace:getFurnaceCreateGhostOnDeath(createGhostOnDeath)
+function aspectFurnace:getCreateGhostOnDeath(createGhostOnDeath)
 	return self:getProperty("create_ghost_on_death",createGhostOnDeath)
 end
 
-function aspectFurnace:setFurnaceCreateGhostOnDeath(createGhostOnDeath)
+function aspectFurnace:setCreateGhostOnDeath(createGhostOnDeath)
 	return self:setProperty("create_ghost_on_death",createGhostOnDeath)
 end
 
-function aspectFurnace:getFurnaceDamagedTriggerEffect(damagedTriggerEffect)
+function aspectFurnace:getDamagedTriggerEffect(damagedTriggerEffect)
 	return self:getProperty("damaged_trigger_effect",damagedTriggerEffect)
 end
 
-function aspectFurnace:setFurnaceDamagedTriggerEffect(damagedTriggerEffect)
+function aspectFurnace:setDamagedTriggerEffect(damagedTriggerEffect)
 	return self:setProperty("damaged_trigger_effect",damagedTriggerEffect)
 end
 
-function aspectFurnace:getFurnaceDyingExplosion(dyingExplosion)
+function aspectFurnace:getDyingExplosion(dyingExplosion)
 	return self:getProperty("dying_explosion",dyingExplosion)
 end
 
-function aspectFurnace:setFurnaceDyingExplosion(dyingExplosion)
+function aspectFurnace:setDyingExplosion(dyingExplosion)
 	return self:setProperty("dying_explosion",dyingExplosion)
 end
 
-function aspectFurnace:getFurnaceDyingTriggerEffect(dyingTriggerEffect)
+function aspectFurnace:getDyingTriggerEffect(dyingTriggerEffect)
 	return self:getProperty("dying_trigger_effect",dyingTriggerEffect)
 end
 
-function aspectFurnace:setFurnaceDyingTriggerEffect(dyingTriggerEffect)
+function aspectFurnace:setDyingTriggerEffect(dyingTriggerEffect)
 	return self:setProperty("dying_trigger_effect",dyingTriggerEffect)
 end
 
-function aspectFurnace:getFurnaceHealingPerTick(healingPerTick)
+function aspectFurnace:getHealingPerTick(healingPerTick)
 	return self:getProperty("healing_per_tick",healingPerTick)
 end
 
-function aspectFurnace:setFurnaceHealingPerTick(healingPerTick)
+function aspectFurnace:setHealingPerTick(healingPerTick)
 	return self:setProperty("healing_per_tick",healingPerTick)
 end
 
-function aspectFurnace:getFurnaceHideResistances(hideResistances)
+function aspectFurnace:getHideResistances(hideResistances)
 	return self:getProperty("hide_resistances",hideResistances)
 end
 
-function aspectFurnace:setFurnaceHideResistances(hideResistances)
+function aspectFurnace:setHideResistances(hideResistances)
 	return self:setProperty("hide_resistances",hideResistances)
 end
 
-function aspectFurnace:getFurnaceIntegrationPatch(integrationPatch)
+function aspectFurnace:getIntegrationPatch(integrationPatch)
 	return self:getProperty("integration_patch",integrationPatch)
 end
 
-function aspectFurnace:setFurnaceIntegrationPatch(integrationPatch)
+function aspectFurnace:setIntegrationPatch(integrationPatch)
 	return self:setProperty("integration_patch",integrationPatch)
 end
 
-function aspectFurnace:getFurnaceIntegrationPatchRenderLayer(integrationPatchRenderLayer)
+function aspectFurnace:getIntegrationPatchRenderLayer(integrationPatchRenderLayer)
 	return self:getProperty("integration_patch_render_layer",integrationPatchRenderLayer)
 end
 
-function aspectFurnace:setFurnaceIntegrationPatchRenderLayer(integrationPatchRenderLayer)
+function aspectFurnace:setIntegrationPatchRenderLayer(integrationPatchRenderLayer)
 	return self:setProperty("integration_patch_render_layer",integrationPatchRenderLayer)
 end
 
-function aspectFurnace:getFurnaceLoot(loot)
+function aspectFurnace:getLoot(loot)
 	return self:getProperty("loot",loot)
 end
 
-function aspectFurnace:setFurnaceLoot(loot)
+function aspectFurnace:setLoot(loot)
 	return self:setProperty("loot",loot)
 end
 
-function aspectFurnace:getFurnaceMaxHealth(maxHealth)
+function aspectFurnace:getMaxHealth(maxHealth)
 	return self:getProperty("max_health",maxHealth)
 end
 
-function aspectFurnace:setFurnaceMaxHealth(maxHealth)
+function aspectFurnace:setMaxHealth(maxHealth)
 	return self:setProperty("max_health",maxHealth)
 end
 
-function aspectFurnace:getFurnaceRandomCorpseVariation(randomCorpseVariation)
+function aspectFurnace:getRandomCorpseVariation(randomCorpseVariation)
 	return self:getProperty("random_corpse_variation",randomCorpseVariation)
 end
 
-function aspectFurnace:setFurnaceRandomCorpseVariation(randomCorpseVariation)
+function aspectFurnace:setRandomCorpseVariation(randomCorpseVariation)
 	return self:setProperty("random_corpse_variation",randomCorpseVariation)
 end
 
-function aspectFurnace:getFurnaceRepairSound(repairSound)
+function aspectFurnace:getRepairSound(repairSound)
 	return self:getProperty("repair_sound",repairSound)
 end
 
-function aspectFurnace:setFurnaceRepairSound(repairSound)
+function aspectFurnace:setRepairSound(repairSound)
 	return self:setProperty("repair_sound",repairSound)
 end
 
-function aspectFurnace:getFurnaceRepairSpeedModifier(repairSpeedModifier)
+function aspectFurnace:getRepairSpeedModifier(repairSpeedModifier)
 	return self:getProperty("repair_speed_modifier",repairSpeedModifier)
 end
 
-function aspectFurnace:setFurnaceRepairSpeedModifier(repairSpeedModifier)
+function aspectFurnace:setRepairSpeedModifier(repairSpeedModifier)
 	return self:setProperty("repair_speed_modifier",repairSpeedModifier)
 end
 
-function aspectFurnace:getFurnaceResistances(resistances)
+function aspectFurnace:getResistances(resistances)
 	return self:getProperty("resistances",resistances)
 end
 
-function aspectFurnace:setFurnaceResistances(resistances)
+function aspectFurnace:setResistances(resistances)
 	return self:setProperty("resistances",resistances)
 end
 
-function aspectFurnace:getFurnaceIcons(icons)
+function aspectFurnace:getIcons(icons)
 	return self:getProperty("icons",icons)
 end
 
-function aspectFurnace:setFurnaceIcons(icons)
+function aspectFurnace:setIcons(icons)
 	return self:setProperty("icons",icons)
 end
 
-function aspectFurnace:getFurnaceIcon(icon)
+function aspectFurnace:getIcon(icon)
 	return self:getProperty("icon",icon)
 end
 
-function aspectFurnace:setFurnaceIcon(icon)
+function aspectFurnace:setIcon(icon)
 	return self:setProperty("icon",icon)
 end
 
-function aspectFurnace:getFurnaceIconSize(iconSize)
+function aspectFurnace:getIconSize(iconSize)
 	return self:getProperty("icon_size",iconSize)
 end
 
-function aspectFurnace:setFurnaceIconSize(iconSize)
+function aspectFurnace:setIconSize(iconSize)
 	return self:setProperty("icon_size",iconSize)
 end
 
-function aspectFurnace:getFurnaceAdditionalPastableEntities(additionalPastableEntities)
+function aspectFurnace:getAdditionalPastableEntities(additionalPastableEntities)
 	return self:getProperty("additional_pastable_entities",additionalPastableEntities)
 end
 
-function aspectFurnace:setFurnaceAdditionalPastableEntities(additionalPastableEntities)
+function aspectFurnace:setAdditionalPastableEntities(additionalPastableEntities)
 	return self:setProperty("additional_pastable_entities",additionalPastableEntities)
 end
 
-function aspectFurnace:getFurnaceAlertIconScale(alertIconScale)
+function aspectFurnace:getAlertIconScale(alertIconScale)
 	return self:getProperty("alert_icon_scale",alertIconScale)
 end
 
-function aspectFurnace:setFurnaceAlertIconScale(alertIconScale)
+function aspectFurnace:setAlertIconScale(alertIconScale)
 	return self:setProperty("alert_icon_scale",alertIconScale)
 end
 
-function aspectFurnace:getFurnaceAlertIconShift(alertIconShift)
+function aspectFurnace:getAlertIconShift(alertIconShift)
 	return self:getProperty("alert_icon_shift",alertIconShift)
 end
 
-function aspectFurnace:setFurnaceAlertIconShift(alertIconShift)
+function aspectFurnace:setAlertIconShift(alertIconShift)
 	return self:setProperty("alert_icon_shift",alertIconShift)
 end
 
-function aspectFurnace:getFurnaceAllowCopyPaste(allowCopyPaste)
+function aspectFurnace:getAllowCopyPaste(allowCopyPaste)
 	return self:getProperty("allow_copy_paste",allowCopyPaste)
 end
 
-function aspectFurnace:setFurnaceAllowCopyPaste(allowCopyPaste)
+function aspectFurnace:setAllowCopyPaste(allowCopyPaste)
 	return self:setProperty("allow_copy_paste",allowCopyPaste)
 end
 
-function aspectFurnace:getFurnaceAutoplace(autoplace)
+function aspectFurnace:getAutoplace(autoplace)
 	return self:getProperty("autoplace",autoplace)
 end
 
-function aspectFurnace:setFurnaceAutoplace(autoplace)
+function aspectFurnace:setAutoplace(autoplace)
 	return self:setProperty("autoplace",autoplace)
 end
 
-function aspectFurnace:getFurnaceBuildBaseEvolutionRequirement(buildBaseEvolutionRequirement)
+function aspectFurnace:getBuildBaseEvolutionRequirement(buildBaseEvolutionRequirement)
 	return self:getProperty("build_base_evolution_requirement",buildBaseEvolutionRequirement)
 end
 
-function aspectFurnace:setFurnaceBuildBaseEvolutionRequirement(buildBaseEvolutionRequirement)
+function aspectFurnace:setBuildBaseEvolutionRequirement(buildBaseEvolutionRequirement)
 	return self:setProperty("build_base_evolution_requirement",buildBaseEvolutionRequirement)
 end
 
-function aspectFurnace:getFurnaceBuildSound(buildSound)
+function aspectFurnace:getBuildSound(buildSound)
 	return self:getProperty("build_sound",buildSound)
 end
 
-function aspectFurnace:setFurnaceBuildSound(buildSound)
+function aspectFurnace:setBuildSound(buildSound)
 	return self:setProperty("build_sound",buildSound)
 end
 
-function aspectFurnace:getFurnaceCloseSound(closeSound)
+function aspectFurnace:getCloseSound(closeSound)
 	return self:getProperty("close_sound",closeSound)
 end
 
-function aspectFurnace:setFurnaceCloseSound(closeSound)
+function aspectFurnace:setCloseSound(closeSound)
 	return self:setProperty("close_sound",closeSound)
 end
 
-function aspectFurnace:getFurnaceCollisionBox(collisionBox)
+function aspectFurnace:getCollisionBox(collisionBox)
 	return self:getProperty("collision_box",collisionBox)
 end
 
-function aspectFurnace:setFurnaceCollisionBox(collisionBox)
+function aspectFurnace:setCollisionBox(collisionBox)
 	return self:setProperty("collision_box",collisionBox)
 end
 
-function aspectFurnace:getFurnaceCollisionMask(collisionMask)
+function aspectFurnace:getCollisionMask(collisionMask)
 	return self:getProperty("collision_mask",collisionMask)
 end
 
-function aspectFurnace:setFurnaceCollisionMask(collisionMask)
+function aspectFurnace:setCollisionMask(collisionMask)
 	return self:setProperty("collision_mask",collisionMask)
 end
 
-function aspectFurnace:getFurnaceCreatedEffect(createdEffect)
+function aspectFurnace:getCreatedEffect(createdEffect)
 	return self:getProperty("created_effect",createdEffect)
 end
 
-function aspectFurnace:setFurnaceCreatedEffect(createdEffect)
+function aspectFurnace:setCreatedEffect(createdEffect)
 	return self:setProperty("created_effect",createdEffect)
 end
 
-function aspectFurnace:getFurnaceCreatedSmoke(createdSmoke)
+function aspectFurnace:getCreatedSmoke(createdSmoke)
 	return self:getProperty("created_smoke",createdSmoke)
 end
 
-function aspectFurnace:setFurnaceCreatedSmoke(createdSmoke)
+function aspectFurnace:setCreatedSmoke(createdSmoke)
 	return self:setProperty("created_smoke",createdSmoke)
 end
 
-function aspectFurnace:getFurnaceDrawingBox(drawingBox)
+function aspectFurnace:getDrawingBox(drawingBox)
 	return self:getProperty("drawing_box",drawingBox)
 end
 
-function aspectFurnace:setFurnaceDrawingBox(drawingBox)
+function aspectFurnace:setDrawingBox(drawingBox)
 	return self:setProperty("drawing_box",drawingBox)
 end
 
-function aspectFurnace:getFurnaceEmissionsPerSecond(emissionsPerSecond)
+function aspectFurnace:getEmissionsPerSecond(emissionsPerSecond)
 	return self:getProperty("emissions_per_second",emissionsPerSecond)
 end
 
-function aspectFurnace:setFurnaceEmissionsPerSecond(emissionsPerSecond)
+function aspectFurnace:setEmissionsPerSecond(emissionsPerSecond)
 	return self:setProperty("emissions_per_second",emissionsPerSecond)
 end
 
-function aspectFurnace:getFurnaceEnemyMapColor(enemyMapColor)
+function aspectFurnace:getEnemyMapColor(enemyMapColor)
 	return self:getProperty("enemy_map_color",enemyMapColor)
 end
 
-function aspectFurnace:setFurnaceEnemyMapColor(enemyMapColor)
+function aspectFurnace:setEnemyMapColor(enemyMapColor)
 	return self:setProperty("enemy_map_color",enemyMapColor)
 end
 
-function aspectFurnace:getFurnaceFastReplaceableGroup(fastReplaceableGroup)
+function aspectFurnace:getFastReplaceableGroup(fastReplaceableGroup)
 	return self:getProperty("fast_replaceable_group",fastReplaceableGroup)
 end
 
-function aspectFurnace:setFurnaceFastReplaceableGroup(fastReplaceableGroup)
+function aspectFurnace:setFastReplaceableGroup(fastReplaceableGroup)
 	return self:setProperty("fast_replaceable_group",fastReplaceableGroup)
 end
 
-function aspectFurnace:getFurnaceFlags(flags)
+function aspectFurnace:getFlags(flags)
 	return self:getProperty("flags",flags)
 end
 
-function aspectFurnace:setFurnaceFlags(flags)
+function aspectFurnace:setFlags(flags)
 	return self:setProperty("flags",flags)
 end
 
-function aspectFurnace:getFurnaceFriendlyMapColor(friendlyMapColor)
+function aspectFurnace:getFriendlyMapColor(friendlyMapColor)
 	return self:getProperty("friendly_map_color",friendlyMapColor)
 end
 
-function aspectFurnace:setFurnaceFriendlyMapColor(friendlyMapColor)
+function aspectFurnace:setFriendlyMapColor(friendlyMapColor)
 	return self:setProperty("friendly_map_color",friendlyMapColor)
 end
 
-function aspectFurnace:getFurnaceHitVisualizationBox(hitVisualizationBox)
+function aspectFurnace:getHitVisualizationBox(hitVisualizationBox)
 	return self:getProperty("hit_visualization_box",hitVisualizationBox)
 end
 
-function aspectFurnace:setFurnaceHitVisualizationBox(hitVisualizationBox)
+function aspectFurnace:setHitVisualizationBox(hitVisualizationBox)
 	return self:setProperty("hit_visualization_box",hitVisualizationBox)
 end
 
-function aspectFurnace:getFurnaceMapColor(mapColor)
+function aspectFurnace:getMapColor(mapColor)
 	return self:getProperty("map_color",mapColor)
 end
 
-function aspectFurnace:setFurnaceMapColor(mapColor)
+function aspectFurnace:setMapColor(mapColor)
 	return self:setProperty("map_color",mapColor)
 end
 
-function aspectFurnace:getFurnaceMapGeneratorBoundingBox(mapGeneratorBoundingBox)
+function aspectFurnace:getMapGeneratorBoundingBox(mapGeneratorBoundingBox)
 	return self:getProperty("map_generator_bounding_box",mapGeneratorBoundingBox)
 end
 
-function aspectFurnace:setFurnaceMapGeneratorBoundingBox(mapGeneratorBoundingBox)
+function aspectFurnace:setMapGeneratorBoundingBox(mapGeneratorBoundingBox)
 	return self:setProperty("map_generator_bounding_box",mapGeneratorBoundingBox)
 end
 
-function aspectFurnace:getFurnaceMinable(minable)
+function aspectFurnace:getMinable(minable)
 	return self:getProperty("minable",minable)
 end
 
-function aspectFurnace:setFurnaceMinable(minable)
+function aspectFurnace:setMinable(minable)
 	return self:setProperty("minable",minable)
 end
 
-function aspectFurnace:getFurnaceMinedSound(minedSound)
+function aspectFurnace:getMinedSound(minedSound)
 	return self:getProperty("mined_sound",minedSound)
 end
 
-function aspectFurnace:setFurnaceMinedSound(minedSound)
+function aspectFurnace:setMinedSound(minedSound)
 	return self:setProperty("mined_sound",minedSound)
 end
 
-function aspectFurnace:getFurnaceMiningSound(miningSound)
+function aspectFurnace:getMiningSound(miningSound)
 	return self:getProperty("mining_sound",miningSound)
 end
 
-function aspectFurnace:setFurnaceMiningSound(miningSound)
+function aspectFurnace:setMiningSound(miningSound)
 	return self:setProperty("mining_sound",miningSound)
 end
 
-function aspectFurnace:getFurnaceNextUpgrade(nextUpgrade)
+function aspectFurnace:getNextUpgrade(nextUpgrade)
 	return self:getProperty("next_upgrade",nextUpgrade)
 end
 
-function aspectFurnace:setFurnaceNextUpgrade(nextUpgrade)
+function aspectFurnace:setNextUpgrade(nextUpgrade)
 	return self:setProperty("next_upgrade",nextUpgrade)
 end
 
-function aspectFurnace:getFurnaceOpenSound(openSound)
+function aspectFurnace:getOpenSound(openSound)
 	return self:getProperty("open_sound",openSound)
 end
 
-function aspectFurnace:setFurnaceOpenSound(openSound)
+function aspectFurnace:setOpenSound(openSound)
 	return self:setProperty("open_sound",openSound)
 end
 
-function aspectFurnace:getFurnacePlaceableBy(placeableBy)
+function aspectFurnace:getPlaceableBy(placeableBy)
 	return self:getProperty("placeable_by",placeableBy)
 end
 
-function aspectFurnace:setFurnacePlaceableBy(placeableBy)
+function aspectFurnace:setPlaceableBy(placeableBy)
 	return self:setProperty("placeable_by",placeableBy)
 end
 
-function aspectFurnace:getFurnaceRadiusVisualisationSpecification(radiusVisualisationSpecification)
+function aspectFurnace:getRadiusVisualisationSpecification(radiusVisualisationSpecification)
 	return self:getProperty("radius_visualisation_specification",radiusVisualisationSpecification)
 end
 
-function aspectFurnace:setFurnaceRadiusVisualisationSpecification(radiusVisualisationSpecification)
+function aspectFurnace:setRadiusVisualisationSpecification(radiusVisualisationSpecification)
 	return self:setProperty("radius_visualisation_specification",radiusVisualisationSpecification)
 end
 
-function aspectFurnace:getFurnaceRemainsWhenMined(remainsWhenMined)
+function aspectFurnace:getRemainsWhenMined(remainsWhenMined)
 	return self:getProperty("remains_when_mined",remainsWhenMined)
 end
 
-function aspectFurnace:setFurnaceRemainsWhenMined(remainsWhenMined)
+function aspectFurnace:setRemainsWhenMined(remainsWhenMined)
 	return self:setProperty("remains_when_mined",remainsWhenMined)
 end
 
-function aspectFurnace:getFurnaceRemoveDecoratives(removeDecoratives)
+function aspectFurnace:getRemoveDecoratives(removeDecoratives)
 	return self:getProperty("remove_decoratives",removeDecoratives)
 end
 
-function aspectFurnace:setFurnaceRemoveDecoratives(removeDecoratives)
+function aspectFurnace:setRemoveDecoratives(removeDecoratives)
 	return self:setProperty("remove_decoratives",removeDecoratives)
 end
 
-function aspectFurnace:getFurnaceRotatedSound(rotatedSound)
+function aspectFurnace:getRotatedSound(rotatedSound)
 	return self:getProperty("rotated_sound",rotatedSound)
 end
 
-function aspectFurnace:setFurnaceRotatedSound(rotatedSound)
+function aspectFurnace:setRotatedSound(rotatedSound)
 	return self:setProperty("rotated_sound",rotatedSound)
 end
 
-function aspectFurnace:getFurnaceSelectableInGame(selectableInGame)
+function aspectFurnace:getSelectableInGame(selectableInGame)
 	return self:getProperty("selectable_in_game",selectableInGame)
 end
 
-function aspectFurnace:setFurnaceSelectableInGame(selectableInGame)
+function aspectFurnace:setSelectableInGame(selectableInGame)
 	return self:setProperty("selectable_in_game",selectableInGame)
 end
 
-function aspectFurnace:getFurnaceSelectionBox(selectionBox)
+function aspectFurnace:getSelectionBox(selectionBox)
 	return self:getProperty("selection_box",selectionBox)
 end
 
-function aspectFurnace:setFurnaceSelectionBox(selectionBox)
+function aspectFurnace:setSelectionBox(selectionBox)
 	return self:setProperty("selection_box",selectionBox)
 end
 
-function aspectFurnace:getFurnaceSelectionPriority(selectionPriority)
+function aspectFurnace:getSelectionPriority(selectionPriority)
 	return self:getProperty("selection_priority",selectionPriority)
 end
 
-function aspectFurnace:setFurnaceSelectionPriority(selectionPriority)
+function aspectFurnace:setSelectionPriority(selectionPriority)
 	return self:setProperty("selection_priority",selectionPriority)
 end
 
-function aspectFurnace:getFurnaceShootingCursorSize(shootingCursorSize)
+function aspectFurnace:getShootingCursorSize(shootingCursorSize)
 	return self:getProperty("shooting_cursor_size",shootingCursorSize)
 end
 
-function aspectFurnace:setFurnaceShootingCursorSize(shootingCursorSize)
+function aspectFurnace:setShootingCursorSize(shootingCursorSize)
 	return self:setProperty("shooting_cursor_size",shootingCursorSize)
 end
 
-function aspectFurnace:getFurnaceStickerBox(stickerBox)
+function aspectFurnace:getStickerBox(stickerBox)
 	return self:getProperty("sticker_box",stickerBox)
 end
 
-function aspectFurnace:setFurnaceStickerBox(stickerBox)
+function aspectFurnace:setStickerBox(stickerBox)
 	return self:setProperty("sticker_box",stickerBox)
 end
 
-function aspectFurnace:getFurnaceSubgroup(subgroup)
+function aspectFurnace:getSubgroup(subgroup)
 	return self:getProperty("subgroup",subgroup)
 end
 
-function aspectFurnace:setFurnaceSubgroup(subgroup)
+function aspectFurnace:setSubgroup(subgroup)
 	return self:setProperty("subgroup",subgroup)
 end
 
-function aspectFurnace:getFurnaceTileHeight(tileHeight)
+function aspectFurnace:getTileHeight(tileHeight)
 	return self:getProperty("tile_height",tileHeight)
 end
 
-function aspectFurnace:setFurnaceTileHeight(tileHeight)
+function aspectFurnace:setTileHeight(tileHeight)
 	return self:setProperty("tile_height",tileHeight)
 end
 
-function aspectFurnace:getFurnaceTileWidth(tileWidth)
+function aspectFurnace:getTileWidth(tileWidth)
 	return self:getProperty("tile_width",tileWidth)
 end
 
-function aspectFurnace:setFurnaceTileWidth(tileWidth)
+function aspectFurnace:setTileWidth(tileWidth)
 	return self:setProperty("tile_width",tileWidth)
 end
 
-function aspectFurnace:getFurnaceTriggerTargetMask(triggerTargetMask)
+function aspectFurnace:getTriggerTargetMask(triggerTargetMask)
 	return self:getProperty("trigger_target_mask",triggerTargetMask)
 end
 
-function aspectFurnace:setFurnaceTriggerTargetMask(triggerTargetMask)
+function aspectFurnace:setTriggerTargetMask(triggerTargetMask)
 	return self:setProperty("trigger_target_mask",triggerTargetMask)
 end
 
-function aspectFurnace:getFurnaceVehicleImpactSound(vehicleImpactSound)
+function aspectFurnace:getVehicleImpactSound(vehicleImpactSound)
 	return self:getProperty("vehicle_impact_sound",vehicleImpactSound)
 end
 
-function aspectFurnace:setFurnaceVehicleImpactSound(vehicleImpactSound)
+function aspectFurnace:setVehicleImpactSound(vehicleImpactSound)
 	return self:setProperty("vehicle_impact_sound",vehicleImpactSound)
 end
 
-function aspectFurnace:getFurnaceWaterReflection(waterReflection)
+function aspectFurnace:getWaterReflection(waterReflection)
 	return self:getProperty("water_reflection",waterReflection)
 end
 
-function aspectFurnace:setFurnaceWaterReflection(waterReflection)
+function aspectFurnace:setWaterReflection(waterReflection)
 	return self:setProperty("water_reflection",waterReflection)
 end
 
-function aspectFurnace:getFurnaceWorkingSound(workingSound)
+function aspectFurnace:getWorkingSound(workingSound)
 	return self:getProperty("working_sound",workingSound)
 end
 
-function aspectFurnace:setFurnaceWorkingSound(workingSound)
+function aspectFurnace:setWorkingSound(workingSound)
 	return self:setProperty("working_sound",workingSound)
 end
 
-function aspectFurnace:getFurnaceName(name)
+function aspectFurnace:getName(name)
 	return self:getProperty("name",name)
 end
 
-function aspectFurnace:setFurnaceName(name)
+function aspectFurnace:setName(name)
 	return self:setProperty("name",name)
 end
 
-function aspectFurnace:getFurnaceType(type)
+function aspectFurnace:getType(type)
 	return self:getProperty("type",type)
 end
 
-function aspectFurnace:setFurnaceType(type)
+function aspectFurnace:setType(type)
 	return self:setProperty("type",type)
 end
 
-function aspectFurnace:getFurnaceLocalisedDescription(localisedDescription)
+function aspectFurnace:getLocalisedDescription(localisedDescription)
 	return self:getProperty("localised_description",localisedDescription)
 end
 
-function aspectFurnace:setFurnaceLocalisedDescription(localisedDescription)
+function aspectFurnace:setLocalisedDescription(localisedDescription)
 	return self:setProperty("localised_description",localisedDescription)
 end
 
-function aspectFurnace:getFurnaceLocalisedName(localisedName)
+function aspectFurnace:getLocalisedName(localisedName)
 	return self:getProperty("localised_name",localisedName)
 end
 
-function aspectFurnace:setFurnaceLocalisedName(localisedName)
+function aspectFurnace:setLocalisedName(localisedName)
 	return self:setProperty("localised_name",localisedName)
 end
 
-function aspectFurnace:getFurnaceOrder(order)
+function aspectFurnace:getOrder(order)
 	return self:getProperty("order",order)
 end
 
-function aspectFurnace:setFurnaceOrder(order)
+function aspectFurnace:setOrder(order)
 	return self:setProperty("order",order)
 end
 
