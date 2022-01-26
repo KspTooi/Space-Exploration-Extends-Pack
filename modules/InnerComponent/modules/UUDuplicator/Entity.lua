@@ -8,8 +8,8 @@ aspectService.create(TypeEnum.recipeCategory,db.forName("uu-duplicator-category"
 
 
 
-aspectConverter.toAssemblingMachine(aspectService.create(TypeEnum.assemblingMachine)
-        
+aspectConverter.toAssemblingMachine(aspectService.create(TypeEnum.assemblingMachine))
+
         :setName(db.forName("uu-duplicator"))
         :setEntityCollisionMask(ConstEnum.collisionMaskAllowInGroundAndSpace)
         :setAllowInSpace(true)
