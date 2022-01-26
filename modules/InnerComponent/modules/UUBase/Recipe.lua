@@ -20,15 +20,18 @@ local rst = {
 crafting_machine_tint = { primary = {r=57,g=15,b=43}, secondary = {r=57,g=15,b=43}, tertiary = {r=57,g=15,b=43}, quaternary = {r=57,g=15,b=43}}
 
 
-aspectService.forRecipe(aspectService.create(TypeEnum.recipe))
+
+local object = aspectService.create(TypeEnum.recipe)
+
+aspectConverter.toRecipe(object)
+
         :setName(db.forName("uu-matter-to-fluid"))
-        :setRecipeName(db.forName("uu-matter-to-fluid"))
-        :setRecipeIcon(db.forRes("UUBase/res/hr-fluid-uu-recipe.png"))
-        :setRecipeIconSize(64)
-        :setRecipeIngredients(ingredients:build())
-        :setRecipeResults(rst)
-        :setRecipeCategory(RecipeCategoryEnum.chemistry)
-        :setRecipeSubgroup(ItemSubgroupEnum.fluidRecipes)
-        :setRecipeCraftingMachineTint(crafting_machine_tint)
-        :setRecipeEnergyRequired(0.6)
+        :setIcon(db.forRes("UUBase/res/hr-fluid-uu-recipe.png"))
+        :setIconSize(64)
+        :setIngredients(ingredients:build())
+        :setResult(rst)
+        :setCategory(RecipeCategoryEnum.chemistry)
+        :setSubgroup(ItemSubgroupEnum.fluidRecipes)
+        :setCraftingMachineTint(crafting_machine_tint)
+        :setEnergyRequired(0.6)
         :insertInto()
