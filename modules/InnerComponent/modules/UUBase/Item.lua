@@ -5,7 +5,7 @@
 ---
 
 aspectService.get(TypeEnum.fluid,FluidEnum.water)
-        :setName(ConstEnum.modPrefix.."fluid-uu-matter")
+        :setName(db.forName("fluid-uu-matter"))
         :setItemIcon(ConstEnum.modulesPath.."UUBase/res/hr-fluid-uu.png")
         :setFluidHeatCapacity(nil)
         :setFluidGasTemperature(nil)
@@ -16,7 +16,7 @@ aspectService.get(TypeEnum.fluid,FluidEnum.water)
         :insertInto()
 
         :getSame(FluidEnum.water)
-        :setName(ConstEnum.modPrefix.."fluid-uu-amplifier")
+        :setName(db.forName("fluid-uu-amplifier"))
         :setItemIcon(ConstEnum.modulesPath.."UUBase/res/hr-fluid-uu-amplifier.png")
         :setFluidHeatCapacity(nil)
         :setFluidGasTemperature(nil)
@@ -26,7 +26,7 @@ aspectService.get(TypeEnum.fluid,FluidEnum.water)
         :setFluidMaxTemperature(-273)
         :insertInto()
 
-aspectService.create(TypeEnum.item,ConstEnum.modPrefix.."uu-matter")
+aspectService.create(TypeEnum.item,db.forName("uu-matter"))
         :setItemStackSize(500)
         :setItemIcon(ConstEnum.modulesPath.."UUBase/res/hr-uu-matter.png")
         :setItemIconSize(32)
