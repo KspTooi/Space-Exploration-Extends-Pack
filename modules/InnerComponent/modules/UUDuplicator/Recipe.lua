@@ -13,7 +13,8 @@ local duplicateResult = {
 
 local UUFluidToMaterial = {
 
-    {name = db.forName("uu-matter") , amount = 10 , result = duplicateResult },
+    { type=TypeEnum.item , name = db.forName("uu-matter") , amount = 10 , result = duplicateResult },
+    { type=TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 10 , result = duplicateResult },
 
 }
 
@@ -21,7 +22,7 @@ local UUFluidToMaterial = {
 
 for i,v in pairs(UUFluidToMaterial) do
 
-    local ingredients = db.buildIngredients(TypeEnum.item , v.name , v.amount):build()
+    local ingredients = db.buildIngredients(v.type , v.name , v.amount):build()
 
     aspectService.create(TypeEnum.recipe,db.forName("uu-duplicate-"..v.name))
                  :setRecipeCategory(db.forName("uu-duplicator-category"))
