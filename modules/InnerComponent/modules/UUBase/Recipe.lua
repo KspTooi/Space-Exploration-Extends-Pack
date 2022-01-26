@@ -3,3 +3,32 @@
 --- Created by KspTooi.
 --- DateTime: 2022/1/24 14:00
 ---
+
+
+local ingredients = db.buildIngredients(TypeEnum.item,db.forName("uu-matter"),1)
+
+local rst = {
+    {
+        type = TypeEnum.fluid,
+        name = db.forName("fluid-uu-matter"),
+        amount = 10
+    }
+
+}
+
+
+crafting_machine_tint = { primary = {r=57,g=15,b=43}, secondary = {r=57,g=15,b=43}, tertiary = {r=57,g=15,b=43}, quaternary = {r=57,g=15,b=43}}
+
+
+aspectService.forRecipe(aspectService.create(TypeEnum.recipe))
+        :setName(db.forName("uu-matter-to-fluid"))
+        :setRecipeName(db.forName("uu-matter-to-fluid"))
+        :setRecipeIcon(db.forRes("UUBase/res/hr-fluid-uu-recipe.png"))
+        :setRecipeIconSize(64)
+        :setRecipeIngredients(ingredients:build())
+        :setRecipeResults(rst)
+        :setRecipeCategory(RecipeCategoryEnum.chemistry)
+        :setRecipeSubgroup(ItemSubgroupEnum.fluidRecipes)
+        :setRecipeCraftingMachineTint(crafting_machine_tint)
+        :setRecipeEnergyRequired(0.6)
+        :insertInto()

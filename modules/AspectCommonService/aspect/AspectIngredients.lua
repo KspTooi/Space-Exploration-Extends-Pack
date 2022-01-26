@@ -13,6 +13,10 @@ function aspectIngredients.create(luaObject)
     return aspectIngredients;
 end
 
+function aspectIngredients:build()
+    return self.luaObject
+end
+
 ----静态内部操作方法 ----- 结束 -----<<<<
 
 

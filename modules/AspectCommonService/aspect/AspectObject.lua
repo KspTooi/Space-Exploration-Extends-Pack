@@ -8,7 +8,6 @@ local aspectObject = {}
 
 
 ----静态内部操作方法 ----- 开始----->>>>
-
 function aspectObject.create(luaObject)
     aspectObject.luaObject = luaObject
     return aspectObject;
@@ -162,7 +161,11 @@ function aspectObject:isNotEmpty()
     return false
 end
 
-
+--从其他AspectObject转入
+function aspectObject:import(object)
+    self:setLuaObject(object)
+    return self;
+end
 ----静态内部操作方法 ----- 结束 -----<<<<
 
 
@@ -255,6 +258,10 @@ function aspectObject:setEntityEnergyUsage(energyUsage)
     return self:setProperty("energy_usage",energyUsage)
 end
 
+function aspectObject:setEntityEnergySource(energySource)
+    return self:setProperty("energy_source",energySource)
+end
+
 function aspectObject:setEntityCraftSpeed(craftSpeed)
     return self:setProperty("crafting_speed",craftSpeed)
 end
@@ -263,6 +270,9 @@ function aspectObject:setEntityModuleSpecification(moduleSpecification)
     return self:setProperty("module_specification",moduleSpecification)
 end
 
+function aspectObject:setEntityAllowedEffects(allowedEffects)
+    return self:setProperty("allowed_effects",allowedEffects)
+end
 
 function aspectObject:setEntityCollisionMask(collisionMask)
     return self:setProperty("collision_mask",collisionMask)
@@ -293,6 +303,11 @@ function aspectObject:setEntityCraftingCategories(craftingCategories)
     return self:setProperty("crafting_categories",craftingCategories)
 end
 
+function aspectObject:setEntityMinable(minable)
+    return self:setProperty("minable",minable)
+end
+
+
 
 
 ---- 实体操作方法 ----- 结束 -----<<<<
@@ -314,7 +329,22 @@ function aspectObject:setRecipeCategory(category)
     return self:setProperty("category",category)
 end
 
+function aspectObject:setRecipeIcon(icon)
+    return self:setProperty("icon",icon)
+end
+
+function aspectObject:setRecipeIconSize(iconSize)
+    return self:setProperty("icon_size",iconSize)
+end
+
+function aspectObject:getRecipeIngredients(ingredients)
+    return self:getProperty(ingredients,ingredients)
+end
+
+
+
 ---- 合成表操作方法 ----- 结束 -----<<<<
+
 
 
 

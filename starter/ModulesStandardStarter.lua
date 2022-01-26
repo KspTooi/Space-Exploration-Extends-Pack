@@ -10,7 +10,8 @@ require("enums.TypeEnum")
 require("enums.ItemEnum")
 require("enums.ToolEnum")
 require("enums.FluidEnum")
-
+require("enums.RecipeCategoryEnum")
+require("enums.SubgroupEnum")
 
 --UU液体
 require("modules.InnerComponent.modules.UUBase.Entity")
@@ -24,4 +25,10 @@ require("modules.InnerComponent.modules.UUMatterFabricator.Entity")
 require("modules.InnerComponent.modules.UUMatterFabricator.Item")
 require("modules.InnerComponent.modules.UUMatterFabricator.Recipe")
 require("modules.InnerComponent.modules.UUMatterFabricator.Technology")
+
+--UU物质复制机
+require("modules.InnerComponent.modules.UUDuplicator.Entity")
+require("modules.InnerComponent.modules.UUDuplicator.Item")
+require("modules.InnerComponent.modules.UUDuplicator.Recipe")
+require("modules.InnerComponent.modules.UUDuplicator.Technology")
 
