@@ -6,7 +6,7 @@
 
 ConstEnum = {}
 
-ConstEnum.modDisplayName = "ksptooi-server-commons-preprocess"
+ConstEnum.modDisplayName = "Space-Exploration-Extends-Pack"
 
 ---基本参数
 ConstEnum.modPrefix = "kscp-"
@@ -20,7 +20,7 @@ ConstEnum.modAlias1 = "SpaceExplorationExtendsPack UU-Industrial"
 ConstEnum.modAlias2 = "UU-Industrial"
 
 
-ConstEnum.version = "1.4-M"
+ConstEnum.version = "1.4-P"
 ConstEnum.ctx = "KspTooi"
 
 ConstEnum.kw = "kW"
