@@ -15,26 +15,27 @@ local uuGenerateResult = {
 
 local oreToUUMatter = {
 
-    { name = ItemEnum.ironOre , amount = 4 , result = uuGenerateResult},
-    { name = ItemEnum.copperOre , amount = 4 , result = uuGenerateResult},
-    { name = ItemEnum.coal , amount = 5 , result = uuGenerateResult},
-    { name = ItemEnum.stone , amount = 6 , result = uuGenerateResult},
-    { name = ItemEnum.uraniumOre , amount = 4 , result = uuGenerateResult}
-
+    { type = TypeEnum.item, name = ItemEnum.ironOre , amount = 4 , result = uuGenerateResult},
+    { type = TypeEnum.item, name = ItemEnum.copperOre , amount = 4 , result = uuGenerateResult},
+    { type = TypeEnum.item, name = ItemEnum.coal , amount = 5 , result = uuGenerateResult},
+    { type = TypeEnum.item, name = ItemEnum.stone , amount = 6 , result = uuGenerateResult},
+    { type = TypeEnum.item, name = ItemEnum.uraniumOre , amount = 4 , result = uuGenerateResult},
+    --太空探索
+    { type = TypeEnum.item, name = "se-beryllium-ingot" , amount = 4 , result = uuGenerateResult},
+    { type = TypeEnum.item, name = "se-holmium-ingot" , amount = 4 , result = uuGenerateResult},
+    { type = TypeEnum.item, name = "se-iridium-ingot" , amount = 4 , result = uuGenerateResult},
 }
-
-
 
 for i,v in pairs(oreToUUMatter) do
 
     local ingredients = db.buildIngredients(TypeEnum.item , v.name , v.amount):build()
-
-    aspectService.create(TypeEnum.recipe,db.forName("uu-generate-"..v.name))
-            :setRecipeCategory(db.forName("uu-fabricator-category"))
-            :setRecipeResults(v.result)
-            :setRecipeIngredients(ingredients)
-            :insertInto()
-
+    if aspectService.get(v.type,v.name):isNotEmpty() then
+        aspectService.create(TypeEnum.recipe,db.forName("uu-generate-"..v.name))
+                     :setRecipeCategory(db.forName("uu-fabricator-category"))
+                     :setRecipeResults(v.result)
+                     :setRecipeIngredients(ingredients)
+                     :insertInto()
+    end
 end
 
 
