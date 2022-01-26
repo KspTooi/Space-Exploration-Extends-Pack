@@ -24,10 +24,16 @@ for i,v in pairs(UUFluidToMaterial) do
 
     local ingredients = db.buildIngredients(v.type , v.name , v.amount):build()
 
-    aspectService.create(TypeEnum.recipe,db.forName("uu-duplicate-"..v.name))
-                 :setRecipeCategory(db.forName("uu-duplicator-category"))
-                 :setRecipeResults(v.result)
-                 :setRecipeIngredients(ingredients)
-                 :insertInto()
+
+    if aspectService.get(v.type,v.name):isNotEmpty() then
+
+        aspectService.create(TypeEnum.recipe,db.forName("uu-duplicate-"..v.name))
+                     :setRecipeCategory(db.forName("uu-duplicator-category"))
+                     :setRecipeResults(v.result)
+                     :setRecipeIngredients(ingredients)
+                     :insertInto()
+
+    end
+
 
 end
