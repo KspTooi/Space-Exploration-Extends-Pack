@@ -13,7 +13,6 @@ local rst = {
         name = db.forName("fluid-uu-matter"),
         amount = 10
     }
-
 }
 
 
@@ -29,7 +28,7 @@ aspectConverter.toRecipe(object)
         :setIcon(db.forRes("UUBase/res/hr-fluid-uu-recipe.png"))
         :setIconSize(64)
         :setIngredients(ingredients:build())
-        :setResult(rst)
+        :setResults(rst)
         :setCategory(RecipeCategoryEnum.chemistry)
         :setSubgroup(ItemSubgroupEnum.fluidRecipes)
         :setCraftingMachineTint(crafting_machine_tint)
