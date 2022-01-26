@@ -37,3 +37,5 @@ end
 function aspectConverter:toFurnace(input)
     return aspectFurnace:import(input)
 end
+
+return aspectConverter
