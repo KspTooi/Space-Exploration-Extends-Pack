@@ -22,19 +22,19 @@ function aspectConverter.toRecipe(input)
     return aspectRecipe:import(input)
 end
 
-function aspectConverter:toEntity(input)
+function aspectConverter.toEntity(input)
     return aspectEntity:import(input)
 end
 
-function aspectConverter:toTechnology(input)
+function aspectConverter.toTechnology(input)
     return aspectTechnology:import(input)
 end
 
-function aspectConverter:toAssemblingMachine(input)
+function aspectConverter.toAssemblingMachine(input)
     return aspectAssemblingMachine:import(input)
 end
 
-function aspectConverter:toFurnace(input)
+function aspectConverter.toFurnace(input)
     return aspectFurnace:import(input)
 end
 
