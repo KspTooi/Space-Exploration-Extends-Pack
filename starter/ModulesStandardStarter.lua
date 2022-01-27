@@ -38,7 +38,7 @@ local function loaderForModules(defines)
     for i,v in pairs(modulesDefine) do
 
         for i1,init in pairs(modulesInitConfig) do
-            require(v.packName.."."..init)
+            require(v.packName.."/"..init)
         end
 
     end
