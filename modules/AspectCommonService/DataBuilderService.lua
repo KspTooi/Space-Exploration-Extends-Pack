@@ -48,5 +48,13 @@ function db.buildIngredients(type,name,amount,catalystAmount)
 end
 
 
+function db.forInnerModules(modules)
+    return ConstEnum.modulesPath..modules
+end
+
+function db.forSupportModules(modules)
+    return ConstEnum.supportModulesPath..modules
+end
+
 
 return db
