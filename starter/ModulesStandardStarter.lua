@@ -14,11 +14,45 @@ require("enums.RecipeCategoryEnum")
 require("enums.SubgroupEnum")
 require("enums.ExplosionEnum")
 
+
+---模块加载顺序
+local modulesInitConfig = {
+    "Entity","Item","Recipe","Technology"
+}
+
+
+---模块定义
+local modulesDefine = {
+
+    { name = "UUBase" , desc = "UU液体基础" ,  packName = db.forInnerModules("UUBase") }
+
+}
+
+
+---模块加载
+local function loaderForModules(defines)
+
+    for i,v in pairs(modulesDefine) do
+
+        for i1,init in pairs(modulesInitConfig) do
+            require(v.packName..init)
+        end
+
+    end
+
+end
+
+
+loaderForModules(modulesDefine)
+
+
+
+
 --UU液体
-require("modules.InnerComponent.modules.UUBase.Entity")
+--[[require("modules.InnerComponent.modules.UUBase.Entity")
 require("modules.InnerComponent.modules.UUBase.Item")
 require("modules.InnerComponent.modules.UUBase.Recipe")
-require("modules.InnerComponent.modules.UUBase.Technology")
+require("modules.InnerComponent.modules.UUBase.Technology")]]
 
 
 --UU物质生成机
@@ -33,3 +67,8 @@ require("modules.InnerComponent.modules.UUDuplicator.Item")
 require("modules.InnerComponent.modules.UUDuplicator.Recipe")
 require("modules.InnerComponent.modules.UUDuplicator.Technology")
 
+--4号组装机
+require("modules.InnerComponent.modules.Entity")
+require("modules.InnerComponent.modules.Item")
+require("modules.InnerComponent.modules.Recipe")
+require("modules.InnerComponent.modules.Technology")
