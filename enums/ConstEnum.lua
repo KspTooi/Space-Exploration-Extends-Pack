@@ -12,6 +12,7 @@ ConstEnum.modDisplayName = "Space-Exploration-Extends-Pack"
 ConstEnum.modPrefix = "kscp-"
 ConstEnum.modRefName = "__ksptooi-server-commons-preprocess__"
 ConstEnum.modulesPath = ConstEnum.modRefName.."/modules/InnerComponent/modules/"
+ConstEnum.supportModulesPath = ConstEnum.modRefName.."/modules/SupportComponent/"
 ---名称参数结束
 
 
