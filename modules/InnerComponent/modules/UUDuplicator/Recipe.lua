@@ -6,36 +6,148 @@
 
 
 
-local duplicateResult = {
-    {type = TypeEnum.item, name = ConstEnum.modPrefix.."uu-matter", amount = 1, catalyst_amount = 1}
-    --原版材料
-    { type=TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 10 , result = duplicateResult },
+aspectService.create(TypeEnum.itemGroup)
+        :setName(db.forName("uu-duplicator-item-group"))
+        :setItemIcon(db.forRes("UUBase/res/hr-fluid-uu-recipe.png"))
+        :setItemIconSize(64)
+        :insertInto()
+
+
+aspectService.create(TypeEnum.itemSubgroup)
+        :setName(db.forName("uu-duplicate-subgroup"))
+        :setProperty("group",db.forName("uu-duplicator-item-group"))
+        :insertInto()
+
+
+local duplicatorRecipe = {
+
+    {
+        name = "uu-to-iron-plate",
+        desc = "转换为铁板",
+
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 10 }
+        },
+        output = {
+            { type = TypeEnum.item , name = ItemEnum.ironPlate , amount = 4 }
+        },
+    },
+
+    {
+        name = "uu-to-steel-plate",
+        desc = "转换为钢板",
+
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 25 }
+        },
+        output = {
+            { type = TypeEnum.item , name = ItemEnum.steelPlate , amount = 2 }
+        },
+    },
+
+    {
+        name = "uu-to-copper-plate",
+        desc = "转换为铜板",
+
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 10 }
+        },
+        output = {
+            { type = TypeEnum.item , name = ItemEnum.copperPlate , amount = 4 }
+        },
+    },
+
+    {
+        name = "uu-to-stone",
+        desc = "转换为石头",
+
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 10 }
+        },
+        output = {
+            { type = TypeEnum.item , name = ItemEnum.stone , amount = 4 }
+        },
+    },
+
+    {
+        name = "uu-to-stone-brick",
+        desc = "转换为石砖",
+
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 10 }
+        },
+        output = {
+            { type = TypeEnum.item , name = ItemEnum.stoneBrick , amount = 3 }
+        },
+    },
+
+    {
+        name = "uu-to-coal",
+        desc = "转换为煤矿",
+
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 10 }
+        },
+        output = {
+            { type = TypeEnum.item , name = ItemEnum.coal , amount = 4 }
+        },
+    },
+
+    {
+        name = "uu-to-water",
+        desc = "转换为水",
+
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 10 }
+        },
+        output = {
+            { type = TypeEnum.fluid , name = FluidEnum.water , amount = 200 }
+        },
+    },
+
+    {
+        name = "uu-to-crude-oil",
+        desc = "转换为油",
+
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 10 }
+        },
+        output = {
+            { type = TypeEnum.fluid , name = FluidEnum.crudeOil , amount = 100 }
+        },
+    },
+
+
 }
 
 
-local UUFluidToMaterial = {
+for i,v in pairs(duplicatorRecipe) do
 
-    { type=TypeEnum.item , name = db.forName("uu-matter") , amount = 10 , result = duplicateResult },
-    { type=TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 10 , result = duplicateResult },
+    for i1,o in pairs(v.input) do
 
-}
-
-
-
-for i,v in pairs(UUFluidToMaterial) do
-
-    local ingredients = db.buildIngredients(v.type , v.name , v.amount):build()
-
-
-    if aspectService.get(v.type,v.name):isNotEmpty() then
-
-        aspectService.create(TypeEnum.recipe,db.forName("uu-duplicate-"..v.name))
-                     :setRecipeCategory(db.forName("uu-duplicator-category"))
-                     :setRecipeResults(v.result)
-                     :setRecipeIngredients(ingredients)
-                     :insertInto()
+        if aspectService.get(o.type,o.name):isNotEmpty()==false then
+            return
+        end
 
     end
 
+
+    for i1,o in pairs(v.output) do
+
+        if aspectService.get(o.type,o.name):isNotEmpty()==false then
+            return
+        end
+
+    end
+
+
+
+
+    aspectService.create(TypeEnum.recipe,db.forName("uu-duplicate-"..v.name))
+                 :setRecipeCategory(db.forName("uu-duplicator-category"))
+                 :setRecipeResults(v.output)
+                 :setRecipeIngredients(v.input)
+                 :setItemSubgroup(db.forName("uu-duplicate-subgroup"))
+                 :insertInto()
 
 end
