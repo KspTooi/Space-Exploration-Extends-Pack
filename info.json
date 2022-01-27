@@ -1,11 +1,11 @@
 {
-	"name":"ksptooi-server-commons-preprocess",
+	"name":"uu-matter",
 	"author":"KspTooi",
-	"version":"1.4.50",
-	"title":"ksptooi-server-commons-preprocess",
+	"version":"1.5",
+	"title":"uu-matter",
 	"homepage":"https://github.com/KspTooi/Space-Exploration-Extends-Pack",
 	"contact": "ksptooi@outlook.com",
-	"description": "this mods only use for my private server,it provides of basic language pack and some vanilla modify! WARN use it at your own risk ",
+	"description": "get the \"uu-matter\" into the factorio\nBuild uu-fabricator and duplicator to Swap your resources!\nnow support the Space Exploration!!\n(! PreRelese Version)",
 	"factorio_version":"1.1",
 	"dependencies": [
 		"base >= 1.1.50",

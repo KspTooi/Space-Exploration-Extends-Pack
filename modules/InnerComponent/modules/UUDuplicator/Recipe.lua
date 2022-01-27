@@ -10,6 +10,7 @@ aspectService.create(TypeEnum.itemGroup)
         :setName(db.forName("uu-duplicator-item-group"))
         :setItemIcon(db.forRes("UUBase/res/hr-fluid-uu-recipe.png"))
         :setItemIconSize(64)
+        :setProperty("order_in_recipe","u[uu-duplicator]")
         :insertInto()
 
 
@@ -117,6 +118,19 @@ local duplicatorRecipe = {
         },
     },
 
+    {
+        name = "uu-to-glass",
+        desc = "转换为玻璃",
+
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 10 }
+        },
+        output = {
+            { type = TypeEnum.item , name = "glass" , amount = 100 }
+        }
+    },
+
+
 
 }
 
@@ -141,13 +155,11 @@ for i,v in pairs(duplicatorRecipe) do
     end
 
 
-
-
     aspectService.create(TypeEnum.recipe,db.forName("uu-duplicate-"..v.name))
                  :setRecipeCategory(db.forName("uu-duplicator-category"))
                  :setRecipeResults(v.output)
                  :setRecipeIngredients(v.input)
-                 :setItemSubgroup(db.forName("uu-duplicate-subgroup"))
+                 :setItemSubgroup(ItemSubgroupEnum.rawResource)
                  :insertInto()
 
 end
