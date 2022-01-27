@@ -16,11 +16,11 @@ require "modules.realistic-reactors.item"
 require "modules.realistic-reactors.receipe"
 require "modules.realistic-reactors.technology"]]
 
-require "modules.compact-reactor.item"
+--[[require "modules.compact-reactor.item"
 
 require "modules.compact-reactor.entity"
 require "modules.compact-reactor.receipe"
-require "modules.compact-reactor.technology"
+require "modules.compact-reactor.technology"]]
 
 data.raw["recipe"]["kscp-compact-nuclear-reactor"].hide=false
 
