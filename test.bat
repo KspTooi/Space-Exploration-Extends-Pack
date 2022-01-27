@@ -1,8 +1,8 @@
-echo off
+﻿echo off
 
 taskkill /f /t /im factorio.exe
 
-set buildTarget="C:\Users\Administrator\AppData\Roaming\Factorio\mods\ksptooi-server-commons-preprocess_1.4.50"
+set buildTarget="C:\Users\Administrator\AppData\Roaming\Factorio\mods\uu-matter_1.5.0"
 set projectPath="C:\InternalDeveloper\Lua\ksptooi-server-commons-preprocess"
 set gamePath = "C:\InternalGames\Steam\steamapps\common\Factorio\bin\x64\factorio.exe"
 
