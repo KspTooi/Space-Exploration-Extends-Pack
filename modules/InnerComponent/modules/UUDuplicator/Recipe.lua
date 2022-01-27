@@ -8,6 +8,8 @@
 
 local duplicateResult = {
     {type = TypeEnum.item, name = ConstEnum.modPrefix.."uu-matter", amount = 1, catalyst_amount = 1}
+    --原版材料
+    { type=TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 10 , result = duplicateResult },
 }
 
 
