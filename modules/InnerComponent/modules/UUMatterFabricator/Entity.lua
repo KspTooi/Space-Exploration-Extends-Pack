@@ -20,9 +20,9 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
 
         :setEntityCraftingCategories({db.forName("uu-fabricator-category")})
 
-        :setEntityCollisionBox({{-2.9, -2.9}, {2.9, 2.9}})  --左右 上下
-        :setEntitySelectionBox({{-3.2, -3.2}, {3.2, 3.2}})
-        :setEntityDrawingBox({{-3, -3}, {3, 3}})
+        :setEntityCollisionBox({{-2.7, -2.7}, {2.7, 2.7}})  --左右 上下
+        :setEntitySelectionBox({{-3.0, -3.0}, {3.0, 3.0}})
+        :setEntityDrawingBox({{-3.2, -3.2}, {3.2, 3.2}})
         :setEntityAnimation({
 
             layers ={
@@ -36,8 +36,8 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
                     height = 512,
                     frame_count = 32,
                     line_length = 8,
-                    shift = util.by_pixel(0, 0),
-                    scale = 0.52,
+                    shift = util.by_pixel(-5, -22),
+                    scale = 0.55,
                     hr_version =
                     {
                         filename = ConstEnum.modulesPath.."UUMatterFabricator/res/hr-genric-object-uu.png",
@@ -46,8 +46,8 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
                         height = 512,
                         frame_count = 32,
                         line_length = 8,
-                        shift = util.by_pixel(0, 0),
-                        scale = 0.52
+                        shift = util.by_pixel(-5, -22),
+                        scale = 0.55
                     }
                 },
                 {
@@ -58,8 +58,8 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
                     frame_count = 32,
                     line_length = 8,
                     draw_as_shadow = true,
-                    shift = util.by_pixel(0, 0),
-                    scale = 0.52,
+                    shift = util.by_pixel(-5, -22),
+                    scale = 0.55,
                     hr_version =
                     {
                         filename = ConstEnum.modulesPath.."UUMatterFabricator/res/hr-genric-object-gen1-shadow.png",
@@ -69,8 +69,8 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
                         frame_count = 32,
                         line_length = 8,
                         draw_as_shadow = true,
-                        shift = util.by_pixel(0, 0),
-                        scale = 0.52
+                        shift = util.by_pixel(-5, -22),
+                        scale = 0.55
                     }
                 }
 
