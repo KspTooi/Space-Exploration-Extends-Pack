@@ -86,42 +86,31 @@ end
 local fluidBox = {
     {
         production_type = "input",
-        --pipe_picture = assembler2pipepictures(),
---[[        pipe_covers = pipecoverspictures(),]]
-        base_area = 1,
+        base_area = 10,
         base_level = -1,
         height = 1,
-        pipe_connections = { { type = "input", position = { 0, -3 } } },
-        --secondary_draw_orders = { north = -1 }
+        pipe_covers = pipecoverspictures(),
+        pipe_connections = {{ type = "input", position = { 0, -3 } }},
+    },
+    {
+        production_type = "output",
+        base_level = 10,
+        pipe_covers = pipecoverspictures(),
+        pipe_connections = {{ position = { 0, 3 } }},
     },
     {
         production_type = "input",
-        --pipe_picture = assembler2pipepictures(),
---[[        pipe_covers = pipecoverspictures(),]]
-        base_area = 1,
+        base_area = 10,
         base_level = -1,
         height = 1,
-        pipe_connections = { { type = "input", position = { 0, 2.8 } } },
-        --secondary_draw_orders = { north = -1 }
-    }, {
-        production_type = "input",
---[[        pipe_picture = pipePic(),
-        pipe_covers = pipecoverspictures(),]]
-        base_area = 1,
-        base_level = -1,
-        height = 1,
-        pipe_connections = { { type = "input", position = { -2.7, 0 } } },
-        secondary_draw_orders = { north = -1 }
+        pipe_covers = pipecoverspictures(),
+        pipe_connections = {{ type = "input", position = { -3, 0 } }},
     },
     {
         production_type = "input",
---[[        pipe_picture = pipePic(),
-        pipe_covers = pipecoverspictures(),]]
-        base_area = 1,
-        base_level = -1,
-        height = 1,
-        pipe_connections = { { type = "input", position = { 2.7, 0 } } },
-        --secondary_draw_orders = { north = -1 }
+        base_level = 10,
+        pipe_covers = pipecoverspictures(),
+        pipe_connections = {{ position = { 3, 0 } }},
     },
     off_when_no_fluid_recipe = false
 }
