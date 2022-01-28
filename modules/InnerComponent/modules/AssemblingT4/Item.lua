@@ -7,7 +7,7 @@ data:extend(
 		{
 			type = "item",
 			name = "kscp-assembling-machine-4",
-			icon = "__ksptooi-server-commons-preprocess__/modules/iv-assembling/res/iv-assembling-machine-icon.png",
+			icon = db.forRes("AssemblingT4/res/".."iv-assembling-machine-icon.png"),
 			icon_size = 64,
 			icon_mipmaps = 1,
 			subgroup = "extraction-machine",

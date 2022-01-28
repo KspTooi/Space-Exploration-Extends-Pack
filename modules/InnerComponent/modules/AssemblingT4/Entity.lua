@@ -19,7 +19,7 @@ iv_assembler.animation = {
 	layers =
 	{
 		{
-			filename = "__ksptooi-server-commons-preprocess__/modules/iv-assembling/res/iv-assembling-machine.png",
+			filename = db.forRes("AssemblingT4/res/".."iv-assembling-machine.png"),
 			priority = "high",
 			width = 108,
 			height = 119,
@@ -28,7 +28,7 @@ iv_assembler.animation = {
 			shift = util.by_pixel(0, -0.5),
 			hr_version =
 			{
-				filename = "__ksptooi-server-commons-preprocess__/modules/iv-assembling/res/hr-iv-assembling-machine.png",
+				filename = db.forRes("AssemblingT4/res/".."hr-iv-assembling-machine.png"),
 				priority = "high",
 				width = 214,
 				height = 237,
@@ -39,7 +39,7 @@ iv_assembler.animation = {
 			}
 		},
 		{
-			filename = "__ksptooi-server-commons-preprocess__/modules/iv-assembling/res/iv-assembling-machine-shadow.png",
+			filename = db.forRes("AssemblingT4/res/".."iv-assembling-machine-shadow.png"),
 			priority = "high",
 			width = 130,
 			height = 82,
@@ -49,7 +49,7 @@ iv_assembler.animation = {
 			shift = util.by_pixel(28, 4),
 			hr_version =
 			{
-				filename = "__ksptooi-server-commons-preprocess__/modules/iv-assembling/res/hr-iv-assembling-machine-shadow.png",
+				filename = db.forRes("AssemblingT4/res/".."hr-iv-assembling-machine-shadow.png"),
 				priority = "high",
 				width = 260,
 				height = 162,
