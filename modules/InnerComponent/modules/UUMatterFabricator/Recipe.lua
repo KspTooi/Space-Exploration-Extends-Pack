@@ -14,8 +14,8 @@ local uuMatterResult = {
 }
 local uuAmplifierResult = {
     {
-        type = TypeEnum.fluid,
-        name = db.forName("fluid-uu-amplifier"),
+        type = TypeEnum.item,
+        name = db.forName("uu-amplifier"),
         amount = 1, catalyst_amount = 1
     }
 }
