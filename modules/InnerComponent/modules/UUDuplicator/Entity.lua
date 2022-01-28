@@ -119,7 +119,7 @@ local animation = {
 
     layers = {
         {
-            filename = db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator.png"),
+            filename = db.forRes("UUDuplicator/res/hr-genric-object-gen3-duplicator.png"),
             priority = "high",
             width = 512,
             height = 512,
@@ -128,7 +128,7 @@ local animation = {
             shift = util.by_pixel(-3.5, -13),
             scale = 0.4,
             hr_version = {
-                filename = db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator.png"),
+                filename = db.forRes("UUDuplicator/res/hr-genric-object-gen3-duplicator.png"),
                 priority = "high",
                 width = 512,
                 height = 512,
@@ -139,7 +139,7 @@ local animation = {
             }
         },
         {
-            filename = db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator-shadow.png"),
+            filename = db.forRes("UUDuplicator/res/hr-genric-object-gen3-duplicator-shadow.png"),
             priority = "high",
             width = 512,
             height = 512,
@@ -149,7 +149,7 @@ local animation = {
             shift = util.by_pixel(-3.5, -10),
             scale = 0.4,
             hr_version = {
-                filename = db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator-shadow.png"),
+                filename = db.forRes("UUDuplicator/res/hr-genric-object-gen3-duplicator-shadow.png"),
                 priority = "high",
                 width = 512,
                 height = 512,
