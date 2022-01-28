@@ -5,25 +5,32 @@
 ---
 
 
-local uuGenerateResult = {
+local uuMatterResult = {
     {
       type = TypeEnum.item,
       name = db.forName("uu-matter"),
       amount = 1, catalyst_amount = 1
     }
 }
+local uuAmplifierResult = {
+    {
+        type = TypeEnum.item,
+        name = db.forName("uu-amplifier"),
+        amount = 1, catalyst_amount = 1
+    }
+}
 
 local oreToUUMatter = {
 
-    { type = TypeEnum.item, name = ItemEnum.ironOre , amount = 4 , result = uuGenerateResult},
-    { type = TypeEnum.item, name = ItemEnum.copperOre , amount = 4 , result = uuGenerateResult},
-    { type = TypeEnum.item, name = ItemEnum.coal , amount = 5 , result = uuGenerateResult},
-    { type = TypeEnum.item, name = ItemEnum.stone , amount = 6 , result = uuGenerateResult},
-    { type = TypeEnum.item, name = ItemEnum.uraniumOre , amount = 4 , result = uuGenerateResult},
+    { type = TypeEnum.item, name = ItemEnum.ironOre , amount = 4 , result = uuMatterResult},
+    { type = TypeEnum.item, name = ItemEnum.copperOre , amount = 4 , result = uuMatterResult},
+    { type = TypeEnum.item, name = ItemEnum.coal , amount = 5 , result = uuMatterResult},
+    { type = TypeEnum.item, name = ItemEnum.stone , amount = 6 , result = uuMatterResult},
+    { type = TypeEnum.item, name = ItemEnum.uraniumOre , amount = 4 , result = uuMatterResult},
     --太空探索
-    { type = TypeEnum.item, name = "se-beryllium-ingot" , amount = 4 , result = uuGenerateResult},
-    { type = TypeEnum.item, name = "se-holmium-ingot" , amount = 4 , result = uuGenerateResult},
-    { type = TypeEnum.item, name = "se-iridium-ingot" , amount = 4 , result = uuGenerateResult},
+    { type = TypeEnum.item, name = "se-beryllium-ingot" , amount = 4 , result = uuAmplifierResult},
+    { type = TypeEnum.item, name = "se-holmium-ingot" , amount = 4 , result = uuAmplifierResult},
+    { type = TypeEnum.item, name = "se-iridium-ingot" , amount = 4 , result = uuAmplifierResult},
 }
 
 for i,v in pairs(oreToUUMatter) do
