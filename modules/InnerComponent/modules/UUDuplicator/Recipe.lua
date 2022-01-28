@@ -135,7 +135,7 @@ local duplicatorRecipe = {
 
         input = {
             { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 50 },
-            { type = TypeEnum.fluid , name = db.forName("uu-amplifier") , amount = 30 }
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-amplifier") , amount = 30 }
         },
         output = {
             { type = TypeEnum.item , name = "se-beryllium-plate" , amount = 100 }
@@ -147,7 +147,7 @@ local duplicatorRecipe = {
 
         input = {
             { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 50 },
-            { type = TypeEnum.fluid , name = db.forName("uu-amplifier") , amount = 30 }
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-amplifier") , amount = 30 }
         },
         output = {
             { type = TypeEnum.item , name = "se-iridium-plate" , amount = 100 }
@@ -159,7 +159,7 @@ local duplicatorRecipe = {
 
         input = {
             { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 50 },
-            { type = TypeEnum.fluid , name = db.forName("uu-amplifier") , amount = 30 }
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-amplifier") , amount = 30 }
         },
         output = {
             { type = TypeEnum.item , name = "se-holmium-plate" , amount = 100 }
@@ -171,7 +171,7 @@ local duplicatorRecipe = {
 
         input = {
             { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 80 },
-            { type = TypeEnum.fluid , name = db.forName("uu-amplifier") , amount = 50 }
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-amplifier") , amount = 50 }
         },
         output = {
             { type = TypeEnum.item , name = "se-vulcanite-block" , amount = 100 }
@@ -183,7 +183,7 @@ local duplicatorRecipe = {
 
         input = {
             { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 100 },
-            { type = TypeEnum.fluid , name = db.forName("uu-amplifier") , amount = 50 }
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-amplifier") , amount = 50 }
         },
         output = {
             { type = TypeEnum.item , name = "se-cryonite-rod" , amount = 100 }
