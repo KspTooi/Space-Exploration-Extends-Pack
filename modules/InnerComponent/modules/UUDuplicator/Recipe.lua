@@ -123,28 +123,80 @@ local duplicatorRecipe = {
         desc = "转换为玻璃",
 
         input = {
-            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 10 }
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 100 }
         },
         output = {
             { type = TypeEnum.item , name = "glass" , amount = 100 }
         }
     },
+    {
+        name = "uu-to-se-beryllium-plate",
+        desc = "转换为铍板",
 
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 50 },
+            { type = TypeEnum.fluid , name = db.forName("uu-amplifier") , amount = 30 }
+        },
+        output = {
+            { type = TypeEnum.item , name = "se-beryllium-plate" , amount = 100 }
+        }
+    },
+    {
+        name = "uu-to-se-iridium-plate",
+        desc = "转换为铱板",
 
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 50 },
+            { type = TypeEnum.fluid , name = db.forName("uu-amplifier") , amount = 30 }
+        },
+        output = {
+            { type = TypeEnum.item , name = "se-iridium-plate" , amount = 100 }
+        }
+    },
+    {
+        name = "uu-to-se-holmium-plate",
+        desc = "转换为钬板",
 
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 50 },
+            { type = TypeEnum.fluid , name = db.forName("uu-amplifier") , amount = 30 }
+        },
+        output = {
+            { type = TypeEnum.item , name = "se-holmium-plate" , amount = 100 }
+        }
+    },
+    {
+        name = "uu-to-se-vulcanite-block",
+        desc = "转换为火成岩块",
+
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 80 },
+            { type = TypeEnum.fluid , name = db.forName("uu-amplifier") , amount = 50 }
+        },
+        output = {
+            { type = TypeEnum.item , name = "se-vulcanite-block" , amount = 100 }
+        }
+    },
+    {
+        name = "uu-to-se-cryonite-rod",
+        desc = "转换为冰晶石棒",
+
+        input = {
+            { type = TypeEnum.fluid , name = db.forName("fluid-uu-matter") , amount = 100 },
+            { type = TypeEnum.fluid , name = db.forName("uu-amplifier") , amount = 50 }
+        },
+        output = {
+            { type = TypeEnum.item , name = "se-cryonite-rod" , amount = 100 }
+        }
+    },
 }
 
-
 for i,v in pairs(duplicatorRecipe) do
-
     for i1,o in pairs(v.input) do
-
         if aspectService.get(o.type,o.name):isNotEmpty()==false then
             return
         end
-
     end
-
 
     for i1,o in pairs(v.output) do
 
