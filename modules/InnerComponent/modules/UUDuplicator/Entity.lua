@@ -46,18 +46,19 @@ local function pipePic()
         },
         south =
         {
-            filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-S.png",
+            filename = db.forRes("UUDuplicator/res/hr-pipe-south.png"),
             priority = "extra-high",
-            width = 44,
-            height = 31,
-            shift = util.by_pixel(0, -31.5),
+            width = 50,
+            height = 49,
+            shift = util.by_pixel(0, -21),
+            scale = 0.5,
             hr_version =
             {
-                filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-pipe-S.png",
+                filename = db.forRes("UUDuplicator/res/hr-pipe-south.png"),
                 priority = "extra-high",
-                width = 88,
-                height = 61,
-                shift = util.by_pixel(0, -31.25),
+                width = 50,
+                height = 49,
+                shift = util.by_pixel(0, -21),
                 scale = 0.5
             }
         },
@@ -89,14 +90,14 @@ local fluidBox = {
         base_area = 10,
         base_level = -1,
         height = 1,
-        pipe_covers = pipecoverspictures(),
-        pipe_connections = {{ type = "input", position = { 0, -3 } }},
+        --pipe_covers = pipecoverspictures(),
+        pipe_connections = {{ type = "input", position = { 0, -2.8 } }},
     },
     {
         production_type = "output",
         base_level = 10,
-        pipe_covers = pipecoverspictures(),
-        pipe_connections = {{ position = { 0, 3 } }},
+        --pipe_covers = pipecoverspictures(),
+        pipe_connections = {{ position = { 0, 2.8 } }},
     },
     {
         production_type = "input",
@@ -104,13 +105,14 @@ local fluidBox = {
         base_level = -1,
         height = 1,
         pipe_covers = pipecoverspictures(),
-        pipe_connections = {{ type = "input", position = { -3, 0 } }},
+        pipe_picture = pipePic(),
+        pipe_connections = {{ type = "input", position = { -2.8, 0 } }},
     },
     {
         production_type = "input",
         base_level = 10,
-        pipe_covers = pipecoverspictures(),
-        pipe_connections = {{ position = { 3, 0 } }},
+        --pipe_covers = pipecoverspictures(),
+        pipe_connections = {{ position = { 2.8, 0 } }},
     },
     off_when_no_fluid_recipe = false
 }
@@ -121,20 +123,20 @@ local animation = {
         {
             filename = db.forRes("UUDuplicator/res/hr-genric-object-gen3-duplicator.png"),
             priority = "high",
-            width = 512,
-            height = 512,
+            width = 404,
+            height = 373,
             frame_count = 32,
             line_length = 8,
-            shift = util.by_pixel(-3.5, -13),
+            shift = util.by_pixel(0.5, 0),
             scale = 0.4,
             hr_version = {
                 filename = db.forRes("UUDuplicator/res/hr-genric-object-gen3-duplicator.png"),
                 priority = "high",
-                width = 512,
-                height = 512,
+                width = 404,
+                height = 373,
                 frame_count = 32,
                 line_length = 8,
-                shift = util.by_pixel(-3.5, -13),
+                shift = util.by_pixel(0.5, 0),
                 scale = 0.4
             }
         },
