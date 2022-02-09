@@ -8,7 +8,7 @@
 
 
 aspectConverter.toItem(aspectService.create(TypeEnum.item))
-        :setName(db.forName("prism-structure-item"))
+        :setName(db.forName("prism-structure"))
         :setIcon(db.forRes("PrismStructure/res/hr-prism-sturcture-item.png"))
         :setIconSize(128)
         :setStackSize(100)

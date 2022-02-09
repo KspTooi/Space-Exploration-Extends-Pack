@@ -5,6 +5,14 @@
 ---
 
 
+local effects = {
+        {
+            type = "unlock-recipe",
+            recipe = db.forName("prism-structure")
+        }
+}
+
+
 aspectConverter.toTechnology(aspectService.create(TypeEnum.technology))
         :setName(db.forName("prism-structure"))
         :setIcon(db.forRes("PrismStructure/res/hr-prism-sturcture-item.png"))
@@ -20,4 +28,5 @@ aspectConverter.toTechnology(aspectService.create(TypeEnum.technology))
             },
             time = 30
         })
+        :setEffects(effects)
         :insertInto()

@@ -3,3 +3,24 @@
 --- Created by KspTooi.
 --- DateTime: 2022/2/8 17:26
 ---
+
+
+--[[local prismStructureRecipe = db.buildIngredients(TypeEnum.item,ItemEnum.steelPlate,5)
+        :insert(TypeEnum.item,ItemEnum.stoneBrick,5)
+        :insert(TypeEnum.item,ItemEnum.electronicCircuit,2)]]
+
+local ingredients = db.buildIngredients(TypeEnum.item,ItemEnum.steelPlate,5)
+        :insert(TypeEnum.item,ItemEnum.stoneBrick,5)
+        :insert(TypeEnum.item,ItemEnum.electronicCircuit,2)
+
+
+
+aspectConverter.toRecipe(aspectService.create(TypeEnum.recipe))
+        :setName(db.forName("prism-structure"))
+        :setOrder("p[prism-structure-item]")
+        :setResult(db.forName("prism-structure"))
+        :setEnergyRequired(4)
+        :setEnabled(false)
+        :setRequesterPasteMultiplier(1)
+        :setIngredients(ingredients:build())
+        :insertInto()
