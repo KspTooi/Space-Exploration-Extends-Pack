@@ -9,6 +9,7 @@ local aspectEntity = require("aspect.AspectEntity")
 local aspectTechnology = require("aspect.AspectTechnology")
 local aspectAssemblingMachine = require("aspect.AspectAssemblingMachine")
 local aspectFurnace = require("aspect.AspectFurnace")
+local aspectItem = require("aspect.AspectItem")
 
 
 local aspectConverter = {}
@@ -41,6 +42,11 @@ end
 ---@return aspectFurnace
 function aspectConverter.toFurnace(input)
     return aspectFurnace:import(input)
+end
+
+---@return aspectItem
+function aspectConverter.toItem(input)
+    return aspectItem:import(input)
 end
 
 return aspectConverter
