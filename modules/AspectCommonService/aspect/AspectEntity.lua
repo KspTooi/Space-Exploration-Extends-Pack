@@ -1,3 +1,5 @@
+
+---@class aspectEntity
 local aspectEntity = {}
 
 

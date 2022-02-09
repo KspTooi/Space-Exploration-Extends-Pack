@@ -4,6 +4,7 @@
 --- DateTime: 2022/1/25 15:40
 ---
 
+---@class aspectIngredients
 local aspectIngredients = {}
 
 ----静态内部操作方法 ----- 开始----->>>>

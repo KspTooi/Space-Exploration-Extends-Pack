@@ -1,3 +1,5 @@
+
+---@class aspectFurnace
 local aspectFurnace = {}
 
 

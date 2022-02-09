@@ -1,3 +1,5 @@
+
+---@class aspectRecipe
 local aspectRecipe = {}
 
 

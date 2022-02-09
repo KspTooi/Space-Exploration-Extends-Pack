@@ -4,6 +4,7 @@
 --- DateTime: 2022/1/14 16:53
 ---
 
+---@class aspectObject
 local aspectObject = {}
 
 

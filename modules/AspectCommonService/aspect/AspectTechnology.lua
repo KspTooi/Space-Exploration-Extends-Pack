@@ -1,3 +1,5 @@
+
+---@class aspectTechnology
 local aspectTechnology = {}
 
 

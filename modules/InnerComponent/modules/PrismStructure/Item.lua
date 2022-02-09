@@ -6,9 +6,20 @@
 
 
 
----@type aspectObject
 local a = aspectService.create(TypeEnum.item)
         :setName(db.forName("prism-structure-item"))
         :setItemIcon(db.forRes("PrismStructure/res/hr-prism-sturcture-item.png"))
         :setItemIconSize(64)
         :insertInto()
+
+
+
+
+
+
+
+
+
+
+
+

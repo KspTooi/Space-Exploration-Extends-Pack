@@ -13,27 +13,32 @@ local aspectFurnace = require("aspect.AspectFurnace")
 
 local aspectConverter = {}
 
-
+---@return aspectObject
 function aspectConverter.toObject(input)
     return aspectObject:import(input)
 end
 
+---@return aspectRecipe
 function aspectConverter.toRecipe(input)
     return aspectRecipe:import(input)
 end
 
+---@return aspectEntity
 function aspectConverter.toEntity(input)
     return aspectEntity:import(input)
 end
 
+---@return aspectTechnology
 function aspectConverter.toTechnology(input)
     return aspectTechnology:import(input)
 end
 
+---@return aspectAssemblingMachine
 function aspectConverter.toAssemblingMachine(input)
     return aspectAssemblingMachine:import(input)
 end
 
+---@return aspectFurnace
 function aspectConverter.toFurnace(input)
     return aspectFurnace:import(input)
 end

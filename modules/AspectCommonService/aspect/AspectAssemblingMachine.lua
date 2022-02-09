@@ -1,3 +1,6 @@
+
+
+---@class aspectAssemblingMachine
 local aspectAssemblingMachine = {}
 
 
