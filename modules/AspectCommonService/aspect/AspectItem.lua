@@ -165,259 +165,259 @@ end
 ----通用内部操作方法 ----- 结束 -----<<<<
 
 
-function aspectItem:getItemIcons(icons)
+function aspectItem:getIcons(icons)
 	return self:getProperty("icons",icons)
 end
 
-function aspectItem:setItemIcons(icons)
+function aspectItem:setIcons(icons)
 	return self:setProperty("icons",icons)
 end
 
-function aspectItem:getItemIcon(icon)
+function aspectItem:getIcon(icon)
 	return self:getProperty("icon",icon)
 end
 
-function aspectItem:setItemIcon(icon)
+function aspectItem:setIcon(icon)
 	return self:setProperty("icon",icon)
 end
 
-function aspectItem:getItemIconSize(iconSize)
+function aspectItem:getIconSize(iconSize)
 	return self:getProperty("icon_size",iconSize)
 end
 
-function aspectItem:setItemIconSize(iconSize)
+function aspectItem:setIconSize(iconSize)
 	return self:setProperty("icon_size",iconSize)
 end
 
-function aspectItem:getItemStackSize(stackSize)
+function aspectItem:getStackSize(stackSize)
 	return self:getProperty("stack_size",stackSize)
 end
 
-function aspectItem:setItemStackSize(stackSize)
+function aspectItem:setStackSize(stackSize)
 	return self:setProperty("stack_size",stackSize)
 end
 
-function aspectItem:getItemBurntResult(burntResult)
+function aspectItem:getBurntResult(burntResult)
 	return self:getProperty("burnt_result",burntResult)
 end
 
-function aspectItem:setItemBurntResult(burntResult)
+function aspectItem:setBurntResult(burntResult)
 	return self:setProperty("burnt_result",burntResult)
 end
 
-function aspectItem:getItemCloseSound(closeSound)
+function aspectItem:getCloseSound(closeSound)
 	return self:getProperty("close_sound",closeSound)
 end
 
-function aspectItem:setItemCloseSound(closeSound)
+function aspectItem:setCloseSound(closeSound)
 	return self:setProperty("close_sound",closeSound)
 end
 
-function aspectItem:getItemDarkBackgroundIcons(darkBackgroundIcons)
+function aspectItem:getDarkBackgroundIcons(darkBackgroundIcons)
 	return self:getProperty("dark_background_icons",darkBackgroundIcons)
 end
 
-function aspectItem:setItemDarkBackgroundIcons(darkBackgroundIcons)
+function aspectItem:setDarkBackgroundIcons(darkBackgroundIcons)
 	return self:setProperty("dark_background_icons",darkBackgroundIcons)
 end
 
-function aspectItem:getItemDarkBackgroundIcon(darkBackgroundIcon)
+function aspectItem:getDarkBackgroundIcon(darkBackgroundIcon)
 	return self:getProperty("dark_background_icon",darkBackgroundIcon)
 end
 
-function aspectItem:setItemDarkBackgroundIcon(darkBackgroundIcon)
+function aspectItem:setDarkBackgroundIcon(darkBackgroundIcon)
 	return self:setProperty("dark_background_icon",darkBackgroundIcon)
 end
 
-function aspectItem:getItemIconSize(iconSize)
+function aspectItem:getIconSize(iconSize)
 	return self:getProperty("icon_size",iconSize)
 end
 
-function aspectItem:setItemIconSize(iconSize)
+function aspectItem:setIconSize(iconSize)
 	return self:setProperty("icon_size",iconSize)
 end
 
-function aspectItem:getItemDefaultRequestAmount(defaultRequestAmount)
+function aspectItem:getDefaultRequestAmount(defaultRequestAmount)
 	return self:getProperty("default_request_amount",defaultRequestAmount)
 end
 
-function aspectItem:setItemDefaultRequestAmount(defaultRequestAmount)
+function aspectItem:setDefaultRequestAmount(defaultRequestAmount)
 	return self:setProperty("default_request_amount",defaultRequestAmount)
 end
 
-function aspectItem:getItemFlags(flags)
+function aspectItem:getFlags(flags)
 	return self:getProperty("flags",flags)
 end
 
-function aspectItem:setItemFlags(flags)
+function aspectItem:setFlags(flags)
 	return self:setProperty("flags",flags)
 end
 
-function aspectItem:getItemFuelAccelerationMultiplier(fuelAccelerationMultiplier)
+function aspectItem:getFuelAccelerationMultiplier(fuelAccelerationMultiplier)
 	return self:getProperty("fuel_acceleration_multiplier",fuelAccelerationMultiplier)
 end
 
-function aspectItem:setItemFuelAccelerationMultiplier(fuelAccelerationMultiplier)
+function aspectItem:setFuelAccelerationMultiplier(fuelAccelerationMultiplier)
 	return self:setProperty("fuel_acceleration_multiplier",fuelAccelerationMultiplier)
 end
 
-function aspectItem:getItemFuelCategory(fuelCategory)
+function aspectItem:getFuelCategory(fuelCategory)
 	return self:getProperty("fuel_category",fuelCategory)
 end
 
-function aspectItem:setItemFuelCategory(fuelCategory)
+function aspectItem:setFuelCategory(fuelCategory)
 	return self:setProperty("fuel_category",fuelCategory)
 end
 
-function aspectItem:getItemFuelEmissionsMultiplier(fuelEmissionsMultiplier)
+function aspectItem:getFuelEmissionsMultiplier(fuelEmissionsMultiplier)
 	return self:getProperty("fuel_emissions_multiplier",fuelEmissionsMultiplier)
 end
 
-function aspectItem:setItemFuelEmissionsMultiplier(fuelEmissionsMultiplier)
+function aspectItem:setFuelEmissionsMultiplier(fuelEmissionsMultiplier)
 	return self:setProperty("fuel_emissions_multiplier",fuelEmissionsMultiplier)
 end
 
-function aspectItem:getItemFuelGlowColor(fuelGlowColor)
+function aspectItem:getFuelGlowColor(fuelGlowColor)
 	return self:getProperty("fuel_glow_color",fuelGlowColor)
 end
 
-function aspectItem:setItemFuelGlowColor(fuelGlowColor)
+function aspectItem:setFuelGlowColor(fuelGlowColor)
 	return self:setProperty("fuel_glow_color",fuelGlowColor)
 end
 
-function aspectItem:getItemFuelTopSpeedMultiplier(fuelTopSpeedMultiplier)
+function aspectItem:getFuelTopSpeedMultiplier(fuelTopSpeedMultiplier)
 	return self:getProperty("fuel_top_speed_multiplier",fuelTopSpeedMultiplier)
 end
 
-function aspectItem:setItemFuelTopSpeedMultiplier(fuelTopSpeedMultiplier)
+function aspectItem:setFuelTopSpeedMultiplier(fuelTopSpeedMultiplier)
 	return self:setProperty("fuel_top_speed_multiplier",fuelTopSpeedMultiplier)
 end
 
-function aspectItem:getItemFuelValue(fuelValue)
+function aspectItem:getFuelValue(fuelValue)
 	return self:getProperty("fuel_value",fuelValue)
 end
 
-function aspectItem:setItemFuelValue(fuelValue)
+function aspectItem:setFuelValue(fuelValue)
 	return self:setProperty("fuel_value",fuelValue)
 end
 
-function aspectItem:getItemOpenSound(openSound)
+function aspectItem:getOpenSound(openSound)
 	return self:getProperty("open_sound",openSound)
 end
 
-function aspectItem:setItemOpenSound(openSound)
+function aspectItem:setOpenSound(openSound)
 	return self:setProperty("open_sound",openSound)
 end
 
-function aspectItem:getItemPictures(pictures)
+function aspectItem:getPictures(pictures)
 	return self:getProperty("pictures",pictures)
 end
 
-function aspectItem:setItemPictures(pictures)
+function aspectItem:setPictures(pictures)
 	return self:setProperty("pictures",pictures)
 end
 
-function aspectItem:getItemPlaceAsTile(placeAsTile)
+function aspectItem:getPlaceAsTile(placeAsTile)
 	return self:getProperty("place_as_tile",placeAsTile)
 end
 
-function aspectItem:setItemPlaceAsTile(placeAsTile)
+function aspectItem:setPlaceAsTile(placeAsTile)
 	return self:setProperty("place_as_tile",placeAsTile)
 end
 
-function aspectItem:getItemPlaceResult(placeResult)
+function aspectItem:getPlaceResult(placeResult)
 	return self:getProperty("place_result",placeResult)
 end
 
-function aspectItem:setItemPlaceResult(placeResult)
+function aspectItem:setPlaceResult(placeResult)
 	return self:setProperty("place_result",placeResult)
 end
 
-function aspectItem:getItemPlacedAsEquipmentResult(placedAsEquipmentResult)
+function aspectItem:getPlacedAsEquipmentResult(placedAsEquipmentResult)
 	return self:getProperty("placed_as_equipment_result",placedAsEquipmentResult)
 end
 
-function aspectItem:setItemPlacedAsEquipmentResult(placedAsEquipmentResult)
+function aspectItem:setPlacedAsEquipmentResult(placedAsEquipmentResult)
 	return self:setProperty("placed_as_equipment_result",placedAsEquipmentResult)
 end
 
-function aspectItem:getItemRocketLaunchProduct(rocketLaunchProduct)
+function aspectItem:getRocketLaunchProduct(rocketLaunchProduct)
 	return self:getProperty("rocket_launch_product",rocketLaunchProduct)
 end
 
-function aspectItem:setItemRocketLaunchProduct(rocketLaunchProduct)
+function aspectItem:setRocketLaunchProduct(rocketLaunchProduct)
 	return self:setProperty("rocket_launch_product",rocketLaunchProduct)
 end
 
-function aspectItem:getItemRocketLaunchProducts(rocketLaunchProducts)
+function aspectItem:getRocketLaunchProducts(rocketLaunchProducts)
 	return self:getProperty("rocket_launch_products",rocketLaunchProducts)
 end
 
-function aspectItem:setItemRocketLaunchProducts(rocketLaunchProducts)
+function aspectItem:setRocketLaunchProducts(rocketLaunchProducts)
 	return self:setProperty("rocket_launch_products",rocketLaunchProducts)
 end
 
-function aspectItem:getItemSubgroup(subgroup)
+function aspectItem:getSubgroup(subgroup)
 	return self:getProperty("subgroup",subgroup)
 end
 
-function aspectItem:setItemSubgroup(subgroup)
+function aspectItem:setSubgroup(subgroup)
 	return self:setProperty("subgroup",subgroup)
 end
 
-function aspectItem:getItemWireCount(wireCount)
+function aspectItem:getWireCount(wireCount)
 	return self:getProperty("wire_count",wireCount)
 end
 
-function aspectItem:setItemWireCount(wireCount)
+function aspectItem:setWireCount(wireCount)
 	return self:setProperty("wire_count",wireCount)
 end
 
-function aspectItem:getItemInheritedfromPrototypeBase(inheritedfromPrototypeBase)
+function aspectItem:getInheritedfromPrototypeBase(inheritedfromPrototypeBase)
 	return self:getProperty("InheritedfromPrototypeBase",inheritedfromPrototypeBase)
 end
 
-function aspectItem:setItemInheritedfromPrototypeBase(inheritedfromPrototypeBase)
+function aspectItem:setInheritedfromPrototypeBase(inheritedfromPrototypeBase)
 	return self:setProperty("InheritedfromPrototypeBase",inheritedfromPrototypeBase)
 end
 
-function aspectItem:getItemName(name)
+function aspectItem:getName(name)
 	return self:getProperty("name",name)
 end
 
-function aspectItem:setItemName(name)
+function aspectItem:setName(name)
 	return self:setProperty("name",name)
 end
 
-function aspectItem:getItemType(type)
+function aspectItem:getType(type)
 	return self:getProperty("type",type)
 end
 
-function aspectItem:setItemType(type)
+function aspectItem:setType(type)
 	return self:setProperty("type",type)
 end
 
-function aspectItem:getItemLocalisedDescription(localisedDescription)
+function aspectItem:getLocalisedDescription(localisedDescription)
 	return self:getProperty("localised_description",localisedDescription)
 end
 
-function aspectItem:setItemLocalisedDescription(localisedDescription)
+function aspectItem:setLocalisedDescription(localisedDescription)
 	return self:setProperty("localised_description",localisedDescription)
 end
 
-function aspectItem:getItemLocalisedName(localisedName)
+function aspectItem:getLocalisedName(localisedName)
 	return self:getProperty("localised_name",localisedName)
 end
 
-function aspectItem:setItemLocalisedName(localisedName)
+function aspectItem:setLocalisedName(localisedName)
 	return self:setProperty("localised_name",localisedName)
 end
 
-function aspectItem:getItemOrder(order)
+function aspectItem:getOrder(order)
 	return self:getProperty("order",order)
 end
 
-function aspectItem:setItemOrder(order)
+function aspectItem:setOrder(order)
 	return self:setProperty("order",order)
 end
 
