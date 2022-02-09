@@ -3,3 +3,21 @@
 --- Created by KspTooi.
 --- DateTime: 2022/2/8 17:26
 ---
+
+
+aspectConverter.toTechnology(aspectService.create(TypeEnum.technology))
+        :setName(db.forName("prism-structure"))
+        :setIcon(db.forRes("PrismStructure/res/hr-prism-sturcture-item.png"))
+        :setIconSize(128)
+        :setPrerequisites({TechnologyEnum.laser})
+        :setOrder("p[prism-structure-item]")
+        :setUnit({
+            count = 600,
+            ingredients = {
+                {ToolEnum.automationSciencePack, 1},
+                {ToolEnum.logisticSciencePack, 1},
+                {ToolEnum.chemicalSciencePack, 1},
+            },
+            time = 30
+        })
+        :insertInto()

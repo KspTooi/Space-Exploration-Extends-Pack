@@ -6,11 +6,16 @@
 
 
 
-local a = aspectService.create(TypeEnum.item)
+
+aspectConverter.toItem(aspectService.create(TypeEnum.item))
         :setName(db.forName("prism-structure-item"))
-        :setItemIcon(db.forRes("PrismStructure/res/hr-prism-sturcture-item.png"))
-        :setItemIconSize(64)
+        :setIcon(db.forRes("PrismStructure/res/hr-prism-sturcture-item.png"))
+        :setIconSize(128)
+        :setStackSize(100)
+        :setOrder("p[prism-structure-item]")
+        :setSubgroup(ItemSubgroupEnum.intermediateProduct)
         :insertInto()
+
 
 
 

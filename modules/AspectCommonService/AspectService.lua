@@ -11,6 +11,7 @@ aspectConverter = require("AspectConverter") ----类型转换器
 
 local aspectService = {}
 
+---@return aspectObject
 function aspectService.create(type,name)
     local ao = aspectObject.create({})
     ao:setProperty("type",type)
@@ -24,7 +25,7 @@ function aspectService.getList(type)
 end
 
 
-
+---@return aspectObject
 function aspectService.get(type,name)
 
     --获取luaEntity
@@ -34,7 +35,7 @@ function aspectService.get(type,name)
     return aspectObject.create(item)
 end
 
-
+---@return aspectObject
 function aspectService.getItem(name)
 
     --获取luaEntity
@@ -45,19 +46,19 @@ function aspectService.getItem(name)
 
 end
 
-
+---@return aspectObject
 function aspectService.getRecipe(name)
     local recipe = table.deepcopy(data.raw["recipe"][name])
     return aspectObject.create(recipe)
 end
 
-
+---@return aspectObject
 function aspectService.getEntity(name)
     local entity = table.deepcopy(data.raw["entity"][name])
     return aspectObject.create(entity)
 end
 
-
+---@return aspectObject
 function aspectService.getTechnology(name)
     local technology = table.deepcopy(data.raw["technology"][name])
     return aspectObject.create(technology)
