@@ -1,11 +1,2 @@
 echo off
-
-echo .
-echo .
-echo BuildWithDocuments
-echo .
-echo .
-
-echo %cd%
-
-PAUSE
+java -jar ProjectBuilder_2.1-RE.jar %cd% documents

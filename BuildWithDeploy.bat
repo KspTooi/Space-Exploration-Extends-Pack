@@ -1,5 +1,2 @@
 echo off
-
-echo 正在构建项目包
-
-
+java -jar ProjectBuilder_2.1-RE.jar %cd% deploy
