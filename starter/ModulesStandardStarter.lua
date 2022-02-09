@@ -28,7 +28,8 @@ local modulesDefine = {
     { name = "M2" , desc = "UU工厂" ,  packName = db.forInnerModules("UUMatterFabricator") },
     { name = "M3" , desc = "UU复制机" ,  packName = db.forInnerModules("UUDuplicator") },
     { name = "M4" , desc = "四号组装机" ,  packName = db.forInnerModules("AssemblingT4") },
-    { name = "M5" , desc = "紧凑型反应堆" ,  packName = db.forInnerModules("CompactReactor") }
+    { name = "M5" , desc = "紧凑型反应堆" ,  packName = db.forInnerModules("CompactReactor") },
+    { name = "M6" , desc = "光棱组件" ,  packName = db.forInnerModules("PrismStructure") }
 
 }
 
@@ -48,31 +49,3 @@ end
 
 
 loaderForModules(modulesDefine)
-
-
-
-
---UU液体
---[[require("modules.InnerComponent.modules.UUBase.Entity")
-require("modules.InnerComponent.modules.UUBase.Item")
-require("modules.InnerComponent.modules.UUBase.Recipe")
-require("modules.InnerComponent.modules.UUBase.Technology")]]
-
-
---UU物质生成机
---[[require("modules.InnerComponent.modules.UUMatterFabricator.Entity")
-require("modules.InnerComponent.modules.UUMatterFabricator.Item")
-require("modules.InnerComponent.modules.UUMatterFabricator.Recipe")
-require("modules.InnerComponent.modules.UUMatterFabricator.Technology")]]
-
---UU物质复制机
---[[require("modules.InnerComponent.modules.UUDuplicator.Entity")
-require("modules.InnerComponent.modules.UUDuplicator.Item")
-require("modules.InnerComponent.modules.UUDuplicator.Recipe")
-require("modules.InnerComponent.modules.UUDuplicator.Technology")]]
-
---4号组装机
---[[require("modules.InnerComponent.modules.Entity")
-require("modules.InnerComponent.modules.Item")
-require("modules.InnerComponent.modules.Recipe")
-require("modules.InnerComponent.modules.Technology")]]
