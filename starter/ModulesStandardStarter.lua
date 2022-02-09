@@ -13,6 +13,7 @@ require("enums.FluidEnum")
 require("enums.RecipeCategoryEnum")
 require("enums.SubgroupEnum")
 require("enums.ExplosionEnum")
+require("enums.TechnologyEnum")
 
 
 ---模块加载顺序
