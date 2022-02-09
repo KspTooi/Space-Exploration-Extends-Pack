@@ -9,9 +9,10 @@
         :insert(TypeEnum.item,ItemEnum.stoneBrick,5)
         :insert(TypeEnum.item,ItemEnum.electronicCircuit,2)]]
 
-local ingredients = db.buildIngredients(TypeEnum.item,ItemEnum.steelPlate,5)
+local ingredients = db.buildIngredients(TypeEnum.item,ItemEnum.steelPlate,2)
         :insert(TypeEnum.item,ItemEnum.stoneBrick,5)
-        :insert(TypeEnum.item,ItemEnum.electronicCircuit,2)
+        :insert(TypeEnum.item,ItemEnum.copperPlate,5)
+--[[        :insert(TypeEnum.item,ItemEnum.electronicCircuit,2)]]
 
 
 
@@ -19,7 +20,7 @@ aspectConverter.toRecipe(aspectService.create(TypeEnum.recipe))
         :setName(db.forName("prism-structure"))
         :setOrder("p[prism-structure-item]")
         :setResult(db.forName("prism-structure"))
-        :setEnergyRequired(4)
+        :setEnergyRequired(1.8)
         :setEnabled(false)
         :setRequesterPasteMultiplier(1)
         :setIngredients(ingredients:build())
