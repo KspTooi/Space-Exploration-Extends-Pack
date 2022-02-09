@@ -25,8 +25,17 @@ end
 
 ----成分配方操作方法 ----- 开始----->>>>
 
+----@return aspectIngredients
 function aspectIngredients:insert(type,name,amount,catalystAmount)
+
+    if catalystAmount==nil then
+        table.insert(self.luaObject,{type=type,name=name,amount=amount})
+        return aspectIngredients
+    end
+
     table.insert(self.luaObject,{type=type,name=name,amount=amount,catalyst_amount=catalystAmount})
+    return aspectIngredients
+
 end
 
 function aspectIngredients:clear()

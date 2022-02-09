@@ -34,6 +34,7 @@ function db.buildEnergyAsMW(energy)
     return energy..ConstEnum.mw
 end
 
+---@return aspectIngredients
 function db.buildIngredients(type,name,amount,catalystAmount)
 
     aspectIngredients.create({})
