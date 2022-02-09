@@ -4,4 +4,11 @@
 --- DateTime: 2022/2/8 17:26
 ---
 
-aspectService.create(TypeEnum.item)
+
+
+---@type aspectObject
+local a = aspectService.create(TypeEnum.item)
+        :setName(db.forName("prism-structure-item"))
+        :setItemIcon(db.forRes("PrismStructure/res/hr-prism-sturcture-item.png"))
+        :setItemIconSize(64)
+        :insertInto()
