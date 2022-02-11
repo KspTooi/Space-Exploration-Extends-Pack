@@ -1,2 +1,2 @@
 echo off
-java -jar ProjectBuilder_2.1-RE.jar %cd% deploy
+java -jar ProjectBuilder-2.2-RE.jar %cd% deploy
