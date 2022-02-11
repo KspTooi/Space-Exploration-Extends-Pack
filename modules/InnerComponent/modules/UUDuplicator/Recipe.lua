@@ -215,3 +215,20 @@ for i,v in pairs(duplicatorRecipe) do
                  :insertInto()
 
 end
+
+
+--复制机合成
+local ingredients = db.buildIngredients(TypeEnum.item,db.forName("uu-matter-fabricator"),1)
+                      :insert(TypeEnum.item,ItemEnum.advancedCircuit,10)
+                      :insert(TypeEnum.item,db.forName("prism-structure"),20)
+
+
+aspectConverter.toRecipe(aspectService.create(TypeEnum.recipe))
+               :setName(db.forName("uu-duplicator"))
+               :setOrder("u[uu-duplicator]")
+               :setResult(db.forName("uu-duplicator"))
+               :setEnergyRequired(7)
+               :setEnabled(false)
+               :setRequesterPasteMultiplier(1)
+               :setIngredients(ingredients:build())
+               :insertInto()
