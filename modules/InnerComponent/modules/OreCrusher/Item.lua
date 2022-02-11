@@ -12,3 +12,30 @@ aspectService.create(TypeEnum.item)
         :setItemPlaceResult(db.forName("ore-crusher"))
         :setItemStackSize(10)
         :insertInto()
+
+
+
+local dustRecipe = {
+
+    { name = "iron-dust" },
+    { name = "copper-dust" },
+    { name = "stone-dust" },
+    { name = "tin-dust" },
+    { name = "gold-dust" },
+    { name = "coal-dust" },
+
+}
+
+for i,v in pairs(dustRecipe) do
+
+    aspectService.create(TypeEnum.item)
+                 :setName(db.forName(v.name))
+                 :setItemIcon(db.forRes("OreCrusher/res/"..v.name..".png"))
+                 :setItemIconSize(128)
+                 :setItemSubgroup(ItemSubgroupEnum.rawResource)
+                 :setItemStackSize(50)
+                 :insertInto()
+
+end
+
+
