@@ -7,14 +7,14 @@
 local effects = {
     {
         type = "unlock-recipe",
-        recipe = db.forName(db.forName("uu-matter-fabricator"))
+        recipe = db.forName("uu-matter-fabricator")
     }
 }
 
 
 aspectConverter.toTechnology(aspectService.create(TypeEnum.technology))
                :setName(db.forName("uu-matter-fabricator"))
-               :setItemIcon(ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-genric-object-gen3-uu-fabricator-icon.png")
+               :setIcon(ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-genric-object-gen3-uu-fabricator-icon.png")
                :setIconSize(128)
                :setPrerequisites({db.forName("prism-structure")})
                :setOrder("u[uu-matter-fabricator]")
