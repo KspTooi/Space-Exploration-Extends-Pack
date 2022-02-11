@@ -5,6 +5,6 @@
 ---
 
 
-local aspect = aspectService.get(TypeEnum.technology,db.forName("uu-matter-fabricator"))
 
-aspectConverter.toTechnology(aspect)
+
+

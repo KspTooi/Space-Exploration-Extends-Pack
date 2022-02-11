@@ -8,6 +8,10 @@ local effects = {
     {
         type = "unlock-recipe",
         recipe = db.forName("uu-matter-fabricator")
+    },
+    {
+        type = "unlock-recipe",
+        recipe = db.forName("uu-duplicator")
     }
 }
 
