@@ -4,6 +4,31 @@
 --- DateTime: 2022/1/26 2:03
 ---
 
+local effects = {
+    {
+        type = "unlock-recipe",
+        recipe = db.forName("ore-crusher")
+    }
+}
+
+
+aspectConverter.toTechnology(aspectService.create(TypeEnum.technology))
+               :setName(db.forName("ore-crusher"))
+               :setIcon(db.forRes("OreCrusher/res/hr-genric-object-gen3-orecrusher-icon.png"))
+               :setIconSize(128)
+               :setPrerequisites({db.forName("prism-structure")})
+               :setOrder("o[ore-crusher]")
+               :setUnit({
+    count = 600,
+    ingredients = {
+        {ToolEnum.automationSciencePack, 1},
+        {ToolEnum.logisticSciencePack, 1},
+        {ToolEnum.chemicalSciencePack, 1},
+    },
+    time = 30
+})
+               :setEffects(effects)
+               :insertInto()
 
 
 
