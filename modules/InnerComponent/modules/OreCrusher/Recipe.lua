@@ -29,7 +29,7 @@ local uuMatterResult = {
     }
 }
 
-
+--矿转换为粉
 local oreToDust = {
 
     { type = TypeEnum.item, name = ItemEnum.ironOre , amount = 1 , result = { { type = TypeEnum.item, name = db.forName("iron-dust"), amount = 2, catalyst_amount = 1 }}},
@@ -47,6 +47,27 @@ for i,v in pairs(oreToDust) do
                      :setRecipeCategory(db.forName("ore-crusher-category"))
                      :setRecipeResults(v.result)
                      :setRecipeIngredients(oreToDustIngredients)
+                     :insertInto()
+    end
+end
+
+--粉转换为板
+
+local dustToPlate = {
+    { type = TypeEnum.item, name = db.forName("iron-dust") , amount = 1 , result = { { type = TypeEnum.item, name = ItemEnum.ironPlate, amount = 1, catalyst_amount = 1 }}},
+    { type = TypeEnum.item, name = db.forName("copper-dust") , amount = 1 , result = { { type = TypeEnum.item, name = ItemEnum.copperPlate, amount = 1, catalyst_amount = 1 }}},
+    { type = TypeEnum.item, name = db.forName("stone-dust") , amount = 1 , result = { { type = TypeEnum.item, name = ItemEnum.stoneBrick, amount = 1, catalyst_amount = 1 }}}
+}
+
+for i,v in pairs(dustToPlate) do
+
+    local dustToPlateIngredients = db.buildIngredients(TypeEnum.item , v.name , v.amount):build()
+
+    if aspectService.get(v.type,v.name):isNotEmpty() then
+        aspectService.create(TypeEnum.recipe,db.forName("ore-dust-to-plate"..v.name))
+                     :setRecipeCategory("smelting")
+                     :setRecipeResults(v.result)
+                     :setRecipeIngredients(dustToPlateIngredients)
                      :insertInto()
     end
 end

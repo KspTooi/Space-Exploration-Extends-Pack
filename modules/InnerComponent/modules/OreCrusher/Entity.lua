@@ -12,7 +12,7 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
         :setEntityCollisionMask(ConstEnum.collisionMaskAllowInGroundAndSpace)
         :setAllowInSpace(true)
         :setEntityMaxHealth(1500)
-        :setEntityCraftSpeed(5)
+        :setEntityCraftSpeed(1)
         :setFurnaceWorkingVisualisations(nil)
         :setEntityModuleSpecification({
             module_slots = 4
