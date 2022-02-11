@@ -20,57 +20,57 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
 
         :setEntityCraftingCategories({db.forName("uu-fabricator-category")})
 
-        :setEntityCollisionBox({{-2.7, -2.7}, {2.7, 2.7}})  --左右 上下
-        :setEntitySelectionBox({{-3.0, -3.0}, {3.0, 3.0}})
+        :setEntityCollisionBox({{-2.7, -2.7}, {2.7, 2.4}})  --左右 上下
+        :setEntitySelectionBox({{-3.0, -2.7}, {3.0, 2.7}})
         :setEntityDrawingBox({{-3.2, -3.2}, {3.2, 3.2}})
         :setEntityAnimation({
 
             layers ={
 
                 {
-                    filename = ConstEnum.modulesPath.."UUMatterFabricator/res/hr-genric-object-uu.png",
+                    filename = ConstEnum.modulesPath.."UUMatterFabricator/res/hr-genric-object-gen3-uufabricator.png",
                     priority = "high",
 --[[                    width = 978,
                     height = 895,]]
-                    width = 512,
-                    height = 512,
+                    width = 350,
+                    height = 310,
                     frame_count = 32,
                     line_length = 8,
-                    shift = util.by_pixel(-5, -22),
+                    shift = util.by_pixel(0, 0),
                     scale = 0.55,
                     hr_version =
                     {
-                        filename = ConstEnum.modulesPath.."UUMatterFabricator/res/hr-genric-object-uu.png",
+                        filename = ConstEnum.modulesPath.."UUMatterFabricator/res/hr-genric-object-gen3-uufabricator.png",
                         priority = "high",
-                        width = 512,
-                        height = 512,
+                        width = 350,
+                        height = 310,
                         frame_count = 32,
                         line_length = 8,
-                        shift = util.by_pixel(-5, -22),
+                        shift = util.by_pixel(0, 0),
                         scale = 0.55
                     }
                 },
                 {
-                    filename = ConstEnum.modulesPath.."UUMatterFabricator/res/hr-genric-object-gen1-shadow.png",
+                    filename = ConstEnum.modulesPath.."UUMatterFabricator/res/hr-genric-object-gen3-uufabricator-shadow.png",
                     priority = "high",
-                    width = 512,
-                    height = 512,
+                    width = 385,
+                    height = 275,
                     frame_count = 32,
                     line_length = 8,
                     draw_as_shadow = true,
-                    shift = util.by_pixel(-5, -22),
-                    scale = 0.55,
+                    shift = util.by_pixel(20, -1),
+                    scale = 0.5,
                     hr_version =
                     {
-                        filename = ConstEnum.modulesPath.."UUMatterFabricator/res/hr-genric-object-gen1-shadow.png",
+                        filename = ConstEnum.modulesPath.."UUMatterFabricator/res/hr-genric-object-gen3-uufabricator-shadow.png",
                         priority = "high",
-                        width = 512,
-                        height = 512,
+                        width = 385,
+                        height = 275,
                         frame_count = 32,
                         line_length = 8,
                         draw_as_shadow = true,
-                        shift = util.by_pixel(-5, -22),
-                        scale = 0.55
+                        shift = util.by_pixel(20, -1),
+                        scale = 0.5
                     }
                 }
 
