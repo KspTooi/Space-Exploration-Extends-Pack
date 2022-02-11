@@ -47,6 +47,23 @@ end
 
 
 
+local ingredients = db.buildIngredients(TypeEnum.item,ItemEnum.assemblingMachine2,5)
+                      :insert(TypeEnum.item,ItemEnum.advancedCircuit,20)
+                      :insert(TypeEnum.item,db.forName("prism-structure"),20)
+
+--UU机合成
+aspectConverter.toRecipe(aspectService.create(TypeEnum.recipe))
+        :setName(db.forName("uu-matter-fabricator"))
+        :setOrder("u[uu-matter-fabricator]")
+        :setResult(db.forName("uu-matter-fabricator"))
+        :setEnergyRequired(7)
+        :setEnabled(false)
+        :setRequesterPasteMultiplier(1)
+        :setIngredients(ingredients:build())
+        :insertInto()
+
+
+
 --[[
 aspectService.create(TypeEnum.recipe,db.forName("uu-generate-iron"))
 

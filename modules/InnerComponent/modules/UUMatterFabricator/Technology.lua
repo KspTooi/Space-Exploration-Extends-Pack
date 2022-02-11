@@ -3,3 +3,29 @@
 --- Created by Administrator.
 --- DateTime: 2022/1/20 21:27
 ---
+
+local effects = {
+    {
+        type = "unlock-recipe",
+        recipe = db.forName(db.forName("uu-matter-fabricator"))
+    }
+}
+
+
+aspectConverter.toTechnology(aspectService.create(TypeEnum.technology))
+               :setName(db.forName("uu-matter-fabricator"))
+               :setItemIcon(ConstEnum.modulesPath.."/UUMatterFabricator/res/hr-genric-object-gen3-uu-fabricator-icon.png")
+               :setIconSize(128)
+               :setPrerequisites({db.forName("prism-structure")})
+               :setOrder("u[uu-matter-fabricator]")
+               :setUnit({
+    count = 600,
+    ingredients = {
+        {ToolEnum.automationSciencePack, 1},
+        {ToolEnum.logisticSciencePack, 1},
+        {ToolEnum.chemicalSciencePack, 1},
+    },
+    time = 30
+})
+               :setEffects(effects)
+               :insertInto()
