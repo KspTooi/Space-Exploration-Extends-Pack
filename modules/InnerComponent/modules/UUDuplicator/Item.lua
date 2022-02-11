@@ -6,8 +6,8 @@
 
 aspectService.create(TypeEnum.item)
         :setName(db.forName("uu-duplicator"))
-        :setItemIcon(db.forRes("UUDuplicator/res/hr-genric-object-gen2-duplicator-icon.png"))
-        :setItemIconSize(64)
+        :setItemIcon(db.forRes("UUDuplicator/res/hr-genric-object-gen3-duplicator-icon.png"))
+        :setItemIconSize(128)
         :setItemSubgroup(ItemSubgroupEnum.productionMachine)
         :setItemPlaceResult(db.forName("uu-duplicator"))
         :setItemStackSize(10)
