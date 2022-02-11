@@ -19,7 +19,6 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
         })
 
         :setEntityCraftingCategories({db.forName("ore-crusher-category")})
-
         :setEntityCollisionBox({{-2.7, -2.7}, {2.7, 2.4}})  --左右 上下
         :setEntitySelectionBox({{-3.0, -2.7}, {3.0, 2.7}})
         :setEntityDrawingBox({{-3.2, -3.2}, {3.2, 3.2}})
@@ -33,7 +32,7 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
 --[[                    width = 978,
                     height = 895,]]
                     width = 350,
-                    height = 310,
+                    height = 315,
                     frame_count = 32,
                     line_length = 8,
                     shift = util.by_pixel(0, 0),
@@ -43,7 +42,7 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
                         filename = db.forRes("OreCrusher/res/hr-genric-object-gen3-orecrusher.png"),
                         priority = "high",
                         width = 350,
-                        height = 310,
+                        height = 315,
                         frame_count = 32,
                         line_length = 8,
                         shift = util.by_pixel(0, 0),
@@ -54,7 +53,7 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
                     filename = db.forRes("OreCrusher/res/hr-genric-object-gen3-orecrusher-shadow.png"),
                     priority = "high",
                     width = 385,
-                    height = 275,
+                    height = 280,
                     frame_count = 32,
                     line_length = 8,
                     draw_as_shadow = true,
@@ -65,7 +64,7 @@ aspectService.get(TypeEnum.furnace,ItemEnum.electricFurnace)
                         filename = db.forRes("OreCrusher/res/hr-genric-object-gen3-orecrusher-shadow.png"),
                         priority = "high",
                         width = 385,
-                        height = 275,
+                        height = 280,
                         frame_count = 32,
                         line_length = 8,
                         draw_as_shadow = true,

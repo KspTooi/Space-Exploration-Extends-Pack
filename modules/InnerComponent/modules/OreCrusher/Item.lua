@@ -15,18 +15,16 @@ aspectService.create(TypeEnum.item)
 
 
 
-local dustRecipe = {
-
+local dustItem = {
     { name = "iron-dust" },
     { name = "copper-dust" },
     { name = "stone-dust" },
     { name = "tin-dust" },
     { name = "gold-dust" },
     { name = "coal-dust" },
-
 }
 
-for i,v in pairs(dustRecipe) do
+for i,v in pairs(dustItem) do
 
     aspectService.create(TypeEnum.item)
                  :setName(db.forName(v.name))
