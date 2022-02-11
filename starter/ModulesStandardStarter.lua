@@ -30,7 +30,8 @@ local modulesDefine = {
     { name = "M2" , desc = "UU复制机" ,  packName = db.forInnerModules("UUDuplicator") },
     { name = "M4" , desc = "四号组装机" ,  packName = db.forInnerModules("AssemblingT4") },
     { name = "M5" , desc = "紧凑型反应堆" ,  packName = db.forInnerModules("CompactReactor") },
-    { name = "M6" , desc = "光棱组件" ,  packName = db.forInnerModules("PrismStructure") }
+    { name = "M6" , desc = "光棱组件" ,  packName = db.forInnerModules("PrismStructure") },
+    { name = "M7" , desc = "工业研磨机" ,  packName = db.forInnerModules("OreCrusher") }
 
 }
 
