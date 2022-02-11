@@ -181,121 +181,121 @@ end
 
 ---@return any
 function aspectTechnology:getIcons()
-    return self:getProperty(icons)
+    return self:getProperty("icons")
 end
 
 
 ---@return any
 function aspectTechnology:getIcon()
-    return self:getProperty(icon)
+    return self:getProperty("icon")
 end
 
 
 ---@return any
 function aspectTechnology:getIconSize()
-    return self:getProperty(iconSize)
+    return self:getProperty("icon_size")
 end
 
 
 ---@return any
 function aspectTechnology:getUnit()
-    return self:getProperty(unit)
+    return self:getProperty("unit")
 end
 
 
 ---@return any
 function aspectTechnology:getEffects()
-    return self:getProperty(effects)
+    return self:getProperty("effects")
 end
 
 
 ---@return any
 function aspectTechnology:getEnabled()
-    return self:getProperty(enabled)
+    return self:getProperty("enabled")
 end
 
 
 ---@return any
 function aspectTechnology:getExpensive()
-    return self:getProperty(expensive)
+    return self:getProperty("expensive")
 end
 
 
 ---@return any
 function aspectTechnology:getHidden()
-    return self:getProperty(hidden)
+    return self:getProperty("hidden")
 end
 
 
 ---@return any
 function aspectTechnology:getIgnoreTechCostMultiplier()
-    return self:getProperty(ignoreTechCostMultiplier)
+    return self:getProperty("ignore_tech_cost_multiplier")
 end
 
 
 ---@return any
 function aspectTechnology:getMaxLevel()
-    return self:getProperty(maxLevel)
+    return self:getProperty("max_level")
 end
 
 
 ---@return any
 function aspectTechnology:getNormal()
-    return self:getProperty(normal)
+    return self:getProperty("normal")
 end
 
 
 ---@return any
 function aspectTechnology:getPrerequisites()
-    return self:getProperty(prerequisites)
+    return self:getProperty("prerequisites")
 end
 
 
 ---@return any
 function aspectTechnology:getUpgrade()
-    return self:getProperty(upgrade)
+    return self:getProperty("upgrade")
 end
 
 
 ---@return any
 function aspectTechnology:getVisibleWhenDisabled()
-    return self:getProperty(visibleWhenDisabled)
+    return self:getProperty("visible_when_disabled")
 end
 
 
 ---@return any
 function aspectTechnology:getInheritedfromPrototypeBase()
-    return self:getProperty(inheritedfromPrototypeBase)
+    return self:getProperty("InheritedfromPrototypeBase")
 end
 
 
 ---@return any
 function aspectTechnology:getName()
-    return self:getProperty(name)
+    return self:getProperty("name")
 end
 
 
 ---@return any
 function aspectTechnology:getType()
-    return self:getProperty(type)
+    return self:getProperty("type")
 end
 
 
 ---@return any
 function aspectTechnology:getLocalisedDescription()
-    return self:getProperty(localisedDescription)
+    return self:getProperty("localised_description")
 end
 
 
 ---@return any
 function aspectTechnology:getLocalisedName()
-    return self:getProperty(localisedName)
+    return self:getProperty("localised_name")
 end
 
 
 ---@return any
 function aspectTechnology:getOrder()
-    return self:getProperty(order)
+    return self:getProperty("order")
 end
 
 
@@ -314,7 +314,7 @@ end
 
 ---@return aspectTechnology
 function aspectTechnology:setIconSize(iconSize)
-    return self:setProperty("iconSize",iconSize)
+    return self:setProperty("icon_size",iconSize)
 end
 
 
@@ -350,13 +350,13 @@ end
 
 ---@return aspectTechnology
 function aspectTechnology:setIgnoreTechCostMultiplier(ignoreTechCostMultiplier)
-    return self:setProperty("ignoreTechCostMultiplier",ignoreTechCostMultiplier)
+    return self:setProperty("ignore_tech_cost_multiplier",ignoreTechCostMultiplier)
 end
 
 
 ---@return aspectTechnology
 function aspectTechnology:setMaxLevel(maxLevel)
-    return self:setProperty("maxLevel",maxLevel)
+    return self:setProperty("max_level",maxLevel)
 end
 
 
@@ -380,13 +380,13 @@ end
 
 ---@return aspectTechnology
 function aspectTechnology:setVisibleWhenDisabled(visibleWhenDisabled)
-    return self:setProperty("visibleWhenDisabled",visibleWhenDisabled)
+    return self:setProperty("visible_when_disabled",visibleWhenDisabled)
 end
 
 
 ---@return aspectTechnology
 function aspectTechnology:setInheritedfromPrototypeBase(inheritedfromPrototypeBase)
-    return self:setProperty("inheritedfromPrototypeBase",inheritedfromPrototypeBase)
+    return self:setProperty("InheritedfromPrototypeBase",inheritedfromPrototypeBase)
 end
 
 
@@ -404,13 +404,13 @@ end
 
 ---@return aspectTechnology
 function aspectTechnology:setLocalisedDescription(localisedDescription)
-    return self:setProperty("localisedDescription",localisedDescription)
+    return self:setProperty("localised_description",localisedDescription)
 end
 
 
 ---@return aspectTechnology
 function aspectTechnology:setLocalisedName(localisedName)
-    return self:setProperty("localisedName",localisedName)
+    return self:setProperty("localised_name",localisedName)
 end
 
 
