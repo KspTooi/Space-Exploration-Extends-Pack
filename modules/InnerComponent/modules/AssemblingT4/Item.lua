@@ -12,7 +12,7 @@ data:extend(
 			icon_mipmaps = 1,
 			subgroup = "extraction-machine",
 			place_result = "kscp-assembling-machine-4",
-			stack_size = 50
+			stack_size = 8
 		},
 	}
 )
