@@ -11,6 +11,7 @@ local aspectAssemblingMachine = require("aspect.AspectAssemblingMachine")
 local aspectFurnace = require("aspect.AspectFurnace")
 local aspectItem = require("aspect.AspectItem")
 local aspectElectricTurret = require("aspect.AspectElectricTurret")
+local aspectSolarPanel = require("aspect.AspectSolarPanel")
 
 
 local aspectConverter = {}
@@ -53,6 +54,11 @@ end
 ---@return aspectElectricTurret
 function aspectConverter.toElectricTurret(input)
     return aspectElectricTurret:import(input)
+end
+
+---@return aspectSolarPanel
+function aspectConverter.toSolarPanel(input)
+    return aspectSolarPanel:import(input)
 end
 
 return aspectConverter
