@@ -4,19 +4,10 @@
 --- DateTime: 2022/2/8 17:26
 ---
 
+local item = aspectService.get(TypeEnum.item,ItemEnum.solarPanel)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+item:setName(db.forName("prism-solar-panel-1"))
+item:setItemPlaceResult(db.forName("prism-solar-panel-1"))
+item:setItemIcon(db.forRes("PrismSolarPanel/res/hr-genric-object-gen3-prism-solar-panel-icon.png"))
+item:setItemIconSize(128)
+item:insertInto()

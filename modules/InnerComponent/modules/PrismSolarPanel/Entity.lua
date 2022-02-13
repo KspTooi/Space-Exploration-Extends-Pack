@@ -3,3 +3,54 @@
 --- Created by KspTooi.
 --- DateTime: 2022/2/8 17:25
 ---
+
+local object = aspectService.get(TypeEnum.solarPanel,ItemEnum.solarPanel)
+
+
+local prismSolarPanel1={
+    layers =
+    {
+        {
+            filename = db.forRes("PrismSolarPanel/res/hr-genric-object-gen3-prism-solar-panel.png"),
+            priority = "high",
+            width = 289,
+            height = 289,
+            shift = util.by_pixel(0, 0),
+            scale = 0.335,
+            hr_version =
+            {
+                filename = db.forRes("PrismSolarPanel/res/hr-genric-object-gen3-prism-solar-panel.png"),
+                priority = "high",
+                width = 289,
+                height = 289,
+                shift = util.by_pixel(0, 0),
+                scale = 0.335
+            }
+        },
+        {
+            filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow.png",
+            priority = "high",
+            width = 112,
+            height = 90,
+            shift = util.by_pixel(10, 6),
+            draw_as_shadow = true,
+            hr_version =
+            {
+                filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow.png",
+                priority = "high",
+                width = 220,
+                height = 180,
+                shift = util.by_pixel(9.5, 6),
+                draw_as_shadow = true,
+                scale = 0.5
+            }
+        }
+    }
+}
+
+
+
+aspectConverter.toSolarPanel(object)
+        :setName(db.forName("prism-solar-panel-1"))
+        :setPicture(prismSolarPanel1)
+        :insertInto()

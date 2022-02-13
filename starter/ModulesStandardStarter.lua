@@ -32,7 +32,8 @@ local modulesDefine = {
     { name = "M5" , desc = "紧凑型反应堆" ,  packName = db.forInnerModules("CompactReactor") },
     { name = "M6" , desc = "光棱组件" ,  packName = db.forInnerModules("PrismStructure") },
     { name = "M7" , desc = "工业研磨机" ,  packName = db.forInnerModules("OreCrusher") },
-    { name = "M8" , desc = "光棱塔" ,  packName = db.forInnerModules("PrismTower") }
+    { name = "M8" , desc = "光棱塔" ,  packName = db.forInnerModules("PrismTower") },
+    { name = "M9" , desc = "光棱太阳能" ,  packName = db.forInnerModules("PrismSolarPanel") }
 
 }
 
