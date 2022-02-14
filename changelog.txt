@@ -1,12 +1,67 @@
-##VERSIONS:
+---------------------------------------------------------------------------------------------------
+版本: 1.5.7
+日期: 2022/2/14
+  Changes:
+    * Add English Language For All new Item/Entity
+    * Refactor Changelog
 
-1.5.5	- Optimize code structure --- Pre Release Version#1
-1.5.4	- add "ore-dust"
-1.5.3	- Add a machine "OreCrusher"
-1.5.2	- Graphics Update -- UUDuplicator Graphics Refactor
-1.5.1-D	- Graphics Update -- UUMatterFabricator Graphics Refactor
-1.5.1-C	- Develop code generators to quickly generate object-oriented Lua code
-1.5.1-B	- Graphics Update  -- Learn how to use Blender to help me create the graphics for this mod
-1.5.1-A	- developed "project Builder " help me build deploy the project
-1.5.1	- refactor mods code
-1.5.0	- Initial release!
+  Notes:
+    * Pre Release Version#2
+
+---------------------------------------------------------------------------------------------------
+版本: 1.5.6
+日期: ?
+  Changes:
+    * Add new Building of "Prism-Solar-Panel"
+    * Created its Graphics
+
+  Notes:
+    * PrismSolarPanel can compress your solar; make it take up less land
+
+---------------------------------------------------------------------------------------------------
+版本: 1.5.5
+日期: ?
+  Changes:
+    * Optimize code structure --- Pre Release Version#1
+
+---------------------------------------------------------------------------------------------------
+版本: 1.5.4
+日期: ?
+  Changes:
+    * Add "ore-dust" (Raw Ore can be crushed into corresponding "ore-dust" this will produce more resource)
+
+---------------------------------------------------------------------------------------------------
+版本: 1.5.3
+日期: ?
+  Changes:
+    * Add a machine "OreCrusher"
+    * Created its graphics
+
+---------------------------------------------------------------------------------------------------
+版本: 1.5.1-F
+日期: ?
+  Changes:
+    * Develop code generators to quickly generate object-oriented Lua code
+    * Graphics Update -- UUMatterFabricator Graphics Refactor
+    * Graphics Update -- UUDuplicator Graphics Refactor
+
+---------------------------------------------------------------------------------------------------
+版本: 1.5.1-A
+日期: ?
+  Changes:
+    * developed "project Builder " help me build deploy the project
+    * Graphics Update  -- Learn how to use Blender to help me create the graphics for this mod
+
+---------------------------------------------------------------------------------------------------
+版本: 1.5.1
+日期: ?
+  Changes:
+    * refactor mods code
+
+---------------------------------------------------------------------------------------------------
+版本: 1.5.0
+日期: ?
+  Changes:
+    * Initial release!
+
+---------------------------------------------------------------------------------------------------
